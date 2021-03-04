@@ -33,7 +33,6 @@ export const Tags: { [id: string]: TagData } = {
 
 	// Move tags
 	// ---------
-	
 	zmove: {
 		name: "Z-Move",
 		moveFilter: move => !!move.isZ,
