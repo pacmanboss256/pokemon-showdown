@@ -1425,6 +1425,12 @@ export const AbilitiesText: {[k: string]: AbilityText} = {
 
 		activate: "#lightningrod",
 	},
+	striker: {
+		name: "Striker",
+		desc: "this pokemon kicks harder than most",
+		shortDesc: "kick me lol",
+
+	},
 	strongjaw: {
 		name: "Strong Jaw",
 		desc: "This Pokemon's bite-based attacks have their power multiplied by 1.5.",

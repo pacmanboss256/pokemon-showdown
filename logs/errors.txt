@@ -1,0 +1,388 @@
+
+Error [ERR_IPC_DISCONNECTED]: IPC channel is already disconnected
+    at ChildProcess.target.disconnect (internal/child_process.js:858:26)
+    at QueryProcessWrapper.destroy (C:\Users\pacma\source\repos\pacmanboss256\pokemon-showdown\.lib-dist\process-manager.js:178:16)
+    at QueryProcessWrapper.release (C:\Users\pacma\source\repos\pacmanboss256\pokemon-showdown\.lib-dist\process-manager.js:164:9)
+    at QueryProcessManager.releaseCrashed (C:\Users\pacma\source\repos\pacmanboss256\pokemon-showdown\.lib-dist\process-manager.js:421:16)
+    at ChildProcess.<anonymous> (C:\Users\pacma\source\repos\pacmanboss256\pokemon-showdown\.lib-dist\process-manager.js:478:47)
+    at ChildProcess.emit (events.js:315:20)
+    at ChildProcess.EventEmitter.emit (domain.js:467:12)
+    at finish (internal/child_process.js:888:14)
+    at processTicksAndRejections (internal/process/task_queues.js:75:11)
+
+Error [ERR_IPC_DISCONNECTED]: IPC channel is already disconnected
+    at ChildProcess.target.disconnect (internal/child_process.js:858:26)
+    at QueryProcessWrapper.destroy (C:\Users\pacma\source\repos\pacmanboss256\pokemon-showdown\.lib-dist\process-manager.js:178:16)
+    at QueryProcessWrapper.release (C:\Users\pacma\source\repos\pacmanboss256\pokemon-showdown\.lib-dist\process-manager.js:164:9)
+    at QueryProcessManager.releaseCrashed (C:\Users\pacma\source\repos\pacmanboss256\pokemon-showdown\.lib-dist\process-manager.js:421:16)
+    at ChildProcess.<anonymous> (C:\Users\pacma\source\repos\pacmanboss256\pokemon-showdown\.lib-dist\process-manager.js:478:47)
+    at ChildProcess.emit (events.js:315:20)
+    at ChildProcess.EventEmitter.emit (domain.js:467:12)
+    at finish (internal/child_process.js:888:14)
+    at processTicksAndRejections (internal/process/task_queues.js:75:11)
+
+Error [ERR_IPC_DISCONNECTED]: IPC channel is already disconnected
+    at ChildProcess.target.disconnect (internal/child_process.js:858:26)
+    at QueryProcessWrapper.destroy (C:\Users\pacma\source\repos\pacmanboss256\pokemon-showdown\.lib-dist\process-manager.js:178:16)
+    at QueryProcessWrapper.release (C:\Users\pacma\source\repos\pacmanboss256\pokemon-showdown\.lib-dist\process-manager.js:164:9)
+    at QueryProcessManager.releaseCrashed (C:\Users\pacma\source\repos\pacmanboss256\pokemon-showdown\.lib-dist\process-manager.js:421:16)
+    at ChildProcess.<anonymous> (C:\Users\pacma\source\repos\pacmanboss256\pokemon-showdown\.lib-dist\process-manager.js:478:47)
+    at ChildProcess.emit (events.js:315:20)
+    at ChildProcess.EventEmitter.emit (domain.js:467:12)
+    at finish (internal/child_process.js:888:14)
+    at processTicksAndRejections (internal/process/task_queues.js:75:11)
+
+Error [ERR_IPC_DISCONNECTED]: IPC channel is already disconnected
+    at ChildProcess.target.disconnect (internal/child_process.js:858:26)
+    at QueryProcessWrapper.destroy (C:\Users\pacma\source\repos\pacmanboss256\pokemon-showdown\.lib-dist\process-manager.js:178:16)
+    at QueryProcessWrapper.release (C:\Users\pacma\source\repos\pacmanboss256\pokemon-showdown\.lib-dist\process-manager.js:164:9)
+    at QueryProcessManager.releaseCrashed (C:\Users\pacma\source\repos\pacmanboss256\pokemon-showdown\.lib-dist\process-manager.js:421:16)
+    at ChildProcess.<anonymous> (C:\Users\pacma\source\repos\pacmanboss256\pokemon-showdown\.lib-dist\process-manager.js:478:47)
+    at ChildProcess.emit (events.js:315:20)
+    at ChildProcess.EventEmitter.emit (domain.js:467:12)
+    at finish (internal/child_process.js:888:14)
+    at processTicksAndRejections (internal/process/task_queues.js:75:11)
+
+Error [ERR_IPC_DISCONNECTED]: IPC channel is already disconnected
+    at ChildProcess.target.disconnect (internal/child_process.js:858:26)
+    at QueryProcessWrapper.destroy (C:\Users\pacma\source\repos\pacmanboss256\pokemon-showdown\.lib-dist\process-manager.js:178:16)
+    at QueryProcessWrapper.release (C:\Users\pacma\source\repos\pacmanboss256\pokemon-showdown\.lib-dist\process-manager.js:164:9)
+    at QueryProcessManager.releaseCrashed (C:\Users\pacma\source\repos\pacmanboss256\pokemon-showdown\.lib-dist\process-manager.js:421:16)
+    at ChildProcess.<anonymous> (C:\Users\pacma\source\repos\pacmanboss256\pokemon-showdown\.lib-dist\process-manager.js:478:47)
+    at ChildProcess.emit (events.js:315:20)
+    at ChildProcess.EventEmitter.emit (domain.js:467:12)
+    at finish (internal/child_process.js:888:14)
+    at processTicksAndRejections (internal/process/task_queues.js:75:11)
+
+TypeError: Cannot read property 'blazekick' of undefined
+    at ModdedDex.getDescs (C:\Users\pacma\Source\Repos\pacmanboss256\pokemon-showdown\.sim-dist\dex.js:440:43)
+    at ModdedDex.getMove (C:\Users\pacma\Source\Repos\pacmanboss256\pokemon-showdown\.sim-dist\dex.js:481:30)
+    at TeamValidator.onChangeSet (C:\Users\pacma\Source\Repos\pacmanboss256\pokemon-showdown\.data-dist\rulesets.js:261:28)
+    at TeamValidator.validateSet (C:\Users\pacma\Source\Repos\pacmanboss256\pokemon-showdown\.sim-dist\team-validator.js:415:54)
+    at TeamValidator.baseValidateTeam (C:\Users\pacma\Source\Repos\pacmanboss256\pokemon-showdown\.sim-dist\team-validator.js:270:60)
+    at TeamValidator.validateTeam (C:\Users\pacma\Source\Repos\pacmanboss256\pokemon-showdown\.sim-dist\team-validator.js:217:15)
+    at QueryProcessManager._query (C:\Users\pacma\Source\Repos\pacmanboss256\pokemon-showdown\.server-dist\team-validator-async.js:50:57)
+    at process.<anonymous> (C:\Users\pacma\Source\Repos\pacmanboss256\pokemon-showdown\.lib-dist\process-manager.js:552:30)
+    at process.emit (events.js:315:20)
+    at process.EventEmitter.emit (domain.js:467:12)
+
+Additional information:
+  formatid = gen8anythinggoes
+  team = Hitmonlee|||striker|blazekick|||M||||
+
+
+TypeError: Cannot read property 'blazekick' of undefined
+    at ModdedDex.getDescs (C:\Users\pacma\Source\Repos\pacmanboss256\pokemon-showdown\.sim-dist\dex.js:440:43)
+    at ModdedDex.getMove (C:\Users\pacma\Source\Repos\pacmanboss256\pokemon-showdown\.sim-dist\dex.js:481:30)
+    at TeamValidator.onChangeSet (C:\Users\pacma\Source\Repos\pacmanboss256\pokemon-showdown\.data-dist\rulesets.js:261:28)
+    at TeamValidator.validateSet (C:\Users\pacma\Source\Repos\pacmanboss256\pokemon-showdown\.sim-dist\team-validator.js:415:54)
+    at TeamValidator.baseValidateTeam (C:\Users\pacma\Source\Repos\pacmanboss256\pokemon-showdown\.sim-dist\team-validator.js:270:60)
+    at TeamValidator.validateTeam (C:\Users\pacma\Source\Repos\pacmanboss256\pokemon-showdown\.sim-dist\team-validator.js:217:15)
+    at QueryProcessManager._query (C:\Users\pacma\Source\Repos\pacmanboss256\pokemon-showdown\.server-dist\team-validator-async.js:50:57)
+    at process.<anonymous> (C:\Users\pacma\Source\Repos\pacmanboss256\pokemon-showdown\.lib-dist\process-manager.js:552:30)
+    at process.emit (events.js:315:20)
+    at process.EventEmitter.emit (domain.js:467:12)
+
+Additional information:
+  formatid = gen8anythinggoes
+  team = Hitmonlee|||striker|blazekick|||M||||
+
+
+TypeError: Cannot read property 'blazekick' of undefined
+    at ModdedDex.getDescs (C:\Users\pacma\Source\Repos\pacmanboss256\pokemon-showdown\.sim-dist\dex.js:440:43)
+    at ModdedDex.getMove (C:\Users\pacma\Source\Repos\pacmanboss256\pokemon-showdown\.sim-dist\dex.js:481:30)
+    at TeamValidator.onChangeSet (C:\Users\pacma\Source\Repos\pacmanboss256\pokemon-showdown\.data-dist\rulesets.js:261:28)
+    at TeamValidator.validateSet (C:\Users\pacma\Source\Repos\pacmanboss256\pokemon-showdown\.sim-dist\team-validator.js:415:54)
+    at TeamValidator.baseValidateTeam (C:\Users\pacma\Source\Repos\pacmanboss256\pokemon-showdown\.sim-dist\team-validator.js:270:60)
+    at TeamValidator.validateTeam (C:\Users\pacma\Source\Repos\pacmanboss256\pokemon-showdown\.sim-dist\team-validator.js:217:15)
+    at QueryProcessManager._query (C:\Users\pacma\Source\Repos\pacmanboss256\pokemon-showdown\.server-dist\team-validator-async.js:50:57)
+    at process.<anonymous> (C:\Users\pacma\Source\Repos\pacmanboss256\pokemon-showdown\.lib-dist\process-manager.js:552:30)
+    at process.emit (events.js:315:20)
+    at process.EventEmitter.emit (domain.js:467:12)
+
+Additional information:
+  formatid = gen8anythinggoes
+  team = Hitmonlee|||striker|blazekick|||M||||
+
+
+TypeError: Cannot read property 'highjumpkick' of undefined
+    at ModdedDex.getDescs (C:\Users\pacma\Source\Repos\pacmanboss256\pokemon-showdown\.sim-dist\dex.js:440:43)
+    at ModdedDex.getMove (C:\Users\pacma\Source\Repos\pacmanboss256\pokemon-showdown\.sim-dist\dex.js:481:30)
+    at TeamValidator.onChangeSet (C:\Users\pacma\Source\Repos\pacmanboss256\pokemon-showdown\.data-dist\rulesets.js:261:28)
+    at TeamValidator.validateSet (C:\Users\pacma\Source\Repos\pacmanboss256\pokemon-showdown\.sim-dist\team-validator.js:415:54)
+    at TeamValidator.baseValidateTeam (C:\Users\pacma\Source\Repos\pacmanboss256\pokemon-showdown\.sim-dist\team-validator.js:270:60)
+    at TeamValidator.validateTeam (C:\Users\pacma\Source\Repos\pacmanboss256\pokemon-showdown\.sim-dist\team-validator.js:217:15)
+    at QueryProcessManager._query (C:\Users\pacma\Source\Repos\pacmanboss256\pokemon-showdown\.server-dist\team-validator-async.js:50:57)
+    at process.<anonymous> (C:\Users\pacma\Source\Repos\pacmanboss256\pokemon-showdown\.lib-dist\process-manager.js:552:30)
+    at process.emit (events.js:315:20)
+    at process.EventEmitter.emit (domain.js:467:12)
+
+Additional information:
+  formatid = gen8anythinggoes
+  team = Hitmonlee|||striker|highjumpkick|||M||||
+
+
+Error: bind EADDRINUSE 0.0.0.0:8000
+    at listenOnMasterHandle (net.js:1385:18)
+    at shared (internal/cluster/child.js:132:3)
+    at Worker.<anonymous> (internal/cluster/child.js:103:7)
+    at process.onInternalMessage (internal/cluster/utils.js:48:5)
+    at process.emit (events.js:327:22)
+    at process.EventEmitter.emit (domain.js:467:12)
+    at emit (internal/child_process.js:903:12)
+    at processTicksAndRejections (internal/process/task_queues.js:81:21)
+
+Error [ERR_IPC_DISCONNECTED]: IPC channel is already disconnected
+    at ChildProcess.target.disconnect (internal/child_process.js:858:26)
+    at QueryProcessWrapper.destroy (C:\Users\pacma\source\repos\pacmanboss256\pokemon-showdown\.lib-dist\process-manager.js:178:16)
+    at QueryProcessWrapper.release (C:\Users\pacma\source\repos\pacmanboss256\pokemon-showdown\.lib-dist\process-manager.js:164:9)
+    at QueryProcessManager.releaseCrashed (C:\Users\pacma\source\repos\pacmanboss256\pokemon-showdown\.lib-dist\process-manager.js:421:16)
+    at ChildProcess.<anonymous> (C:\Users\pacma\source\repos\pacmanboss256\pokemon-showdown\.lib-dist\process-manager.js:478:47)
+    at ChildProcess.emit (events.js:315:20)
+    at ChildProcess.EventEmitter.emit (domain.js:467:12)
+    at finish (internal/child_process.js:888:14)
+    at processTicksAndRejections (internal/process/task_queues.js:75:11)
+
+TypeError: Cannot read property 'then' of null
+    at RawProcessManager.releaseCrashed (C:\Users\pacma\source\repos\pacmanboss256\pokemon-showdown\.lib-dist\process-manager.js:421:25)
+    at Worker.<anonymous> (C:\Users\pacma\source\repos\pacmanboss256\pokemon-showdown\.lib-dist\process-manager.js:478:47)
+    at Worker.emit (events.js:315:20)
+    at Worker.EventEmitter.emit (domain.js:467:12)
+    at ChildProcess.<anonymous> (internal/cluster/master.js:220:12)
+    at Object.onceWrapper (events.js:421:28)
+    at ChildProcess.emit (events.js:315:20)
+    at ChildProcess.EventEmitter.emit (domain.js:467:12)
+    at finish (internal/child_process.js:888:14)
+    at processTicksAndRejections (internal/process/task_queues.js:75:11)
+
+TypeError: Cannot read property 'highjumpkick' of undefined
+    at ModdedDex.getDescs (C:\Users\pacma\Source\Repos\pacmanboss256\pokemon-showdown\.sim-dist\dex.js:440:43)
+    at ModdedDex.getMove (C:\Users\pacma\Source\Repos\pacmanboss256\pokemon-showdown\.sim-dist\dex.js:481:30)
+    at TeamValidator.onChangeSet (C:\Users\pacma\Source\Repos\pacmanboss256\pokemon-showdown\.data-dist\rulesets.js:261:28)
+    at TeamValidator.validateSet (C:\Users\pacma\Source\Repos\pacmanboss256\pokemon-showdown\.sim-dist\team-validator.js:415:54)
+    at TeamValidator.baseValidateTeam (C:\Users\pacma\Source\Repos\pacmanboss256\pokemon-showdown\.sim-dist\team-validator.js:270:60)
+    at TeamValidator.validateTeam (C:\Users\pacma\Source\Repos\pacmanboss256\pokemon-showdown\.sim-dist\team-validator.js:217:15)
+    at QueryProcessManager._query (C:\Users\pacma\Source\Repos\pacmanboss256\pokemon-showdown\.server-dist\team-validator-async.js:50:57)
+    at process.<anonymous> (C:\Users\pacma\Source\Repos\pacmanboss256\pokemon-showdown\.lib-dist\process-manager.js:552:30)
+    at process.emit (events.js:315:20)
+    at process.EventEmitter.emit (domain.js:467:12)
+
+Additional information:
+  formatid = gen8anythinggoes
+  team = Hitmonlee|||striker|highjumpkick|||M||||
+
+
+TypeError: Cannot read property 'highjumpkick' of undefined
+    at ModdedDex.getDescs (C:\Users\pacma\Source\Repos\pacmanboss256\pokemon-showdown\.sim-dist\dex.js:440:43)
+    at ModdedDex.getMove (C:\Users\pacma\Source\Repos\pacmanboss256\pokemon-showdown\.sim-dist\dex.js:481:30)
+    at TeamValidator.onChangeSet (C:\Users\pacma\Source\Repos\pacmanboss256\pokemon-showdown\.data-dist\rulesets.js:261:28)
+    at TeamValidator.validateSet (C:\Users\pacma\Source\Repos\pacmanboss256\pokemon-showdown\.sim-dist\team-validator.js:415:54)
+    at TeamValidator.baseValidateTeam (C:\Users\pacma\Source\Repos\pacmanboss256\pokemon-showdown\.sim-dist\team-validator.js:270:60)
+    at TeamValidator.validateTeam (C:\Users\pacma\Source\Repos\pacmanboss256\pokemon-showdown\.sim-dist\team-validator.js:217:15)
+    at QueryProcessManager._query (C:\Users\pacma\Source\Repos\pacmanboss256\pokemon-showdown\.server-dist\team-validator-async.js:50:57)
+    at process.<anonymous> (C:\Users\pacma\Source\Repos\pacmanboss256\pokemon-showdown\.lib-dist\process-manager.js:552:30)
+    at process.emit (events.js:315:20)
+    at process.EventEmitter.emit (domain.js:467:12)
+
+Additional information:
+  formatid = gen8anythinggoes
+  team = Hitmonlee|||limber|highjumpkick|||M||||
+
+
+Error: bind EADDRINUSE 0.0.0.0:8000
+    at listenOnMasterHandle (net.js:1385:18)
+    at shared (internal/cluster/child.js:132:3)
+    at Worker.<anonymous> (internal/cluster/child.js:103:7)
+    at process.onInternalMessage (internal/cluster/utils.js:48:5)
+    at process.emit (events.js:327:22)
+    at process.EventEmitter.emit (domain.js:467:12)
+    at emit (internal/child_process.js:903:12)
+    at processTicksAndRejections (internal/process/task_queues.js:81:21)
+
+TypeError: Cannot read property 'highjumpkick' of undefined
+    at ModdedDex.getDescs (C:\Users\pacma\source\repos\pacmanboss256\pokemon-showdown\.sim-dist\dex.js:440:43)
+    at ModdedDex.getMove (C:\Users\pacma\source\repos\pacmanboss256\pokemon-showdown\.sim-dist\dex.js:481:30)
+    at TeamValidator.onChangeSet (C:\Users\pacma\source\repos\pacmanboss256\pokemon-showdown\.data-dist\rulesets.js:261:28)
+    at TeamValidator.validateSet (C:\Users\pacma\source\repos\pacmanboss256\pokemon-showdown\.sim-dist\team-validator.js:415:54)
+    at TeamValidator.baseValidateTeam (C:\Users\pacma\source\repos\pacmanboss256\pokemon-showdown\.sim-dist\team-validator.js:270:60)
+    at TeamValidator.validateTeam (C:\Users\pacma\source\repos\pacmanboss256\pokemon-showdown\.sim-dist\team-validator.js:217:15)
+    at QueryProcessManager._query (C:\Users\pacma\source\repos\pacmanboss256\pokemon-showdown\.server-dist\team-validator-async.js:50:57)
+    at process.<anonymous> (C:\Users\pacma\source\repos\pacmanboss256\pokemon-showdown\.lib-dist\process-manager.js:552:30)
+    at process.emit (events.js:315:20)
+    at process.EventEmitter.emit (domain.js:467:12)
+
+Additional information:
+  formatid = gen8anythinggoes
+  team = Hitmonlee|||striker|highjumpkick|||M||||
+
+
+Error [ERR_IPC_DISCONNECTED]: IPC channel is already disconnected
+    at ChildProcess.target.disconnect (internal/child_process.js:858:26)
+    at QueryProcessWrapper.destroy (C:\Users\pacma\source\repos\pacmanboss256\pokemon-showdown\.lib-dist\process-manager.js:178:16)
+    at QueryProcessWrapper.release (C:\Users\pacma\source\repos\pacmanboss256\pokemon-showdown\.lib-dist\process-manager.js:164:9)
+    at QueryProcessManager.releaseCrashed (C:\Users\pacma\source\repos\pacmanboss256\pokemon-showdown\.lib-dist\process-manager.js:421:16)
+    at ChildProcess.<anonymous> (C:\Users\pacma\source\repos\pacmanboss256\pokemon-showdown\.lib-dist\process-manager.js:478:47)
+    at ChildProcess.emit (events.js:315:20)
+    at ChildProcess.EventEmitter.emit (domain.js:467:12)
+    at finish (internal/child_process.js:888:14)
+    at processTicksAndRejections (internal/process/task_queues.js:75:11)
+
+Error [ERR_IPC_DISCONNECTED]: IPC channel is already disconnected
+    at ChildProcess.target.disconnect (internal/child_process.js:858:26)
+    at QueryProcessWrapper.destroy (C:\Users\pacma\source\repos\pacmanboss256\pokemon-showdown\.lib-dist\process-manager.js:178:16)
+    at QueryProcessWrapper.release (C:\Users\pacma\source\repos\pacmanboss256\pokemon-showdown\.lib-dist\process-manager.js:164:9)
+    at QueryProcessManager.releaseCrashed (C:\Users\pacma\source\repos\pacmanboss256\pokemon-showdown\.lib-dist\process-manager.js:421:16)
+    at ChildProcess.<anonymous> (C:\Users\pacma\source\repos\pacmanboss256\pokemon-showdown\.lib-dist\process-manager.js:478:47)
+    at ChildProcess.emit (events.js:315:20)
+    at ChildProcess.EventEmitter.emit (domain.js:467:12)
+    at finish (internal/child_process.js:888:14)
+    at processTicksAndRejections (internal/process/task_queues.js:75:11)
+
+Error [ERR_IPC_DISCONNECTED]: IPC channel is already disconnected
+    at ChildProcess.target.disconnect (internal/child_process.js:858:26)
+    at QueryProcessWrapper.destroy (C:\Users\pacma\source\repos\pacmanboss256\pokemon-showdown\.lib-dist\process-manager.js:178:16)
+    at QueryProcessWrapper.release (C:\Users\pacma\source\repos\pacmanboss256\pokemon-showdown\.lib-dist\process-manager.js:164:9)
+    at QueryProcessManager.releaseCrashed (C:\Users\pacma\source\repos\pacmanboss256\pokemon-showdown\.lib-dist\process-manager.js:421:16)
+    at ChildProcess.<anonymous> (C:\Users\pacma\source\repos\pacmanboss256\pokemon-showdown\.lib-dist\process-manager.js:478:47)
+    at ChildProcess.emit (events.js:315:20)
+    at ChildProcess.EventEmitter.emit (domain.js:467:12)
+    at finish (internal/child_process.js:888:14)
+    at processTicksAndRejections (internal/process/task_queues.js:75:11)
+
+TypeError: Cannot read property 'brickbreak' of undefined
+    at ModdedDex.getDescs (C:\Users\pacma\Source\Repos\pacmanboss256\pokemon-showdown\.sim-dist\dex.js:440:43)
+    at ModdedDex.getMove (C:\Users\pacma\Source\Repos\pacmanboss256\pokemon-showdown\.sim-dist\dex.js:481:30)
+    at TeamValidator.onChangeSet (C:\Users\pacma\Source\Repos\pacmanboss256\pokemon-showdown\.data-dist\rulesets.js:261:28)
+    at TeamValidator.validateSet (C:\Users\pacma\Source\Repos\pacmanboss256\pokemon-showdown\.sim-dist\team-validator.js:415:54)
+    at TeamValidator.baseValidateTeam (C:\Users\pacma\Source\Repos\pacmanboss256\pokemon-showdown\.sim-dist\team-validator.js:270:60)
+    at TeamValidator.validateTeam (C:\Users\pacma\Source\Repos\pacmanboss256\pokemon-showdown\.sim-dist\team-validator.js:217:15)
+    at QueryProcessManager._query (C:\Users\pacma\Source\Repos\pacmanboss256\pokemon-showdown\.server-dist\team-validator-async.js:50:57)
+    at process.<anonymous> (C:\Users\pacma\Source\Repos\pacmanboss256\pokemon-showdown\.lib-dist\process-manager.js:552:30)
+    at process.emit (events.js:315:20)
+    at process.EventEmitter.emit (domain.js:467:12)
+
+Additional information:
+  formatid = gen8anythinggoes
+  team = Hitmonlee|||striker|,brickbreak||2,,,,,|M||||
+
+
+Error: bind EADDRINUSE 0.0.0.0:8000
+    at listenOnMasterHandle (net.js:1385:18)
+    at shared (internal/cluster/child.js:132:3)
+    at Worker.<anonymous> (internal/cluster/child.js:103:7)
+    at process.onInternalMessage (internal/cluster/utils.js:48:5)
+    at process.emit (events.js:327:22)
+    at process.EventEmitter.emit (domain.js:467:12)
+    at emit (internal/child_process.js:903:12)
+    at processTicksAndRejections (internal/process/task_queues.js:81:21)
+
+Error: bind EADDRINUSE 0.0.0.0:8000
+    at listenOnMasterHandle (net.js:1385:18)
+    at shared (internal/cluster/child.js:132:3)
+    at Worker.<anonymous> (internal/cluster/child.js:103:7)
+    at process.onInternalMessage (internal/cluster/utils.js:48:5)
+    at process.emit (events.js:327:22)
+    at process.EventEmitter.emit (domain.js:467:12)
+    at emit (internal/child_process.js:903:12)
+    at processTicksAndRejections (internal/process/task_queues.js:81:21)
+
+Error: bind EADDRINUSE 0.0.0.0:8000
+    at listenOnMasterHandle (net.js:1385:18)
+    at shared (internal/cluster/child.js:132:3)
+    at Worker.<anonymous> (internal/cluster/child.js:103:7)
+    at process.onInternalMessage (internal/cluster/utils.js:48:5)
+    at process.emit (events.js:327:22)
+    at process.EventEmitter.emit (domain.js:467:12)
+    at emit (internal/child_process.js:903:12)
+    at processTicksAndRejections (internal/process/task_queues.js:81:21)
+
+TypeError: Cannot read property 'blazekick' of undefined
+    at ModdedDex.getDescs (C:\Users\pacma\Source\Repos\pacmanboss256\pokemon-showdown\.sim-dist\dex.js:440:43)
+    at ModdedDex.getMove (C:\Users\pacma\Source\Repos\pacmanboss256\pokemon-showdown\.sim-dist\dex.js:481:30)
+    at TeamValidator.onChangeSet (C:\Users\pacma\Source\Repos\pacmanboss256\pokemon-showdown\.data-dist\rulesets.js:261:28)
+    at TeamValidator.validateSet (C:\Users\pacma\Source\Repos\pacmanboss256\pokemon-showdown\.sim-dist\team-validator.js:415:54)
+    at TeamValidator.baseValidateTeam (C:\Users\pacma\Source\Repos\pacmanboss256\pokemon-showdown\.sim-dist\team-validator.js:270:60)
+    at TeamValidator.validateTeam (C:\Users\pacma\Source\Repos\pacmanboss256\pokemon-showdown\.sim-dist\team-validator.js:217:15)
+    at QueryProcessManager._query (C:\Users\pacma\Source\Repos\pacmanboss256\pokemon-showdown\.server-dist\team-validator-async.js:50:57)
+    at process.<anonymous> (C:\Users\pacma\Source\Repos\pacmanboss256\pokemon-showdown\.lib-dist\process-manager.js:552:30)
+    at process.emit (events.js:315:20)
+    at process.EventEmitter.emit (domain.js:467:12)
+
+Additional information:
+  formatid = gen8anythinggoes
+  team = Hitmonlee|||limber|,blazekick|||M||||
+
+
+TypeError: Cannot read property 'blazekick' of undefined
+    at ModdedDex.getDescs (C:\Users\pacma\Source\Repos\pacmanboss256\pokemon-showdown\.sim-dist\dex.js:440:43)
+    at ModdedDex.getMove (C:\Users\pacma\Source\Repos\pacmanboss256\pokemon-showdown\.sim-dist\dex.js:481:30)
+    at TeamValidator.onChangeSet (C:\Users\pacma\Source\Repos\pacmanboss256\pokemon-showdown\.data-dist\rulesets.js:261:28)
+    at TeamValidator.validateSet (C:\Users\pacma\Source\Repos\pacmanboss256\pokemon-showdown\.sim-dist\team-validator.js:415:54)
+    at TeamValidator.baseValidateTeam (C:\Users\pacma\Source\Repos\pacmanboss256\pokemon-showdown\.sim-dist\team-validator.js:270:60)
+    at TeamValidator.validateTeam (C:\Users\pacma\Source\Repos\pacmanboss256\pokemon-showdown\.sim-dist\team-validator.js:217:15)
+    at QueryProcessManager._query (C:\Users\pacma\Source\Repos\pacmanboss256\pokemon-showdown\.server-dist\team-validator-async.js:50:57)
+    at process.<anonymous> (C:\Users\pacma\Source\Repos\pacmanboss256\pokemon-showdown\.lib-dist\process-manager.js:552:30)
+    at process.emit (events.js:315:20)
+    at process.EventEmitter.emit (domain.js:467:12)
+
+Additional information:
+  formatid = gen8anythinggoes
+  team = Hitmonlee|||limber|,blazekick|||M||||
+
+
+TypeError: Cannot read property 'aurasphere' of undefined
+    at ModdedDex.getDescs (C:\Users\pacma\Source\Repos\pacmanboss256\pokemon-showdown\.sim-dist\dex.js:440:43)
+    at ModdedDex.getMove (C:\Users\pacma\Source\Repos\pacmanboss256\pokemon-showdown\.sim-dist\dex.js:481:30)
+    at TeamValidator.onChangeSet (C:\Users\pacma\Source\Repos\pacmanboss256\pokemon-showdown\.data-dist\rulesets.js:261:28)
+    at TeamValidator.validateSet (C:\Users\pacma\Source\Repos\pacmanboss256\pokemon-showdown\.sim-dist\team-validator.js:415:54)
+    at TeamValidator.baseValidateTeam (C:\Users\pacma\Source\Repos\pacmanboss256\pokemon-showdown\.sim-dist\team-validator.js:270:60)
+    at TeamValidator.validateTeam (C:\Users\pacma\Source\Repos\pacmanboss256\pokemon-showdown\.sim-dist\team-validator.js:217:15)
+    at QueryProcessManager._query (C:\Users\pacma\Source\Repos\pacmanboss256\pokemon-showdown\.server-dist\team-validator-async.js:50:57)
+    at process.<anonymous> (C:\Users\pacma\Source\Repos\pacmanboss256\pokemon-showdown\.lib-dist\process-manager.js:552:30)
+    at process.emit (events.js:315:20)
+    at process.EventEmitter.emit (domain.js:467:12)
+
+Additional information:
+  formatid = gen8anythinggoes
+  team = Hitmonlee|||limber|aurasphere,bodyslam|||M||||
+
+
+TypeError: Monitor.slow is not a function
+    at RoomBattleStream._write (C:\Users\pacma\Source\Repos\pacmanboss256\pokemon-showdown\.server-dist\room-battle.js:1199:12)
+    at RoomBattleStream.write (C:\Users\pacma\Source\Repos\pacmanboss256\pokemon-showdown\.lib-dist\streams.js:836:15)
+    at process.<anonymous> (C:\Users\pacma\Source\Repos\pacmanboss256\pokemon-showdown\.lib-dist\process-manager.js:632:17)
+    at process.emit (events.js:315:20)
+    at process.EventEmitter.emit (domain.js:467:12)
+    at emit (internal/child_process.js:903:12)
+    at processTicksAndRejections (internal/process/task_queues.js:81:21)
+
+TypeError: Monitor.slow is not a function
+    at RoomBattleStream._write (C:\Users\pacma\Source\Repos\pacmanboss256\pokemon-showdown\.server-dist\room-battle.js:1199:12)
+    at RoomBattleStream.write (C:\Users\pacma\Source\Repos\pacmanboss256\pokemon-showdown\.lib-dist\streams.js:836:15)
+    at process.<anonymous> (C:\Users\pacma\Source\Repos\pacmanboss256\pokemon-showdown\.lib-dist\process-manager.js:632:17)
+    at process.emit (events.js:315:20)
+    at process.EventEmitter.emit (domain.js:467:12)
+    at emit (internal/child_process.js:903:12)
+    at processTicksAndRejections (internal/process/task_queues.js:81:21)
+
+Error [ERR_IPC_DISCONNECTED]: IPC channel is already disconnected
+    at ChildProcess.target.disconnect (internal/child_process.js:858:26)
+    at QueryProcessWrapper.destroy (C:\Users\pacma\Source\Repos\pacmanboss256\pokemon-showdown\.lib-dist\process-manager.js:178:16)
+    at QueryProcessWrapper.release (C:\Users\pacma\Source\Repos\pacmanboss256\pokemon-showdown\.lib-dist\process-manager.js:164:9)
+    at QueryProcessManager.releaseCrashed (C:\Users\pacma\Source\Repos\pacmanboss256\pokemon-showdown\.lib-dist\process-manager.js:421:16)
+    at ChildProcess.<anonymous> (C:\Users\pacma\Source\Repos\pacmanboss256\pokemon-showdown\.lib-dist\process-manager.js:478:47)
+    at ChildProcess.emit (events.js:315:20)
+    at ChildProcess.EventEmitter.emit (domain.js:467:12)
+    at finish (internal/child_process.js:888:14)
+    at processTicksAndRejections (internal/process/task_queues.js:75:11)
+
+Error [ERR_IPC_DISCONNECTED]: IPC channel is already disconnected
+    at ChildProcess.target.disconnect (internal/child_process.js:858:26)
+    at QueryProcessWrapper.destroy (C:\Users\pacma\Source\Repos\pacmanboss256\pokemon-showdown\.lib-dist\process-manager.js:178:16)
+    at QueryProcessWrapper.release (C:\Users\pacma\Source\Repos\pacmanboss256\pokemon-showdown\.lib-dist\process-manager.js:164:9)
+    at QueryProcessManager.releaseCrashed (C:\Users\pacma\Source\Repos\pacmanboss256\pokemon-showdown\.lib-dist\process-manager.js:421:16)
+    at ChildProcess.<anonymous> (C:\Users\pacma\Source\Repos\pacmanboss256\pokemon-showdown\.lib-dist\process-manager.js:478:47)
+    at ChildProcess.emit (events.js:315:20)
+    at ChildProcess.EventEmitter.emit (domain.js:467:12)
+    at finish (internal/child_process.js:888:14)
+    at processTicksAndRejections (internal/process/task_queues.js:75:11)

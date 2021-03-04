@@ -1213,6 +1213,7 @@ if (!PM.isParentProcess) {
 	global.Chat = require('./chat').Chat;
 	global.Dex = require('../sim/dex').Dex;
 	global.Monitor = {
+		slow() {},
 		crashlog(error: Error, source = 'A simulator process', details: AnyObject | null = null) {
 			const repr = JSON.stringify([error.name, error.message, source, details]);
 			process.send!(`THROW\n@!!@${repr}\n${error.stack}`);

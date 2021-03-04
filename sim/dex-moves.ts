@@ -35,6 +35,7 @@ interface MoveFlags {
 	distance?: 1; // Can target a Pokemon positioned anywhere in a Triple Battle.
 	gravity?: 1; // Prevented from being executed or selected during Gravity's effect.
 	heal?: 1; // Prevented from being executed or selected during Heal Block's effect.
+	kick?: 1; //kick
 	mirror?: 1; // Can be copied by Mirror Move.
 	mystery?: 1; // Unknown effect.
 	nonsky?: 1; // Prevented from being executed or selected in a Sky Battle.
