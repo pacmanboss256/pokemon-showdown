@@ -1,4 +1,3 @@
-*-dist
 databases/*.db*
 *.o
 *.o.dSYM
