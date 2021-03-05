@@ -1,7 +1,6 @@
 databases/*.db*
 *.o
 *node_modules/*
-*-dist/
 *.o.dSYM
 # Typescript build artifacts
 tools/set-import/importer.js
