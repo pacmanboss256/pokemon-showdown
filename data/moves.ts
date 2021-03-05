@@ -9143,7 +9143,7 @@ export const Moves: { [moveid: string]: MoveData } = {
 	jawlock: {
 		num: 746,
 		accuracy: 100,
-		basePower: 80,
+		basePower: 90,
 		category: "Physical",
 		name: "Jaw Lock",
 		pp: 10,
@@ -9155,7 +9155,7 @@ export const Moves: { [moveid: string]: MoveData } = {
 		},
 		secondary: null,
 		target: "normal",
-		type: "Dark",
+		type: "Fighting",
 	},
 	judgment: {
 		num: 449,
