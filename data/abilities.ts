@@ -922,17 +922,18 @@ export const Abilities: { [abilityid: string]: AbilityData } = {
 	fatalprecision: {
 		onModifyDamage(damage, source, target, move) {
 			if (move && target.getMoveHitData(move).typeMod > 0) {
+				this.debug("fatal precision buff");
 				return this.chainModify([4915, 4096]);
 			}
 		},
-		onSourceAccuracy(accuracy, target, source, move) {
+		onModifyAccuracyPriority: -1,
+		onSourceModifyAccuracyBool(accuracy: number | true, source, target, move: ActiveMove) {
 			if (move && target.getMoveHitData(move).typeMod > 0) {
-				if (move && source === this.effectData.target && target === this.effectData.source) {
-					return true;
-				}
-				return accuracy;
+				if (typeof accuracy !== 'number') return;
+				else return true;
 			}
-	    },
+			return accuracy;
+		},
 		name: "Fatal Precision",
 		rating: 4,
 		num: 269,

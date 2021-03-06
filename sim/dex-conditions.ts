@@ -354,6 +354,7 @@ export interface EventMethods {
 	onSourceLockMove?: string | ((this: Battle, pokemon: Pokemon) => void | string);
 	onSourceMaybeTrapPokemon?: (this: Battle, pokemon: Pokemon) => void;
 	onSourceModifyAccuracy?: CommonHandlers['ModifierMove'];
+	onSourceModifyAccuracyBool?: CommonHandlers['ModifierMoveBool'];
 	onSourceModifyAtk?: CommonHandlers['ModifierSourceMove'];
 	onSourceModifyBoost?: (this: Battle, boosts: SparseBoostsTable, pokemon: Pokemon) => SparseBoostsTable | void;
 	onSourceModifyCritRatio?: CommonHandlers['ModifierSourceMove'];
