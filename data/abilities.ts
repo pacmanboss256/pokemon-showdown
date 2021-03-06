@@ -32,7 +32,7 @@ Ratings and how they work:
 
 */
 
-export const Abilities: {[abilityid: string]: AbilityData} = {
+export const Abilities: { [abilityid: string]: AbilityData } = {
 	noability: {
 		isNonstandard: "Past",
 		name: "No Ability",
@@ -637,13 +637,13 @@ export const Abilities: {[abilityid: string]: AbilityData} = {
 	defeatist: {
 		onModifyAtkPriority: 5,
 		onModifyAtk(atk, pokemon) {
-			if (pokemon.hp <= pokemon.maxhp / 2) {
+			if (pokemon.hp <= pokemon.maxhp / 3) {
 				return this.chainModify(0.5);
 			}
 		},
 		onModifySpAPriority: 5,
 		onModifySpA(atk, pokemon) {
-			if (pokemon.hp <= pokemon.maxhp / 2) {
+			if (pokemon.hp <= pokemon.maxhp / 3) {
 				return this.chainModify(0.5);
 			}
 		},
@@ -919,6 +919,26 @@ export const Abilities: {[abilityid: string]: AbilityData} = {
 		rating: 3,
 		num: 187,
 	},
+	fatalprecision: {
+		onModifyDamage(damage, source, target, move) {
+			if (move && target.getMoveHitData(move).typeMod > 0) {
+				this.debug("fatal precision buff");
+				return this.chainModify([4915, 4096]);
+			}
+		},
+		onModifyAccuracyPriority: -1,
+		onSourceModifyAccuracyBool(accuracy: number | true, source, target, move: ActiveMove) {
+			if (move && target.getMoveHitData(move).typeMod > 0) {
+				if (typeof accuracy !== 'number') return;
+				else return true;
+			}
+			return accuracy;
+		},
+		name: "Fatal Precision",
+		rating: 4,
+		num: 269,
+	},
+
 	filter: {
 		onSourceModifyDamage(damage, source, target, move) {
 			if (target.getMoveHitData(move).typeMod > 0) {
@@ -1305,7 +1325,7 @@ export const Abilities: {[abilityid: string]: AbilityData} = {
 			if (['cramorantgulping', 'cramorantgorging'].includes(target.species.id)) {
 				this.damage(source.baseMaxhp / 4, source, target);
 				if (target.species.id === 'cramorantgulping') {
-					this.boost({def: -1}, source, target, null, true);
+					this.boost({spe: -1}, source, target, null, true);
 				} else {
 					source.trySetStatus('par', target, move);
 				}
@@ -1543,11 +1563,6 @@ export const Abilities: {[abilityid: string]: AbilityData} = {
 		rating: 4,
 		num: 246,
 	},
-	illuminate: {
-		name: "Illuminate",
-		rating: 0,
-		num: 35,
-	},
 	illusion: {
 		onBeforeSwitchIn(pokemon) {
 			pokemon.illusion = null;
@@ -1713,7 +1728,7 @@ export const Abilities: {[abilityid: string]: AbilityData} = {
 		onBasePower(basePower, attacker, defender, move) {
 			if (move.flags['punch']) {
 				this.debug('Iron Fist boost');
-				return this.chainModify([4915, 4096]);
+				return this.chainModify([5328, 4096]);
 			}
 		},
 		name: "Iron Fist",
@@ -2986,7 +3001,7 @@ export const Abilities: {[abilityid: string]: AbilityData} = {
 					return this.chainModify(1.25);
 				} else {
 					this.debug('Rivalry weaken');
-					return this.chainModify(0.75);
+					return this.chainModify(1);
 				}
 			}
 		},
@@ -3431,10 +3446,11 @@ export const Abilities: {[abilityid: string]: AbilityData} = {
 				return this.chainModify(1.5);
 			}
 		},
-		onWeather(target, source, effect) {
-			if (target.hasItem('utilityumbrella')) return;
-			if (effect.id === 'sunnyday' || effect.id === 'desolateland') {
-				this.damage(target.baseMaxhp / 8, target, target);
+
+		onModifyDefPriority: 6,
+		onModifyDef(def, pokemon) {
+			if (['sunnyday', 'desolateland'].includes(pokemon.effectiveWeather())) {
+				return this.chainModify(1.33);
 			}
 		},
 		name: "Solar Power",
@@ -3661,6 +3677,18 @@ export const Abilities: {[abilityid: string]: AbilityData} = {
 		name: "Storm Drain",
 		rating: 3,
 		num: 114,
+	},
+	striker: {
+		onBasePowerPriority: 43,
+		onBasePower(basePower, attacker, defender, move) {
+			if (move.flags['kick']) {
+				this.debug('Striker Boost');
+				return this.chainModify([5328, 4096]);
+			}
+		},
+		name: "Striker",
+		rating: 3,
+		num: 268,
 	},
 	strongjaw: {
 		onBasePowerPriority: 19,
@@ -3929,6 +3957,7 @@ export const Abilities: {[abilityid: string]: AbilityData} = {
 				return this.chainModify(1.5);
 			}
 		},
+
 		name: "Toxic Boost",
 		rating: 2.5,
 		num: 137,

@@ -5,7 +5,7 @@ interface TagData {
 	moveFilter?: (move: Move) => boolean;
 }
 
-export const Tags: {[id: string]: TagData} = {
+export const Tags: { [id: string]: TagData } = {
 	// Categories
 	// ----------
 	physical: {
@@ -50,6 +50,10 @@ export const Tags: {[id: string]: TagData} = {
 		name: "Sound",
 		desc: "Doesn't affect Soundproof Pokémon. (All sound moves also bypass Substitute.)",
 		moveFilter: move => 'sound' in move.flags,
+	},
+	kick: {
+		name: "Kick",
+		moveFilter: move => 'kick' in move.flags,
 	},
 	powder: {
 		name: "Powder",
