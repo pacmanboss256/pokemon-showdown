@@ -927,7 +927,10 @@ export const Abilities: { [abilityid: string]: AbilityData } = {
 		},
 		onSourceAccuracy(accuracy, target, source, move) {
 			if (move && target.getMoveHitData(move).typeMod > 0) {
-				if (move && source === this.effectData.target && target === this.effectData.source) return true;
+				if (move && source === this.effectData.target && target === this.effectData.source) {
+					return true;
+				}
+				return accuracy;
 			}
 	    },
 		name: "Fatal Precision",
