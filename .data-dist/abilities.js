@@ -919,6 +919,22 @@ Ratings and how they work:
 		rating: 3,
 		num: 187,
 	},
+	fatalprecision: {
+		onModifyDamage(damage, source, target, move) {
+			if (move && target.getMoveHitData(move).typeMod > 0) {
+				return this.chainModify([4915, 4096]);
+			}
+		},
+		onSourceAccuracy(accuracy, target, source, move) {
+			if (move && target.getMoveHitData(move).typeMod > 0) {
+				if (move && source === this.effectData.target && target === this.effectData.source) return true;
+			}
+	    },
+		name: "Fatal Precision",
+		rating: 4,
+		num: 269,
+	},
+
 	filter: {
 		onSourceModifyDamage(damage, source, target, move) {
 			if (target.getMoveHitData(move).typeMod > 0) {
