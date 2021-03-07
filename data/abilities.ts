@@ -927,7 +927,7 @@ export const Abilities: { [abilityid: string]: AbilityData } = {
 			}
 		},
 		onModifyAccuracyPriority: -1,
-		onSourceModifyAccuracyBool(accuracy: number | true, source, target, move: ActiveMove) {
+		onSourceAccuracy(accuracy: number | true, source, target, move: ActiveMove) {
 			if (move && target.getMoveHitData(move).typeMod > 0) {
 				if (typeof accuracy !== 'number') {
 					 return;
