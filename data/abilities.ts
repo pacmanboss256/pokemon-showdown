@@ -920,7 +920,8 @@ export const Abilities: { [abilityid: string]: AbilityData } = {
 		num: 187,
 	},
 	fatalprecision: {
-		onModifyDamage(damage, source, target, move) {
+		onBasePowerPriority: 25,
+		onBasePower(basePower, source, target, move) {
 			if (move && target.getMoveHitData(move).typeMod > 0) {
 				this.debug("fatal precision buff");
 				return this.chainModify([4915, 4096]);
