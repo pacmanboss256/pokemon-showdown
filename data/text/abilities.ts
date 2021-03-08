@@ -133,6 +133,10 @@ export const AbilitiesText: {[k: string]: AbilityText} = {
 		name: "Big Pecks",
 		shortDesc: "Prevents other Pokemon from lowering this Pokemon's Defense stat stage.",
 	},
+	blademaster: {
+		name: "Blademaster",
+		shortDesc: "Boosts Cutting moves by 20% and +1 crit chance",
+	},
 	blaze: {
 		name: "Blaze",
 		desc: "When this Pokemon has 1/3 or less of its maximum HP, rounded down, its attacking stat is multiplied by 1.5 while using a Fire-type attack.",
