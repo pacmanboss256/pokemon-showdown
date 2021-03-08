@@ -8917,7 +8917,7 @@ export const Pokedex: { [speciesid: string]: SpeciesData } = {
 	samurott: {
 		num: 503,
 		name: "Samurott",
-		types: ["Water"],
+		types: ["Water", "Steel"],
 		genderRatio: {M: 0.875, F: 0.125},
 		baseStats: {hp: 95, atk: 100, def: 85, spa: 108, spd: 70, spe: 70},
 		abilities: {0: "Torrent", 1: "Blademaster", H: "Shell Armor"},
