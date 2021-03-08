@@ -5646,9 +5646,9 @@ export const MovesText: { [k: string]: MoveText } = {
 	},
 	splash: {
 		name: "Splash",
-		shortDesc: "No competitive use.",
+		shortDesc: "Has a small change",
 
-		activate: "  But nothing happened!",
+		activate: "  But nothing happened! What a flex.",
 	},
 	splinteredstormshards: {
 		name: "Splintered Stormshards",
