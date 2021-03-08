@@ -165,9 +165,9 @@ export const ItemsText: {[k: string]: ItemText} = {
 	},
 	brightpowder: {
 		name: "Bright Powder",
-		desc: "The accuracy of attacks against the holder is 0.9x.",
+		desc: "Does nothing",
 		gen2: {
-			desc: "An attack against the holder has its accuracy out of 255 lowered by 20.",
+			desc: "Useless",
 		},
 	},
 	buggem: {
@@ -879,9 +879,9 @@ export const ItemsText: {[k: string]: ItemText} = {
 	},
 	laxincense: {
 		name: "Lax Incense",
-		desc: "The accuracy of attacks against the holder is 0.9x.",
+		desc: "Does Nothing.",
 		gen3: {
-			desc: "The accuracy of attacks against the holder is 0.95x.",
+			desc: "Does Nothing",
 		},
 	},
 	leafstone: {
@@ -1383,13 +1383,11 @@ export const ItemsText: {[k: string]: ItemText} = {
 	},
 	razorclaw: {
 		name: "Razor Claw",
-		desc: "Holder's critical hit ratio is raised by 1 stage. Evolves Sneasel into Weavile when held and leveled up during the night.",
-		shortDesc: "Holder's critical hit ratio is raised by 1 stage.",
+		desc: "Does Nothing",
 	},
 	razorfang: {
 		name: "Razor Fang",
-		desc: "Holder's attacks without a chance to make the target flinch gain a 10% chance to make the target flinch. Evolves Gligar into Gliscor when held and leveled up during the night.",
-		shortDesc: "Holder's attacks without a chance to flinch gain a 10% chance to flinch.",
+		desc: "Does Nothing",
 	},
 	razzberry: {
 		name: "Razz Berry",

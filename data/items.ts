@@ -562,12 +562,6 @@ export const Items: {[itemid: string]: ItemData} = {
 		fling: {
 			basePower: 10,
 		},
-		onModifyAccuracyPriority: -2,
-		onModifyAccuracy(accuracy) {
-			if (typeof accuracy !== 'number') return;
-			this.debug('brightpowder - decreasing accuracy');
-			return this.chainModify([3686, 4096]);
-		},
 		num: 213,
 		gen: 2,
 	},
@@ -2796,12 +2790,6 @@ export const Items: {[itemid: string]: ItemData} = {
 		fling: {
 			basePower: 10,
 		},
-		onModifyAccuracyPriority: -2,
-		onModifyAccuracy(accuracy) {
-			if (typeof accuracy !== 'number') return;
-			this.debug('lax incense - decreasing accuracy');
-			return this.chainModify([3686, 4096]);
-		},
 		num: 255,
 		gen: 3,
 	},
@@ -4315,13 +4303,6 @@ export const Items: {[itemid: string]: ItemData} = {
 		isPokeball: true,
 	},
 	quickclaw: {
-		onFractionalPriorityPriority: -2,
-		onFractionalPriority(priority, pokemon) {
-			if (priority <= 0 && this.randomChance(1, 5)) {
-				this.add('-activate', pokemon, 'item: Quick Claw');
-				return 0.1;
-			}
-		},
 		name: "Quick Claw",
 		spritenum: 373,
 		fling: {
@@ -4394,9 +4375,6 @@ export const Items: {[itemid: string]: ItemData} = {
 		fling: {
 			basePower: 80,
 		},
-		onModifyCritRatio(critRatio) {
-			return critRatio + 1;
-		},
 		num: 326,
 		gen: 4,
 	},
@@ -4406,19 +4384,6 @@ export const Items: {[itemid: string]: ItemData} = {
 		fling: {
 			basePower: 30,
 			volatileStatus: 'flinch',
-		},
-		onModifyMovePriority: -1,
-		onModifyMove(move) {
-			if (move.category !== "Status") {
-				if (!move.secondaries) move.secondaries = [];
-				for (const secondary of move.secondaries) {
-					if (secondary.volatileStatus === 'flinch') return;
-				}
-				move.secondaries.push({
-					chance: 10,
-					volatileStatus: 'flinch',
-				});
-			}
 		},
 		num: 327,
 		gen: 4,
