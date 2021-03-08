@@ -949,7 +949,7 @@ export const Abilities: { [abilityid: string]: AbilityData } = {
 			if (typeof accuracy !== 'number') return;
 			if (move && target.getMoveHitData(move).typeMod > 0) {
 				this.debug("fatal precision buff");
-				return this.chainModify([12288, 4096]);
+				return this.chainModify(3);
 			}
 		},
 		name: "Fatal Precision",
