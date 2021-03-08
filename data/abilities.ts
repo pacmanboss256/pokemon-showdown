@@ -944,7 +944,7 @@ export const Abilities: { [abilityid: string]: AbilityData } = {
 				return this.chainModify([4915, 4096]);
 			}
 		},
-		onSourceModifyAccuracyPriority: -3,
+		onSourceModifyAccuracyPriority: -1,
 		onSourceModifyAccuracy(accuracy, source, target, move) {
 			if (typeof accuracy !== 'number') return;
 			if (move && target.getMoveHitData(move).typeMod > 0) {
