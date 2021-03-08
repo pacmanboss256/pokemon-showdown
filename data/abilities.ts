@@ -32,6 +32,8 @@ Ratings and how they work:
 
 */
 
+import {Moves} from "./moves";
+
 export const Abilities: { [abilityid: string]: AbilityData } = {
 	noability: {
 		isNonstandard: "Past",
@@ -328,6 +330,23 @@ export const Abilities: { [abilityid: string]: AbilityData } = {
 		name: "Big Pecks",
 		rating: 0.5,
 		num: 145,
+	},
+	blademaster: {
+		onBasePowerPriority: 23,
+		onBasePower(basePower, attacker, defender, move) {
+			if (move.flags['blade']) {
+				this.debug('Blademaster boost');
+				return this.chainModify([4915, 4096]);
+			}
+		},
+		onModifyCritRatio(critRatio, source, target, move: ActiveMove) {
+			if (move.flags['blade']) {
+				return (critRatio + 1);
+			}
+		},
+		name: "Blademaster",
+		rating: 3.5,
+		num: 271,
 	},
 	blaze: {
 		onModifyAtkPriority: 5,
