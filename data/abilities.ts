@@ -367,6 +367,14 @@ export const Abilities: { [abilityid: string]: AbilityData } = {
 		rating: 2,
 		num: 66,
 	},
+	blazingsoul: {
+		onModifyPriority(priority, pokemon, target, move) {
+			if (move?.type === 'Fire' && pokemon.hp === pokemon.maxhp) return priority + 1;
+		},
+		name: "Blazing Soul",
+		rating: 3,
+		num: 272,
+	},
 	bulletproof: {
 		onTryHit(pokemon, target, move) {
 			if (move.flags['bullet']) {

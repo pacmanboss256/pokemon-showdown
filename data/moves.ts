@@ -12608,7 +12608,7 @@ export const Moves: { [moveid: string]: MoveData } = {
 	poisonfang: {
 		num: 305,
 		accuracy: 100,
-		basePower: 50,
+		basePower: 75,
 		category: "Physical",
 		name: "Poison Fang",
 		pp: 15,

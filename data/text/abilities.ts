@@ -146,6 +146,10 @@ export const AbilitiesText: {[k: string]: AbilityText} = {
 			shortDesc: "At 1/3 or less of its max HP, this Pokemon's Fire-type attacks have 1.5x power.",
 		},
 	},
+	blazingsoul: {
+		name: "Blazing Soul",
+		desc: "Fire type Gale Wings",
+	},
 	bulletproof: {
 		name: "Bulletproof",
 		desc: "This Pokemon is immune to ballistic moves. Ballistic moves include Bullet Seed, Octazooka, Barrage, Rock Wrecker, Zap Cannon, Acid Spray, Aura Sphere, Focus Blast, and all moves with Ball or Bomb in their name.",
