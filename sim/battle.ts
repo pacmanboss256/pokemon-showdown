@@ -2178,7 +2178,10 @@ export class Battle {
 		attack = this.runEvent('Modify' + statTable[attackStat], attacker, defender, move, attack);
 		defense = this.runEvent('Modify' + statTable[defenseStat], defender, attacker, move, defense);
 
-		if (this.gen <= 4 && ['explosion', 'selfdestruct'].includes(move.id) && defenseStat === 'def') {
+		if (((this.gen <= 4) || (this.gen === 8)) && ['explosion', 'selfdestruct'].includes(move.id) && defenseStat === 'def') {
+			defense = this.clampIntRange(Math.floor(defense / 2), 1);
+		}
+		if (this.gen === 8 && ['mistyexplosion'].includes(move.id) && defenseStat === 'spd') {
 			defense = this.clampIntRange(Math.floor(defense / 2), 1);
 		}
 
