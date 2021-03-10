@@ -995,6 +995,11 @@ export const Abilities: { [abilityid: string]: AbilityData } = {
 				return this.chainModify(1.5);
 			}
 		},
+		onDamage(damage, target, source, effect) {
+			if (effect && effect.id === 'brn') {
+				return (0 * damage);
+			}
+		},
 		name: "Flare Boost",
 		rating: 2,
 		num: 138,
@@ -3983,6 +3988,11 @@ export const Abilities: { [abilityid: string]: AbilityData } = {
 				return this.chainModify(1.5);
 			}
 		},
+		onDamage(damage, target, source, effect) {
+			if (effect && effect.id === ('psn' || 'tox')) {
+				return (0 * damage);
+			}
+		},
 
 		name: "Toxic Boost",
 		rating: 2.5,
@@ -4267,6 +4277,11 @@ export const Abilities: { [abilityid: string]: AbilityData } = {
 		onDamagingHit(damage, target, source, move) {
 			if (move.type === 'Water') {
 				this.boost({def: 2});
+			}
+		},
+		onSourceBasePower(basePower, attacker, defender, move) {
+			if (move.type === 'Water') {
+				return this.chainModify(0.5);
 			}
 		},
 		name: "Water Compaction",
