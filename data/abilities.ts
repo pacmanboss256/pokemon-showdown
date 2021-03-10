@@ -997,8 +997,9 @@ export const Abilities: { [abilityid: string]: AbilityData } = {
 		},
 		onDamage(damage, target, source, effect) {
 			if (effect && effect.id === 'brn') {
-				return (0 * damage);
+				damage = 0;
 			}
+			return damage;
 		},
 		name: "Flare Boost",
 		rating: 2,
@@ -3990,8 +3991,9 @@ export const Abilities: { [abilityid: string]: AbilityData } = {
 		},
 		onDamage(damage, target, source, effect) {
 			if (effect && effect.id === ('psn' || 'tox')) {
-				return (0 * damage);
+				damage = 0;
 			}
+			return damage;
 		},
 
 		name: "Toxic Boost",
