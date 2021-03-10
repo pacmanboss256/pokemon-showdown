@@ -19226,12 +19226,13 @@ export const Moves: { [moveid: string]: MoveData } = {
 		category: "Status",
 		name: "Wide Guard",
 		pp: 10,
+		stallingMove: true,
+		onPrepareHit(pokemon) {
+			return !!this.queue.willAct() && this.runEvent('StallMove', pokemon);
+		},
 		priority: 3,
 		flags: {snatch: 1},
 		sideCondition: 'wideguard',
-		onTry() {
-			return !!this.queue.willAct();
-		},
 		onHitSide(side, source) {
 			source.addVolatile('stall');
 		},
