@@ -953,8 +953,8 @@ export const Abilities: { [abilityid: string]: AbilityData } = {
 			}
 		},
 		onSourceModifyAccuracyPriority: -1,
-		onSourceModifyAccuracy(accuracy, source, target, move) {
-			if ((typeof accuracy === 'number') && move /* && target.getMoveHitData(move).typeMod > 0 */) {
+		onSourceModifyAccuracyBool(accuracy, source, target, move) {
+			if ((typeof accuracy === 'number') && move && target.getMoveHitData(move).typeMod > 0) {
 				this.debug("fatal precision buff");
 				return true;
 			}
