@@ -119,7 +119,11 @@ export const Conditions: {[k: string]: ConditionData} = {
 		},
 		onResidualOrder: 9,
 		onResidual(pokemon) {
-			this.damage(pokemon.baseMaxhp / 8);
+			if (pokemon.ability !== 'Toxicboost') {
+				this.damage(pokemon.baseMaxhp / 8);
+			} else {
+				this.damage(0);
+			}
 		},
 	},
 	tox: {
@@ -143,8 +147,13 @@ export const Conditions: {[k: string]: ConditionData} = {
 			if (this.effectData.stage < 15) {
 				this.effectData.stage++;
 			}
-			this.damage(this.clampIntRange(pokemon.baseMaxhp / 16, 1) * this.effectData.stage);
+			if (pokemon.ability !== 'Toxicboost') {
+				this.damage(this.clampIntRange(pokemon.baseMaxhp / 16, 1) * this.effectData.stage);
+			} else {
+				this.damage(0);
+			}
 		},
+
 	},
 	confusion: {
 		name: 'confusion',
