@@ -3236,6 +3236,15 @@ export const Abilities: { [abilityid: string]: AbilityData } = {
 		rating: 2,
 		num: 251,
 	},
+	selfsufficient: {
+		onResidualPriority: -1,
+		onResidual(pokemon) {
+			this.heal(pokemon.baseMaxhp / 16);
+		},
+		name: "Self Sufficient",
+		rating: 2.5,
+		num: 273,
+	},
 	serenegrace: {
 		onModifyMovePriority: -2,
 		onModifyMove(move) {

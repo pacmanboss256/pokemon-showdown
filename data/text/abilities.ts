@@ -1235,6 +1235,10 @@ export const AbilitiesText: {[k: string]: AbilityText} = {
 		name: "Screen Cleaner",
 		shortDesc: "On switch-in, the effects of Aurora Veil, Light Screen, and Reflect end for both sides.",
 	},
+	selfsufficient: {
+		name: "Self Sufficient",
+		shortDesc: "Leftovers as an ability",
+	},
 	serenegrace: {
 		name: "Serene Grace",
 		shortDesc: "This Pokemon's moves have their secondary effect chance doubled.",
