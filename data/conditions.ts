@@ -14,7 +14,11 @@ export const Conditions: {[k: string]: ConditionData} = {
 		// Damage reduction is handled directly in the sim/battle.js damage function
 		onResidualOrder: 9,
 		onResidual(pokemon) {
-			this.damage(pokemon.baseMaxhp / 16);
+			if (pokemon.ability !== 'flareboost') {
+			 this.damage(pokemon.baseMaxhp / 16);
+			} else {
+				this.damage(0);
+			}
 		},
 	},
 	par: {
@@ -119,7 +123,7 @@ export const Conditions: {[k: string]: ConditionData} = {
 		},
 		onResidualOrder: 9,
 		onResidual(pokemon) {
-			if (pokemon.ability !== 'Toxicboost') {
+			if (pokemon.ability !== 'toxicboost') {
 				this.damage(pokemon.baseMaxhp / 8);
 			} else {
 				this.damage(0);
@@ -147,7 +151,7 @@ export const Conditions: {[k: string]: ConditionData} = {
 			if (this.effectData.stage < 15) {
 				this.effectData.stage++;
 			}
-			if (pokemon.ability !== 'Toxicboost') {
+			if (pokemon.ability !== 'toxicboost') {
 				this.damage(this.clampIntRange(pokemon.baseMaxhp / 16, 1) * this.effectData.stage);
 			} else {
 				this.damage(0);
