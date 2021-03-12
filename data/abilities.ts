@@ -964,6 +964,15 @@ export const Abilities: { [abilityid: string]: AbilityData } = {
 		rating: 4,
 		num: 269,
 	},
+	felinepower: {
+		onModifySpAPriority: 5,
+		onModifySpA(atk) {
+			return this.chainModify(2);
+		},
+		name: "Feline Power",
+		rating: 5,
+		num: 277,
+	},
 
 	filter: {
 		onSourceModifyDamage(damage, source, target, move) {
@@ -2441,6 +2450,27 @@ export const Abilities: { [abilityid: string]: AbilityData } = {
 		rating: 1.5,
 		num: 12,
 	},
+	oraoraoraora: {
+		onPrepareHit(source, target, move) {
+			if (move.flags['punch'] && !move.spreadHit && !move.isZ && !move.isMax) {
+				move.multihit = 2;
+				move.multihitType = 'oraoraoraora';
+			}
+		},
+		onBasePowerPriority: 7,
+		onBasePower(basePower, pokemon, target, move) {
+			if (move.multihitType === 'oraoraoraora' && move.hit > 1) return this.chainModify(0.5);
+		},
+		onSourceModifySecondaries(secondaries, target, source, move) {
+			if (move.multihitType === 'oraoraoraora' && move.hit < 2) {
+				// hack to prevent accidentally suppressing King's Rock/Razor Fang
+				return secondaries.filter(effect => effect.volatileStatus === 'flinch');
+			}
+		},
+		name: "ORAORAORAORA",
+		rating: 4.5,
+		num: 280,
+	},
 	overcoat: {
 		onImmunity(type, pokemon) {
 			if (type === 'sandstorm' || type === 'hail' || type === 'powder') return false;
@@ -3074,6 +3104,48 @@ export const Abilities: { [abilityid: string]: AbilityData } = {
 		name: "Run Away",
 		rating: 0,
 		num: 50,
+	},
+	sagepower: {
+		onStart(pokemon) {
+			pokemon.abilityData.choiceLock = "";
+		},
+		onBeforeMove(pokemon, target, move) {
+			if (move.isZOrMaxPowered || move.id === 'struggle') return;
+			if (pokemon.abilityData.choiceLock && pokemon.abilityData.choiceLock !== move.id) {
+				// Fails unless ability is being ignored (these events will not run), no PP lost.
+				this.addMove('move', pokemon, move.name);
+				this.attrLastMove('[still]');
+				this.debug("Disabled by Sage Power");
+				this.add('-fail', pokemon);
+				return false;
+			}
+		},
+		onModifyMove(move, pokemon) {
+			if (pokemon.abilityData.choiceLock || move.isZOrMaxPowered || move.id === 'struggle') return;
+			pokemon.abilityData.choiceLock = move.id;
+		},
+		onModifySpAPriority: 1,
+		onModifySpA(atk, pokemon) {
+			if (pokemon.volatiles['dynamax']) return;
+			// PLACEHOLDER
+			this.debug('Sage Power SpA Boost');
+			return this.chainModify(1.5);
+		},
+		onDisableMove(pokemon) {
+			if (!pokemon.abilityData.choiceLock) return;
+			if (pokemon.volatiles['dynamax']) return;
+			for (const moveSlot of pokemon.moveSlots) {
+				if (moveSlot.id !== pokemon.abilityData.choiceLock) {
+					pokemon.disableMove(moveSlot.id, false, this.effectData.sourceEffect);
+				}
+			}
+		},
+		onEnd(pokemon) {
+			pokemon.abilityData.choiceLock = "";
+		},
+		name: "Sage Power",
+		rating: 4.5,
+		num: 278,
 	},
 	sandforce: {
 		onBasePowerPriority: 21,

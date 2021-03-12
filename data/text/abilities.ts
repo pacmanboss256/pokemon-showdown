@@ -379,6 +379,10 @@ export const AbilitiesText: {[k: string]: AbilityText} = {
 
 		start: "  [POKEMON] is radiating a fairy aura!",
 	},
+	felinepower: {
+		name: "Feline Power",
+		shortDesc: "Doubles SpA",
+	},
 	filter: {
 		name: "Filter",
 		shortDesc: "This Pokemon receives 3/4 damage from supereffective attacks.",
@@ -912,6 +916,10 @@ export const AbilitiesText: {[k: string]: AbilityText} = {
 			shortDesc: "This Pokemon cannot be infatuated. Gaining this Ability while infatuated cures it.",
 		},
 	},
+	oraoraoraora: {
+		name: "ORAORAORAORA",
+		shortDesc: "Punch moves hit twice",
+	},
 	overcoat: {
 		name: "Overcoat",
 		shortDesc: "This Pokemon is immune to powder moves and damage from Sandstorm or Hail.",
@@ -1184,6 +1192,10 @@ export const AbilitiesText: {[k: string]: AbilityText} = {
 	runaway: {
 		name: "Run Away",
 		shortDesc: "No competitive use.",
+	},
+	sagepower: {
+		name: "Sage Power",
+		shortDesc: "Locks you into first move chosen, but doubles SpA",
 	},
 	sandforce: {
 		name: "Sand Force",
