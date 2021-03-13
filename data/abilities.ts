@@ -952,13 +952,11 @@ export const Abilities: { [abilityid: string]: AbilityData } = {
 				return this.chainModify([4915, 4096]);
 			}
 		},
-		onSourceModifyAccuracyPriority: -1,
-		onSourceModifyAccuracyBool(accuracy, source, target, move) {
-			if ((typeof accuracy === 'number') && move && target.getMoveHitData(move).typeMod > 0) {
-				this.debug("fatal precision buff");
-				return true;
+		onSourceModifyAccuracyPriority: -3,
+		onSourceModifyAccuracy(accuracy, target, source, move) {
+			if (typeof accuracy === 'number' && move && target.getMoveHitData(move).typeMod > 0) {
+				return this.chainModify(5);
 			}
-			return accuracy;
 		},
 		name: "Fatal Precision",
 		rating: 4,
