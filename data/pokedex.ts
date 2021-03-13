@@ -3719,7 +3719,7 @@ export const Pokedex: { [speciesid: string]: SpeciesData } = {
 		name: "Jumpluff",
 		types: ["Grass", "Flying"],
 		baseStats: {hp: 75, atk: 85, def: 70, spa: 35, spd: 95, spe: 110},
-		abilities: {0: "Chlorophyll", 1: "Leaf Guard", H: "Aerialate"},
+		abilities: {0: "Chlorophyll", 1: "Leaf Guard", H: "Aerilate"},
 		heightm: 0.8,
 		weightkg: 3,
 		color: "Blue",
