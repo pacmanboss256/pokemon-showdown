@@ -4022,7 +4022,7 @@ export const Pokedex: { [speciesid: string]: SpeciesData } = {
 	granbull: {
 		num: 210,
 		name: "Granbull",
-		types: ["Fairy", "fFighting"],
+		types: ["Fairy", "Fighting"],
 		genderRatio: {M: 0.25, F: 0.75},
 		baseStats: {hp: 100, atk: 120, def: 75, spa: 60, spd: 60, spe: 45},
 		abilities: {0: "Intimidate", 1: "Quick Feet", H: "Bull Rush"},
