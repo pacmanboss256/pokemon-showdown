@@ -5297,8 +5297,13 @@ export const Items: {[itemid: string]: ItemData} = {
 		spritenum: 475,
 		onModifyCritRatio(critRatio, user) {
 			if (this.toID(user.baseSpecies.baseSpecies) === 'farfetchd') {
-				return critRatio + 2;
+				return critRatio + 1;
 			}
+		},
+		onModifySpe(spe, user) {
+			if (this.toID(user.baseSpecies.baseSpecies) === 'farfetchd') {
+				return this.chainModify(1.5);
+		    }
 		},
 		itemUser: ["Farfetch\u2019d"],
 		num: 259,
