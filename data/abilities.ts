@@ -375,6 +375,18 @@ export const Abilities: { [abilityid: string]: AbilityData } = {
 		rating: 3,
 		num: 272,
 	},
+	bullrush: {
+		onModifyDamage(damage, source, target, move) {
+			if (source.activeMoveActions > 1) {
+				return;
+			} else {
+				return this.chainModify(1.5);
+			}
+		},
+		name: "Bull Rush",
+		rating: 2,
+		num: 273,
+	},
 	bulletproof: {
 		onTryHit(pokemon, target, move) {
 			if (move.flags['bullet']) {

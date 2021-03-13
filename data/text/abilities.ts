@@ -148,7 +148,11 @@ export const AbilitiesText: {[k: string]: AbilityText} = {
 	},
 	blazingsoul: {
 		name: "Blazing Soul",
-		desc: "Fire type Gale Wings",
+		shortDesc: "Fire type Gale Wings",
+	},
+	bullrush: {
+		name: "Bull Rush",
+		shortDesc: "First move gets 1.5x dmg",
 	},
 	bulletproof: {
 		name: "Bulletproof",
