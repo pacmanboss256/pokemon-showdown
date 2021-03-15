@@ -8219,17 +8219,18 @@ export const Pokedex: { [speciesid: string]: SpeciesData } = {
 		eggGroups: ["Fairy", "Mineral"],
 	},
 	rotom: {
-		num: -7,
+		num: 479,
 		name: "Rotom",
 		types: ["Electric", "Ghost"],
 		gender: "N",
-		baseStats: {hp: 50, atk: 50, def: 70, spa: 95, spd: 70, spe: 91},
+		baseStats: {hp: 50, atk: 50, def: 77, spa: 95, spd: 77, spe: 91},
 		abilities: {0: "Levitate"},
 		heightm: 0.3,
 		weightkg: 0.3,
 		color: "Red",
 		eggGroups: ["Amorphous"],
-		evos: ["Rotom-Heat", "Rotom-Wash", "Rotom-Frost", "Rotom-Fan", "Rotom-Mow"],
+		otherFormes: ["Rotom-Heat", "Rotom-Wash", "Rotom-Frost", "Rotom-Fan", "Rotom-Mow"],
+		formeOrder: ["Rotom", "Rotom-Heat", "Rotom-Wash", "Rotom-Frost", "Rotom-Fan", "Rotom-Mow"],
 	},
 	rotomheat: {
 		num: 479,
@@ -8244,7 +8245,7 @@ export const Pokedex: { [speciesid: string]: SpeciesData } = {
 		weightkg: 0.3,
 		color: "Red",
 		eggGroups: ["Amorphous"],
-		prevo: "Rotom",
+		changesFrom: "Rotom",
 	},
 	rotomwash: {
 		num: 479,
@@ -8259,7 +8260,7 @@ export const Pokedex: { [speciesid: string]: SpeciesData } = {
 		weightkg: 0.3,
 		color: "Red",
 		eggGroups: ["Amorphous"],
-		prevo: "Rotom",
+		changesFrom: "Rotom",
 	},
 	rotomfrost: {
 		num: 479,
@@ -8274,7 +8275,7 @@ export const Pokedex: { [speciesid: string]: SpeciesData } = {
 		weightkg: 0.3,
 		color: "Red",
 		eggGroups: ["Amorphous"],
-		prevo: "Rotom",
+		changesFrom: "Rotom",
 	},
 	rotomfan: {
 		num: 479,
@@ -8289,7 +8290,7 @@ export const Pokedex: { [speciesid: string]: SpeciesData } = {
 		weightkg: 0.3,
 		color: "Red",
 		eggGroups: ["Amorphous"],
-		prevo: "Rotom",
+		changesFrom: "Rotom",
 	},
 	rotommow: {
 		num: 479,
@@ -8304,7 +8305,7 @@ export const Pokedex: { [speciesid: string]: SpeciesData } = {
 		weightkg: 0.3,
 		color: "Red",
 		eggGroups: ["Amorphous"],
-		prevo: "Rotom",
+		changesFrom: "Rotom",
 	},
 	uxie: {
 		num: 480,
