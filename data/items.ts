@@ -4408,6 +4408,13 @@ export const Items: {[itemid: string]: ItemData} = {
 		fling: {
 			basePower: 10,
 		},
+		onModifyAccuracyPriority: -2,
+		onModifyAccuracy(accuracy, target, source, move) {
+			if (source.baseSpecies.baseSpecies === "Dusknoir") {
+				move.accuracy = true;
+			}
+		},
+		itemUser: ["Dusknoir"],
 		num: 325,
 		gen: 4,
 	},
