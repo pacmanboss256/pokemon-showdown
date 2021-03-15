@@ -759,7 +759,7 @@ export const Conditions: {[k: string]: ConditionData} = {
 			return [type];
 		},
 	},
-	silvally: {
+/* 	silvally: {
 		name: 'Silvally',
 		onTypePriority: 1,
 		onType(types, pokemon) {
@@ -773,5 +773,5 @@ export const Conditions: {[k: string]: ConditionData} = {
 			}
 			return [type];
 		},
-	},
+	}, */
 };

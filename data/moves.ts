@@ -11667,8 +11667,9 @@ export const Moves: { [moveid: string]: MoveData } = {
 		priority: 0,
 		flags: {contact: 1, protect: 1, mirror: 1},
 		onModifyType(move, pokemon) {
-			if (pokemon.ignoringItem()) return;
-			move.type = this.runEvent('Memory', pokemon, null, move, 'Normal');
+			// eslint-disable-next-line prefer-const
+			let type = pokemon.getTypes()[0];
+			move.type = type;
 		},
 		secondary: null,
 		target: "normal",
