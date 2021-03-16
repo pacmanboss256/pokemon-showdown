@@ -964,10 +964,10 @@ export const Abilities: { [abilityid: string]: AbilityData } = {
 				return this.chainModify([4915, 4096]);
 			}
 		},
-		onSourceAccuracy(accuracy, target, source, move) {
+		onTryHit(target, source, move) {
 			if (target.getMoveHitData(move).typeMod > 0) {
 				if (move && source === this.effectData.target && target === this.effectData.source) {
-				 return true;
+					move.accuracy = true;
 				}
 			}
 		},
