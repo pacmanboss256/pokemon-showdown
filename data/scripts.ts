@@ -477,7 +477,6 @@ export const Scripts: BattleScriptsData = {
 				if (move && (target.getMoveHitData(move).typeMod > 0)) {
 					accuracy = true;
 				}
-				return accuracy;
 			}
 			if (move.alwaysHit || (move.id === 'toxic' && this.gen >= 8 && pokemon.hasType('Poison')) ||
 					(move.target === 'self' && move.category === 'Status' && !target.isSemiInvulnerable())) {
