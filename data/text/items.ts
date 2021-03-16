@@ -225,7 +225,7 @@ export const ItemsText: {[k: string]: ItemText} = {
 		desc: "A rare Poke Ball that has been crafted to commemorate an occasion.",
 	},
 	chestoberry: {
-		name: "Chesto Berry",
+		name: "Chesto Brerry",
 		desc: "Holder wakes up if it is asleep. Single use.",
 	},
 	chilanberry: {
@@ -1395,7 +1395,7 @@ export const ItemsText: {[k: string]: ItemText} = {
 	},
 	reapercloth: {
 		name: "Reaper Cloth",
-		desc: "Evolves Dusclops into Dusknoir when traded.",
+		desc: "Dusknoir cannot miss when holding this.",
 	},
 	redcard: {
 		name: "Red Card",

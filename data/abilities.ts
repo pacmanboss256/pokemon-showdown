@@ -32,7 +32,12 @@ Ratings and how they work:
 
 */
 
+// eslint-disable-next-line object-curly-spacing
+import { Pokemon } from "../sim";
+// eslint-disable-next-line @typescript-eslint/no-unused-vars
 import {Moves} from "./moves";
+// eslint-disable-next-line @typescript-eslint/no-unused-vars
+import {Pokedex} from "./pokedex";
 
 export const Abilities: { [abilityid: string]: AbilityData } = {
 	noability: {
@@ -1620,6 +1625,11 @@ export const Abilities: { [abilityid: string]: AbilityData } = {
 			if (!pokemon.side.pokemon[i]) return;
 			if (pokemon === pokemon.side.pokemon[i]) return;
 			pokemon.illusion = pokemon.side.pokemon[i];
+		},
+		onModifyDamage(damage, pokemon) {
+			if (pokemon.illusion !== null) {
+				return this.chainModify(1.3);
+			}
 		},
 		onDamagingHit(damage, target, source, move) {
 			if (target.illusion) {
