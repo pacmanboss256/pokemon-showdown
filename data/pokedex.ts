@@ -8194,7 +8194,7 @@ export const Pokedex: { [speciesid: string]: SpeciesData } = {
 		name: "Dusknoir",
 		types: ["Ghost"],
 		baseStats: {hp: 45, atk: 100, def: 135, spa: 65, spd: 135, spe: 45},
-		abilities: {0: "Pressure", H: "Frisk"},
+		abilities: {0: "Pressure", H: "Hustle"},
 		heightm: 2.2,
 		weightkg: 106.6,
 		color: "Black",
