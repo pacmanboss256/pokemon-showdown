@@ -555,6 +555,11 @@ export const Abilities: { [abilityid: string]: AbilityData } = {
 	},
 	corrosion: {
 		// Implemented in sim/pokemon.js:Pokemon#setStatus
+		onTryHit(target, source, move) {
+			if (move.type === 'poison') {
+				move.ignoreImmunity = true;
+			}
+		},
 		name: "Corrosion",
 		rating: 2.5,
 		num: 212,
@@ -2818,6 +2823,17 @@ export const Abilities: { [abilityid: string]: AbilityData } = {
 		name: "Pressure",
 		rating: 2.5,
 		num: 46,
+	},
+	primalarmor: {
+		onSourceModifyDamage(damage, source, target, move) {
+			if (target.getMoveHitData(move).typeMod > 0) {
+				this.debug('primal armor neutralize');
+				return this.chainModify(0.5);
+			}
+		},
+		name: "Primal Armor",
+		rating: 3,
+		num: 275,
 	},
 	primordialsea: {
 		onStart(source) {
