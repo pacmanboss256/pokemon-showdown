@@ -21,6 +21,9 @@ export interface EventMethods {
 	onAccuracy?: (
 		this: Battle, accuracy: number, target: Pokemon, source: Pokemon, move: ActiveMove
 	) => number | boolean | null | void;
+	onAccuracyBool?: (
+		this: Battle, accuracy: number | boolean, target: Pokemon, source: Pokemon, move: ActiveMove
+	) => number | boolean | null | void;
 	onBasePower?: CommonHandlers['ModifierSourceMove'];
 	onBeforeFaint?: (this: Battle, pokemon: Pokemon, effect: Effect) => void;
 	onBeforeMove?: CommonHandlers['VoidSourceMove'];
