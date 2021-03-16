@@ -4408,8 +4408,7 @@ export const Items: {[itemid: string]: ItemData} = {
 		fling: {
 			basePower: 10,
 		},
-		onModifyAccuracyPriority: -2,
-		onModifyAccuracy(accuracy, target, source, move) {
+		onTryHit(source, target, move) {
 			if (source.baseSpecies.baseSpecies === "Dusknoir") {
 				move.accuracy = true;
 			}
