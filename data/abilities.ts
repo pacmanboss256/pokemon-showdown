@@ -974,7 +974,6 @@ export const Abilities: { [abilityid: string]: AbilityData } = {
 				return this.chainModify([4915, 4096]);
 			}
 		},
-		// accuracy coded in battle.ts
 		name: "Fatal Precision",
 		rating: 4,
 		num: 269,
