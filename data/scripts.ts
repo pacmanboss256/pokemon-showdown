@@ -470,6 +470,12 @@ export const Scripts: BattleScriptsData = {
 					}
 				}
 			}
+			if (pokemon.baseSpecies.baseSpecies === 'Dusknoir' && pokemon.hasItem('reapercloth')) {
+				accuracy = true;
+			}
+			if (pokemon.hasAbility('fatalprecision') && move && target.getMoveHitData(move).typeMod > 0) {
+				accuracy = true;
+			}
 			if (move.alwaysHit || (move.id === 'toxic' && this.gen >= 8 && pokemon.hasType('Poison')) ||
 					(move.target === 'self' && move.category === 'Status' && !target.isSemiInvulnerable())) {
 				accuracy = true; // bypasses ohko accuracy modifiers

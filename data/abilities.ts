@@ -964,14 +964,7 @@ export const Abilities: { [abilityid: string]: AbilityData } = {
 				return this.chainModify([4915, 4096]);
 			}
 		},
-		onAnyAccuracy(accuracy, target, source, move) {
-			if (target.getMoveHitData(move).typeMod > 0) {
-				if (move && target !== source) {
-					return true;
-				}
-			}
-			return accuracy;
-		},
+		// accuracy coded in battle.ts
 		name: "Fatal Precision",
 		rating: 4,
 		num: 269,

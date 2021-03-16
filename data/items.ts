@@ -4408,12 +4408,7 @@ export const Items: {[itemid: string]: ItemData} = {
 		fling: {
 			basePower: 10,
 		},
-		onAnyAccuracy(accuracy, source, target, move) {
-			if (move && target !== source && source.baseSpecies.baseSpecies === "Dusknoir") {
-				return true;
-			}
-			return accuracy;
-		},
+		// hardcoded in battle.ts
 		itemUser: ["Dusknoir"],
 		num: 325,
 		gen: 4,
