@@ -964,12 +964,13 @@ export const Abilities: { [abilityid: string]: AbilityData } = {
 				return this.chainModify([4915, 4096]);
 			}
 		},
-		onTryHit(target, source, move) {
+		onAnyAccuracy(accuracy, target, source, move) {
 			if (target.getMoveHitData(move).typeMod > 0) {
-				if (move && source === this.effectData.target && target === this.effectData.source) {
-					move.accuracy = true;
+				if (move && target !== source) {
+					return true;
 				}
 			}
+			return accuracy;
 		},
 		name: "Fatal Precision",
 		rating: 4,
