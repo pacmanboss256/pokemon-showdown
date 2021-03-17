@@ -1,4 +1,6 @@
-Pokémon Showdown hello yay
+Pokémon Showdown Radical Red
+
+Modified by Pacmanboss256, Karthik, Aegide, Clemen, and the Showdown! Coding discord server
 
 ========================================================================
 

@@ -974,13 +974,10 @@ export const Abilities: { [abilityid: string]: AbilityData } = {
 				return this.chainModify([4915, 4096]);
 			}
 		},
-		onAccuracyBool(accuracy, target, source, move) {
-			let accuracyFP = move.accuracy;
-			if (move && target.getMoveHitData(move).typeMod > 0) {
-				accuracyFP = true;
+		onModifyMove(move, pokemon, target) {
+			if (target && this.dex.getEffectiveness(move, target.types) > 0) {
+				move.accuracy = true;
 			}
-			accuracy = accuracyFP;
-			return accuracy;
 		},
 		name: "Fatal Precision",
 		rating: 4,
