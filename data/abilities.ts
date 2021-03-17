@@ -970,7 +970,7 @@ export const Abilities: { [abilityid: string]: AbilityData } = {
 	},
 	fatalprecision: {
 		onModifyDamage(damage, source, target, move) {
-			if (move && target.getMoveHitData(move).typeMod > 0) {
+			if (target && this.dex.getEffectiveness(move, target.types) > 0) {
 				return this.chainModify([4915, 4096]);
 			}
 		},
