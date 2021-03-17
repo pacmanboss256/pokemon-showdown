@@ -724,6 +724,14 @@ export const Abilities: { [abilityid: string]: AbilityData } = {
 		rating: 2.5,
 		num: 128,
 	},
+	delibirdspeedup: {
+		onStart(pokemon) {
+			this.boost({spe: 1}, pokemon);
+		},
+		name: "for surprise rng",
+		num: 2000,
+		rating: 0.1,
+	},
 	deltastream: {
 		onStart(source) {
 			this.field.setWeather('deltastream');
