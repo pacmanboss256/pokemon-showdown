@@ -35723,6 +35723,7 @@ export const Learnsets: {[speciesid: string]: LearnsetData} = {
 		learnset: {
 			agility: ["8M", "8L40", "7L45", "6L45", "5L45", "4L45", "3L53"],
 			ancientpower: ["4T"],
+			aquafang: ["8M"],
 			aquajet: ["8L1", "7L11", "6L11", "6S0", "5L34", "4L34"],
 			assurance: ["8M", "7L15", "6L15", "5L26", "4L26"],
 			attract: ["8M", "7M", "6M", "5M", "4M", "3M"],
