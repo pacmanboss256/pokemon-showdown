@@ -139,6 +139,10 @@ export const MovesText: { [k: string]: MoveText } = {
 		desc: "Has a 100% chance to lower the target's Special Defense by 1 stage.",
 		shortDesc: "100% chance to lower the target's Sp. Def by 1.",
 	},
+	aquafang: {
+		name: "Aqua Fang",
+		shortDesc: "Water type biting move",
+	},
 	aquajet: {
 		name: "Aqua Jet",
 		desc: "No additional effect.",

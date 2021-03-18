@@ -150,6 +150,10 @@ export const AbilitiesText: {[k: string]: AbilityText} = {
 		name: "Blazing Soul",
 		shortDesc: "Fire type Gale Wings",
 	},
+	bonezone: {
+		name: "Bone Zone",
+		shortDesc: "Get boned lol",
+	},
 	bullrush: {
 		name: "Bull Rush",
 		shortDesc: "First move gets 1.5x dmg",

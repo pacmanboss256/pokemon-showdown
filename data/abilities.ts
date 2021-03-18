@@ -380,6 +380,22 @@ export const Abilities: { [abilityid: string]: AbilityData } = {
 		rating: 3,
 		num: 272,
 	},
+	bonezone: {
+		onTryHit(target, source, move) {
+			if (move.flags['bone']) {
+				move.ignoreImmunity = true;
+			}
+		},
+		onModifyDamage(damage, source, target, move) {
+			if (move.flags['bone'] && (target.getMoveHitData(move).typeMod < 0)) {
+				this.debug('Welcome to the Bone Zone');
+				return this.chainModify(2);
+			}
+		},
+		name: "Bone Zone",
+		rating: 3,
+		num: 290,
+	},
 	bullrush: {
 		onModifyDamage(damage, source, target, move) {
 			if (source.activeMoveActions > 1) {

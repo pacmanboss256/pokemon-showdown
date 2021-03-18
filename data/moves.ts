@@ -1473,7 +1473,7 @@ export const Moves: { [moveid: string]: MoveData } = {
 		name: "Bone Club",
 		pp: 20,
 		priority: 0,
-		flags: {protect: 1, mirror: 1},
+		flags: {protect: 1, mirror: 1, bone: 1},
 		secondary: {
 			chance: 10,
 			volatileStatus: 'flinch',
@@ -1490,7 +1490,7 @@ export const Moves: { [moveid: string]: MoveData } = {
 		name: "Bonemerang",
 		pp: 10,
 		priority: 0,
-		flags: {protect: 1, mirror: 1},
+		flags: {protect: 1, mirror: 1, bone: 1},
 		multihit: 2,
 		secondary: null,
 		target: "normal",
@@ -1506,7 +1506,7 @@ export const Moves: { [moveid: string]: MoveData } = {
 		name: "Bone Rush",
 		pp: 10,
 		priority: 0,
-		flags: {protect: 1, mirror: 1},
+		flags: {protect: 1, mirror: 1, bone: 1},
 		multihit: [2, 5],
 		secondary: null,
 		target: "normal",
@@ -14942,7 +14942,7 @@ export const Moves: { [moveid: string]: MoveData } = {
 		name: "Shadow Bone",
 		pp: 10,
 		priority: 0,
-		flags: {protect: 1, mirror: 1},
+		flags: {protect: 1, mirror: 1, bone: 1},
 		secondary: {
 			chance: 20,
 			boosts: {
