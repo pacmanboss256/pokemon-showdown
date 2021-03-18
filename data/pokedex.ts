@@ -4259,7 +4259,7 @@ export const Pokedex: { [speciesid: string]: SpeciesData } = {
 		name: "Delibird",
 		types: ["Ice", "Flying"],
 		baseStats: {hp: 45, atk: 100, def: 45, spa: 65, spd: 45, spe: 105},
-		abilities: {0: "Vital Spirit", 1: "Hustle", H: "Insomnia"},
+		abilities: {0: "Vital Spirit", 1: "Hustle", H: "Surprise"},
 		heightm: 0.9,
 		weightkg: 16,
 		color: "Red",
