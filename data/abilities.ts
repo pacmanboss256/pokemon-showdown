@@ -744,7 +744,7 @@ export const Abilities: { [abilityid: string]: AbilityData } = {
 		onStart(pokemon) {
 			this.boost({spe: 1}, pokemon);
 		},
-		name: "for surprise rng",
+		name: "delibirdspeedup",
 		num: 2000,
 		rating: 0.1,
 	},
@@ -3919,6 +3919,17 @@ export const Abilities: { [abilityid: string]: AbilityData } = {
 		rating: 3,
 		num: 207,
 	},
+	surprise: {
+		onStart(pokemon) {
+			const choices = ["delibirdspeedup", "Intimidate", "Intrepid Sword", "Slow Start", "Snow Warning"];
+			const i = Math.floor(Math.random() * choices.length);
+			pokemon.setAbility(choices[i]);
+			return;
+		},
+		name: "Surprise",
+		rating: 2,
+		num: 291,
+	},
 	swarm: {
 		onModifyAtkPriority: 5,
 		onModifyAtk(atk, attacker, defender, move) {
@@ -4579,7 +4590,7 @@ export const Abilities: { [abilityid: string]: AbilityData } = {
 		isNonstandard: "CAP",
 		name: "Mountaineer",
 		rating: 3,
-		num: -2,
+		num: 293,
 	},
 	rebound: {
 		isNonstandard: "CAP",
