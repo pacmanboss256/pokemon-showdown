@@ -381,9 +381,14 @@ export const Abilities: { [abilityid: string]: AbilityData } = {
 		num: 272,
 	},
 	bonezone: {
-		onTryHit(target, source, move) {
+		onModifyMovePriority: -5,
+		onModifyMove(move) {
 			if (move.flags['bone']) {
-				move.ignoreImmunity = true;
+				if (!move.ignoreImmunity) move.ignoreImmunity = {};
+				if (move.ignoreImmunity !== true) {
+					move.ignoreImmunity['Ground'] = true;
+					move.ignoreImmunity['Ghost'] = true;
+				}
 			}
 		},
 		onModifyDamage(damage, source, target, move) {
@@ -571,9 +576,10 @@ export const Abilities: { [abilityid: string]: AbilityData } = {
 	},
 	corrosion: {
 		// Implemented in sim/pokemon.js:Pokemon#setStatus
-		onTryHit(target, source, move) {
-			if (move.type === 'poison') {
-				move.ignoreImmunity = true;
+		onModifyMove(move) {
+			if (!move.ignoreImmunity) move.ignoreImmunity = {};
+			if (move.ignoreImmunity !== true) {
+				move.ignoreImmunity['Poison'] = true;
 			}
 		},
 		name: "Corrosion",
