@@ -1,7 +1,6 @@
 /* eslint-disable max-len */
 
 export const Learnsets: {[k: string]: ModdedLearnsetData} = {
-
 	bulbasaur: {
 		learnset: {
 			tackle: ["8L1"],
@@ -13705,7 +13704,7 @@ export const Learnsets: {[k: string]: ModdedLearnsetData} = {
 			explosion: ["8L76"],
 		},
 	},
-	meowsticfemale: {
+	meowsticf: {
 		learnset: {
 			storedpower: ["8L53"],
 			mefirst: ["8L1"],
@@ -15259,6 +15258,24 @@ export const Learnsets: {[k: string]: ModdedLearnsetData} = {
 			irondefense: ["8L59"],
 			wringout: ["8L67"],
 			prismaticlaser: ["8L73"],
+		},
+	},
+	necrozmaduskmane: {
+			learnset: {
+				sunsteelstrike: ["8R"],
+			},
+		eventOnly: true,
+	},
+	necrozmadawnwings: {
+		learnset: {
+			moongeistbeam: ["8R"],
+		},
+		eventOnly: true,
+	},
+	necrozmaultra: {
+		learnset: {
+			moongeistbeam: ["8R"],
+			sunsteelstrike: ["8R"],
 		},
 	},
 	magearna: {
@@ -17385,7 +17402,7 @@ export const Learnsets: {[k: string]: ModdedLearnsetData} = {
 			magneticflux: ["8L52"],
 		},
 	},
-	indeedeefemale: {
+	indeedeef: {
 		learnset: {
 			playnice: ["8L1"],
 			storedpower: ["8L1"],
