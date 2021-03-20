@@ -21,7 +21,7 @@ export const Formats: FormatList = [
 
 	// Sw/Sh Singles
 	///////////////////////////////////////////////////////////////////
-
+	/*
 	{
 		section: "Sw/Sh Singles",
 	},
@@ -444,7 +444,7 @@ export const Formats: FormatList = [
 		// no restrictions, for serious (other than team preview)
 		ruleset: ['Team Preview', 'Cancel Mod'],
 	},
-
+*/
 	// National Dex
 	///////////////////////////////////////////////////////////////////
 
@@ -533,7 +533,7 @@ export const Formats: FormatList = [
 
 	// Pet Mods
 	///////////////////////////////////////////////////////////////////
-
+	/*
 	{
 		section: "Pet Mods",
 	},
@@ -3272,4 +3272,5 @@ export const Formats: FormatList = [
 		},
 		ruleset: ['HP Percentage Mod', 'Cancel Mod', 'Desync Clause Mod'],
 	},
+	*/
 ];
