@@ -15261,9 +15261,9 @@ export const Learnsets: {[k: string]: ModdedLearnsetData} = {
 		},
 	},
 	necrozmaduskmane: {
-			learnset: {
-				sunsteelstrike: ["8R"],
-			},
+		learnset: {
+			sunsteelstrike: ["8R"],
+		},
 		eventOnly: true,
 	},
 	necrozmadawnwings: {
