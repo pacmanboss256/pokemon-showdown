@@ -2941,6 +2941,22 @@ export const Moves: { [moveid: string]: MoveData } = {
 		type: "Steel",
 		contestType: "Cool",
 	},
+	darkhole: {
+		num: 851,
+		name: "Dark Hole",
+		category: "Special",
+		pp: 5,
+		accuracy: 100,
+		basePower: 100,
+		type: "Dark",
+		priority: 0,
+		flags: {protect: 1, mirror: 1, authentic: 1},
+		target: "normal",
+		secondary: {
+			chance: 40,
+			status: 'slp',
+		},
+	},
 	darkestlariat: {
 		num: 663,
 		accuracy: 100,

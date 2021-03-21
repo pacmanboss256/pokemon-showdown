@@ -1120,15 +1120,14 @@ export const Abilities: { [abilityid: string]: AbilityData } = {
 				}
 			}
 		},
-		onAllyModifyAtkPriority: 3,
-		onAllyModifyAtk(atk, pokemon) {
+		onModifyAtkPriority: 3,
+		onModifyAtk(atk, pokemon) {
 			if (this.effectData.target.baseSpecies.baseSpecies !== 'Cherrim') return;
 			if (['sunnyday', 'desolateland'].includes(pokemon.effectiveWeather())) {
 				return this.chainModify(1.5);
 			}
 		},
-		onAllyModifySpDPriority: 4,
-		onAllyModifySpD(spd, pokemon) {
+		onModifySpe(spe, pokemon) {
 			if (this.effectData.target.baseSpecies.baseSpecies !== 'Cherrim') return;
 			if (['sunnyday', 'desolateland'].includes(pokemon.effectiveWeather())) {
 				return this.chainModify(1.5);
@@ -2583,6 +2582,16 @@ export const Abilities: { [abilityid: string]: AbilityData } = {
 		name: "Own Tempo",
 		rating: 1.5,
 		num: 20,
+	},
+	parasiticwaste: {
+		onModifyMove(move) {
+			if ((move.category !== 'Status') && (move.secondary === 'tox' || 'psn')) {
+				move.drain = [1, 2];
+			}
+		},
+		name: "Parasitic Waste",
+		num: 300,
+		rating: 2.5,
 	},
 	parentalbond: {
 		onPrepareHit(source, target, move) {
