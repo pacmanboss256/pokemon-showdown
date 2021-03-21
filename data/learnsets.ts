@@ -530,6 +530,36 @@ export const Learnsets: {[speciesid: string]: LearnsetData} = {
 			thunder: ["8L58"],
 		},
 	},
+	pikachurockstar: {
+		learnset: {
+			meteormash: ["8R"],
+		},
+		eventOnly: true,
+	},
+	pikachubelle: {
+		learnset: {
+			iciclecrash: ["8R"],
+		},
+		eventOnly: true,
+	},
+	pikachupopstar: {
+		learnset: {
+			drainingkiss: ["8R"],
+		},
+		eventOnly: true,
+	},
+	pikachuphd: {
+		learnset: {
+			electricterrain: ["8R"],
+		},
+		eventOnly: true,
+	},
+	pikachulibre: {
+		learnset: {
+			flyingpress: ["8R"],
+		},
+		eventOnly: true,
+	},
 	raichu: {
 		learnset: {
 			thundershock: ["8L1"],
