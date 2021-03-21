@@ -631,7 +631,7 @@ export const Items: {[itemid: string]: ItemData} = {
 			if (item.megaEvolves === source.baseSpecies.baseSpecies) return false;
 			return true;
 		},
-		num: 1000,
+		num: 999,
 		gen: 8,
 	},
 	cameruptite: {
