@@ -16167,6 +16167,22 @@ export const Moves: { [moveid: string]: MoveData } = {
 		type: "Normal",
 		contestType: "Cool",
 	},
+	soulrobbery: {
+		num: 852,
+		accuracy: 100,
+		basePower: 105,
+		category: "Special",
+		name: "Soul Robbery",
+		pp: 5,
+		priority: 0,
+		flags: {contact: 1, protect: 1, mirror: 1, authentic: 1},
+		stealsBoosts: true,
+		// Boost stealing implemented in scripts.js
+		secondary: null,
+		target: "normal",
+		type: "Psychic",
+		contestType: "Cool",
+	},
 	soulstealing7starstrike: {
 		num: 699,
 		accuracy: true,

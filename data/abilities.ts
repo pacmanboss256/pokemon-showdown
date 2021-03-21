@@ -33,7 +33,8 @@ Ratings and how they work:
 */
 
 // eslint-disable-next-line object-curly-spacing
-import { Pokemon } from "../sim";
+import { statusfilter } from "../server/chat-plugins/chat-monitor";
+import {Pokemon} from "../sim";
 // eslint-disable-next-line @typescript-eslint/no-unused-vars
 import {Moves} from "./moves";
 // eslint-disable-next-line @typescript-eslint/no-unused-vars
@@ -2584,11 +2585,6 @@ export const Abilities: { [abilityid: string]: AbilityData } = {
 		num: 20,
 	},
 	parasiticwaste: {
-		onModifyMove(move) {
-			if ((move.category !== 'Status') && (move.secondary === 'tox' || 'psn')) {
-				move.drain = [1, 2];
-			}
-		},
 		name: "Parasitic Waste",
 		num: 300,
 		rating: 2.5,
