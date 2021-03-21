@@ -621,6 +621,20 @@ export const Items: {[itemid: string]: ItemData} = {
 		num: 118,
 		gen: 5,
 	},
+	butterfreenite: {
+		name: "Butterfree",
+		spritenum: 4,
+		megaStone: "Butterfree-Mega",
+		megaEvolves: "Butterfree",
+		itemUser: ["Butterfree"],
+		onTakeItem(item, source) {
+			if (item.megaEvolves === source.baseSpecies.baseSpecies) return false;
+			return true;
+		},
+		num: 1000,
+		gen: 8,
+		isNonstandard: "Past",
+	},
 	cameruptite: {
 		name: "Cameruptite",
 		spritenum: 625,
