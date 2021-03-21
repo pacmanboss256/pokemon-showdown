@@ -623,7 +623,7 @@ export const Items: {[itemid: string]: ItemData} = {
 	},
 	butterfreenite: {
 		name: "Butterfreenite",
-		spritenum: 4,
+		spritenum: 737,
 		megaStone: "Butterfree-Mega",
 		megaEvolves: "Butterfree",
 		itemUser: ["Butterfree"],
