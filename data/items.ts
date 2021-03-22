@@ -632,7 +632,8 @@ export const Items: {[itemid: string]: ItemData} = {
 			return true;
 		},
 		num: 999,
-		gen: 8,
+		gen: 6,
+		isNonstandard: "Past",
 	},
 	cameruptite: {
 		name: "Cameruptite",
