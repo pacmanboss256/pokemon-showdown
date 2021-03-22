@@ -14151,7 +14151,7 @@ export const Moves: { [moveid: string]: MoveData } = {
 		accuracy: 100,
 		basePower: 80,
 		category: "Special",
-		name: "Dragon Tail",
+		name: "Roar of Time",
 		pp: 10,
 		priority: -6,
 		flags: {contact: 1, protect: 1, mirror: 1},
