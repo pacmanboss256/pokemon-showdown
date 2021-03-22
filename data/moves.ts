@@ -19214,6 +19214,23 @@ export const Moves: { [moveid: string]: MoveData } = {
 			}
 		},
 		secondary: null,
+		self: {
+			onHit(pokemon) {
+				if (pokemon.hasAbility('forecast')) {
+					if (pokemon.hasItem('damprock')) {
+						this.field.setWeather('raindance');
+					} else if (pokemon.hasItem('heatrock')) {
+						this.field.setWeather('sunnyday');
+					} else if (pokemon.hasItem('smoothrock')) {
+						this.field.setWeather('sandstorm');
+					} else if (pokemon.hasItem('icyrock')) {
+						this.field.setWeather('hail');
+					} else {
+						return;
+					}
+				}
+			},
+		},
 		target: "normal",
 		type: "Normal",
 		zMove: {basePower: 160},
