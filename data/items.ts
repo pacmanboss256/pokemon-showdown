@@ -631,7 +631,7 @@ export const Items: {[itemid: string]: ItemData} = {
 			if (item.megaEvolves === source.baseSpecies.baseSpecies) return false;
 			return true;
 		},
-		num: 999,
+		num: 955,
 		gen: 6,
 		isNonstandard: "Past",
 	},
@@ -3102,6 +3102,20 @@ export const Items: {[itemid: string]: ItemData} = {
 		itemUser: ["Lycanroc", "Lycanroc-Midnight", "Lycanroc-Dusk"],
 		num: 925,
 		gen: 7,
+		isNonstandard: "Past",
+	},
+	machampite: {
+		name: "Machampite",
+		spritenum: 737,
+		megaStone: "Machamp-Mega",
+		megaEvolves: "Machamp",
+		itemUser: ["Machamp"],
+		onTakeItem(item, source) {
+			if (item.megaEvolves === source.baseSpecies.baseSpecies) return false;
+			return true;
+		},
+		num: 956,
+		gen: 6,
 		isNonstandard: "Past",
 	},
 	machobrace: {

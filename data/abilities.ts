@@ -230,6 +230,26 @@ export const Abilities: { [abilityid: string]: AbilityData } = {
 		rating: 1,
 		num: 188,
 	},
+	badcompany: {
+		onDamage(damage, target, source, effect) {
+			if (effect.id === 'recoil') {
+				if (!this.activeMove) throw new Error("Battle.activeMove is null");
+				if (this.activeMove.id !== 'struggle') return null;
+			}
+		},
+		onBoost(boost, target, source, effect) {
+			if (source && target !== source) return;
+			let i: BoostName;
+			for (i in boost) {
+				if (boost[i]! < 0) {
+					delete boost[i];
+				}
+			}
+		},
+		name: "Bad Company",
+		num: 301,
+		rating: 4,
+	},
 	baddreams: {
 		onResidualOrder: 26,
 		onResidualSubOrder: 1,
@@ -2596,6 +2616,14 @@ export const Abilities: { [abilityid: string]: AbilityData } = {
 		num: 20,
 	},
 	parasiticwaste: {
+		onModifyMove(move) {
+			if (!move.secondaries) move.secondaries = [];
+			for (const secondary of move.secondaries) {
+				if ((move.category !== 'Status') && (secondary.status === 'psn' || secondary.status === 'tox')) {
+					move.drain = [1, 2];
+				}
+			}
+		},
 		name: "Parasitic Waste",
 		num: 300,
 		rating: 2.5,
