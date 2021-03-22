@@ -1,4 +1,5 @@
 /config/*
+!/config/usergroups.csv
 !/config/formats.ts
 !/config/custom-formats.ts
 /logs/*
