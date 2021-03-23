@@ -7160,7 +7160,7 @@ export const Items: {[itemid: string]: ItemData} = {
 		gen: 6,
 		isNonstandard: "Past",
 	},
-	Kinglerite: {
+	kinglerite: {
 		name: "Kinglerite",
 		spritenum: 737,
 		megaStone: "Kingler-Mega",
@@ -7300,12 +7300,12 @@ export const Items: {[itemid: string]: ItemData} = {
 		gen: 6,
 		isNonstandard: "Past",
 	},
-	sanacondanite: {
-		name: "Sanacondanite",
+	sandacondanite: {
+		name: "Sandacondanite",
 		spritenum: 737,
-		megaStone: "Sanaconda-Mega",
-		megaEvolves: "Sanaconda",
-		itemUser: ["Sanaconda"],
+		megaStone: "Sandaconda-Mega",
+		megaEvolves: "Sandaconda",
+		itemUser: ["Sandaconda"],
 		onTakeItem(item, source) {
 			if (item.megaEvolves === source.baseSpecies.baseSpecies) return false;
 			return true;
@@ -7328,7 +7328,7 @@ export const Items: {[itemid: string]: ItemData} = {
 		gen: 6,
 		isNonstandard: "Past",
 	},
-	appuletunite: {
+	appletunite: {
 		name: "Appletunite",
 		spritenum: 737,
 		megaStone: "Appletunite-Mega",
@@ -7342,7 +7342,7 @@ export const Items: {[itemid: string]: ItemData} = {
 		gen: 6,
 		isNonstandard: "Past",
 	},
-	Alcremienite: {
+	alcremienite: {
 		name: "Alcremienite",
 		spritenum: 737,
 		megaStone: "Alcremie-Mega",
