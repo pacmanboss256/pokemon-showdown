@@ -74,7 +74,7 @@ Learnset-based visual formes include:
 - Vivillon (Poké Ball Pattern)
 - Keldeo (Resolute Forme)
 - all totems
-
+n
 Item-based visual formes include:
 
 - Genesect
