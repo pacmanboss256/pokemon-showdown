@@ -7120,7 +7120,7 @@ export const Items: {[itemid: string]: ItemData} = {
 	// RR items
 	machampite: {
 		name: "Machampite",
-		spritenum: 737,
+		spritenum: 578,
 		megaStone: "Machamp-Mega",
 		megaEvolves: "Machamp",
 		itemUser: ["Machamp"],
@@ -7134,7 +7134,7 @@ export const Items: {[itemid: string]: ItemData} = {
 	},
 	butterfreenite: {
 		name: "Butterfreenite",
-		spritenum: 737,
+		spritenum: 592,
 		megaStone: "Butterfree-Mega",
 		megaEvolves: "Butterfree",
 		itemUser: ["Butterfree"],
@@ -7148,7 +7148,7 @@ export const Items: {[itemid: string]: ItemData} = {
 	},
 	garbodorite: {
 		name: "Garbodorite",
-		spritenum: 737,
+		spritenum: 614,
 		megaStone: "Garbodor-Mega",
 		megaEvolves: "Garbodor",
 		itemUser: ["Garbodor"],
@@ -7162,7 +7162,7 @@ export const Items: {[itemid: string]: ItemData} = {
 	},
 	kinglerite: {
 		name: "Kinglerite",
-		spritenum: 737,
+		spritenum: 583,
 		megaStone: "Kingler-Mega",
 		megaEvolves: "Kingler",
 		itemUser: ["Kingler"],
@@ -7176,7 +7176,7 @@ export const Items: {[itemid: string]: ItemData} = {
 	},
 	snorlaxite: {
 		name: "Snorlaxite",
-		spritenum: 737,
+		spritenum: 616,
 		megaStone: "Snorlax-Mega",
 		megaEvolves: "Snorlax",
 		itemUser: ["Snorlax"],
@@ -7190,10 +7190,10 @@ export const Items: {[itemid: string]: ItemData} = {
 	},
 	laprasite: {
 		name: "Laprasite",
-		spritenum: 737,
+		spritenum: 612,
 		megaStone: "Lapras-Mega",
 		megaEvolves: "Lapras",
-		itemUser: ["lapras"],
+		itemUser: ["Lapras"],
 		onTakeItem(item, source) {
 			if (item.megaEvolves === source.baseSpecies.baseSpecies) return false;
 			return true;
@@ -7204,7 +7204,7 @@ export const Items: {[itemid: string]: ItemData} = {
 	},
 	drednawite: {
 		name: "Drednawite",
-		spritenum: 737,
+		spritenum: 575,
 		megaStone: "Drednaw-Mega",
 		megaEvolves: "Drewdnaw",
 		itemUser: ["Drednaw"],
@@ -7218,7 +7218,7 @@ export const Items: {[itemid: string]: ItemData} = {
 	},
 	coalossalite: {
 		name: "Coalossalite",
-		spritenum: 737,
+		spritenum: 591,
 		megaStone: "Coalossal-Mega",
 		megaEvolves: "Coalossal",
 		itemUser: ["Coalossal"],
@@ -7232,7 +7232,7 @@ export const Items: {[itemid: string]: ItemData} = {
 	},
 	orbeetlite: {
 		name: "Orbeetlite",
-		spritenum: 737,
+		spritenum: 587,
 		megaStone: "Orbeetle-Mega",
 		megaEvolves: "Orbeetle",
 		itemUser: ["Orbeetle"],
@@ -7246,7 +7246,7 @@ export const Items: {[itemid: string]: ItemData} = {
 	},
 	toxtricite: {
 		name: "Toxtricite",
-		spritenum: 737,
+		spritenum: 582,
 		megaStone: "Toxtricity-Mega",
 		megaEvolves: "Toxtricity",
 		itemUser: ["Toxtricity"],
@@ -7260,7 +7260,7 @@ export const Items: {[itemid: string]: ItemData} = {
 	},
 	duraludonite: {
 		name: "Duraludonite",
-		spritenum: 737,
+		spritenum: 577,
 		megaStone: "Duraludon-Mega",
 		megaEvolves: "Duraludon",
 		itemUser: ["Duraludon"],
@@ -7274,7 +7274,7 @@ export const Items: {[itemid: string]: ItemData} = {
 	},
 	copperajahnite: {
 		name: "Copperajahnite",
-		spritenum: 737,
+		spritenum: 605,
 		megaStone: "Copperajah-Mega",
 		megaEvolves: "Copperajah",
 		itemUser: ["Copperajah"],
@@ -7288,7 +7288,7 @@ export const Items: {[itemid: string]: ItemData} = {
 	},
 	centiskorchite: {
 		name: "Centiskorchite",
-		spritenum: 737,
+		spritenum: 586,
 		megaStone: "Centiskorch-Mega",
 		megaEvolves: "Centiskorch",
 		itemUser: ["Centiskorch"],
@@ -7302,7 +7302,7 @@ export const Items: {[itemid: string]: ItemData} = {
 	},
 	sandacondanite: {
 		name: "Sandacondanite",
-		spritenum: 737,
+		spritenum: 626,
 		megaStone: "Sandaconda-Mega",
 		megaEvolves: "Sandaconda",
 		itemUser: ["Sandaconda"],
@@ -7316,7 +7316,7 @@ export const Items: {[itemid: string]: ItemData} = {
 	},
 	flapplenite: {
 		name: "Flapplenite",
-		spritenum: 737,
+		spritenum: 608,
 		megaStone: "Flapple-Mega",
 		megaEvolves: "Flapple",
 		itemUser: ["Flapple"],
@@ -7330,7 +7330,7 @@ export const Items: {[itemid: string]: ItemData} = {
 	},
 	appletunite: {
 		name: "Appletunite",
-		spritenum: 737,
+		spritenum: 608,
 		megaStone: "Appletunite-Mega",
 		megaEvolves: "Appletun",
 		itemUser: ["Appletun"],
@@ -7344,7 +7344,7 @@ export const Items: {[itemid: string]: ItemData} = {
 	},
 	alcremienite: {
 		name: "Alcremienite",
-		spritenum: 737,
+		spritenum: 620,
 		megaStone: "Alcremie-Mega",
 		megaEvolves: "Alcremie",
 		itemUser: ["Alcremie"],
