@@ -5555,6 +5555,27 @@ export const Moves: { [moveid: string]: MoveData } = {
 		zMove: {effect: 'clearnegativeboost'},
 		contestType: "Cute",
 	},
+	forbiddenspell: {
+		num: 853,
+		accuracy: true,
+		basePower: 0,
+		category: "Status",
+		name: "Forbidden Spell",
+		secondary: null,
+		target: "normal",
+		type: "Psychic",
+		flags: {},
+		pp: 5,
+		priority: 0,
+		onHit(target, source, effect) {
+			let usespell = '';
+			// eslint-disable-next-line max-len
+			const spellmoves = ['Shell Smash', 'Healing Wish', 'Dark Hole', 'Tail Glow', 'Roar of Time', 'Quiver Dance', 'No Retreat', 'Soul Robbery'];
+			const i = Math.floor(this.random(0, 7));
+			usespell = spellmoves[i];
+			this.useMove(usespell, target);
+		},
+	},
 	forcepalm: {
 		num: 395,
 		accuracy: 100,

@@ -6837,4 +6837,19 @@ export const MovesText: { [k: string]: MoveText } = {
 			shortDesc: "Nearly always goes first. Always crits.",
 		},
 	},
+	// rr moves
+	darkhole: {
+		name: "Dark Hole",
+		shortDesc: "Imagine dark void that dealt damage",
+		desc: "Bypasses substitute, 40% chance of putting foe to sleep",
+	},
+	forbiddenspell: {
+		name: "Forbidden Spell",
+		shortDesc: "Isn't RNG fun?",
+		desc: "Uses of one of these 8 moves: Shell Smash, Healing Wish, Dark Hole, Tail Glow, Roar of Time, Quiver Dance, No Retreat, or Soul Robbery",
+	},
+	soulrobbery: {
+		name: "Soul Robbery",
+		shortDesc: "Steals opponent's boosts before attacking",
+	},
 };

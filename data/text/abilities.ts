@@ -1726,7 +1726,6 @@ export const AbilitiesText: {[k: string]: AbilityText} = {
 		transform: "Zen Mode triggered!",
 		transformEnd: "Zen Mode ended!",
 	},
-
 	// CAP
 	mountaineer: {
 		name: "Mountaineer",
