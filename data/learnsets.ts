@@ -530,6 +530,31 @@ export const Learnsets: {[speciesid: string]: LearnsetData} = {
 			thunder: ["8L58"],
 		},
 	},
+	pikachucosplay: {
+		learnset: {
+			tailwhip: ["8L1"],
+			thundershock: ["8L1"],
+			growl: ["8L5"],
+			playnice: ["8L7"],
+			quickattack: ["8L10"],
+			electroball: ["8L13"],
+			thunderwave: ["8L18"],
+			feint: ["8L21"],
+			spark: ["8L26"],
+			nuzzle: ["8L29"],
+			discharge: ["8L34"],
+			slam: ["8L37"],
+			thunderbolt: ["8L42"],
+			agility: ["8L45"],
+			wildcharge: ["8L50"],
+			lightscreen: ["8L53"],
+			thunder: ["8L58"],
+		},
+		eventData: [
+			{generation: 6, level: 20, perfectIVs: 3, moves: ["quickattack", "electroball", "thunderwave", "thundershock"], pokeball: "pokeball"},
+		],
+		eventOnly: true,
+	},
 	pikachurockstar: {
 		learnset: {
 			meteormash: ["8R"],
