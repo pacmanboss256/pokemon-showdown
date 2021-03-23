@@ -4263,9 +4263,9 @@ export const Abilities: { [abilityid: string]: AbilityData } = {
 	},
 	truant: {
 		onStart(pokemon) {
-			if (!pokemon.moves.every((h) => this.dex.getMove(h).heal == null)) pokemon.abilityData.hasHealMove = true;
+			if (!pokemon.moves.every((h) => this.dex.getMove(h).heal === null)) pokemon.abilityData.hasHealMove = true;
 			else pokemon.abilityData.hasHealMove = false;
-			
+
 			pokemon.removeVolatile('truant');
 			if (pokemon.activeTurns && (pokemon.moveThisTurnResult !== undefined || !this.queue.willMove(pokemon))) {
 				pokemon.addVolatile('truant');
@@ -4278,7 +4278,7 @@ export const Abilities: { [abilityid: string]: AbilityData } = {
 					this.add('cant', pokemon, 'ability: Truant');
 					return false;
 				}
-				return
+				return;
 			}
 			pokemon.addVolatile('truant');
 		},
@@ -4286,7 +4286,7 @@ export const Abilities: { [abilityid: string]: AbilityData } = {
 			if (!pokemon.abilityData.hasHealMove) return;
 			if (!pokemon.volatiles['truant']) return;
 			for (const moveSlot of pokemon.moveSlots) {
-				if (this.dex.getMove(moveSlot.move).heal == null) {
+				if (this.dex.getMove(moveSlot.move).heal === null) {
 					pokemon.disableMove(moveSlot.id, false, this.effectData.sourceEffect);
 				}
 			}
