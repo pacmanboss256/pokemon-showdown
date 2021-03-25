@@ -1778,7 +1778,7 @@ export const commands: ChatCommands = {
 		}
 		this.sendReplyBox(
 			`Pok&eacute;mon Showdown! damage calculator. (Courtesy of Honko &amp; Austin)<br />` +
-			`- <a href="https://calc.pokemonshowdown.com/index.html">Damage Calculator</a>`
+			`- <a href="https://karthik99999.github.io/rr-damage-calc">Damage Calculator</a>`
 		);
 	},
 	calchelp: [
