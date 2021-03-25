@@ -7258,6 +7258,20 @@ export const Items: {[itemid: string]: ItemData} = {
 		gen: 6,
 		isNonstandard: "Past",
 	},
+	toxtricitelowkey: {
+		name: "Toxtricite Low Key",
+		spritenum: 582,
+		megaStone: "Toxtricity-Low-Key-Mega",
+		megaEvolves: "Toxtricity-Low-Key",
+		itemUser: ["Toxtricity-Low-Key"],
+		onTakeItem(item, source) {
+			if (item.megaEvolves === source.baseSpecies.baseSpecies) return false;
+			return true;
+		},
+		num: 971,
+		gen: 6,
+		isNonstandard: "Past",
+	},
 	duraludonite: {
 		name: "Duraludonite",
 		spritenum: 577,
