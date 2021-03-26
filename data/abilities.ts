@@ -231,11 +231,8 @@ export const Abilities: { [abilityid: string]: AbilityData } = {
 		num: 188,
 	},
 	badcompany: {
-		onDamage(damage, target, source, effect) {
-			if (effect.id === ('recoil' || 'mindblownrecoil')) {
-				if (!this.activeMove) throw new Error("Battle.activeMove is null");
-				if (this.activeMove.id !== 'struggle') return null;
-			}
+		onModifyMove(move) {
+			move.mindBlownRecoil = false
 		},
 		onBoost(boost, target, source, effect) {
 			if (source && target !== source) return;
