@@ -232,7 +232,7 @@ export const Abilities: { [abilityid: string]: AbilityData } = {
 	},
 	badcompany: {
 		onDamage(damage, target, source, effect) {
-			if (effect.id === 'recoil') {
+			if (effect.id === ('recoil' || 'mindblownrecoil')) {
 				if (!this.activeMove) throw new Error("Battle.activeMove is null");
 				if (this.activeMove.id !== 'struggle') return null;
 			}
