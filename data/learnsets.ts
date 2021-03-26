@@ -25561,6 +25561,7 @@ export const Learnsets: {[speciesid: string]: LearnsetData} = {
 	chimecho: {
 		learnset: {
 			healingwish: ["8L57"],
+			forbiddenspell: ["8L50"],
 			synchronoise: ["8L52"],
 			wrap: ["8L1"],
 			growl: ["8L4"],
@@ -28316,6 +28317,7 @@ export const Learnsets: {[speciesid: string]: LearnsetData} = {
 			assist: ["8L29"],
 			captivate: ["8L32"],
 			slash: ["8L37"],
+			slackoff: ["8L1"],
 			bodyslam: ["8L45", "8T"],
 			attract: ["8L52"],
 			honeclaws: ["8L60", "8M"],

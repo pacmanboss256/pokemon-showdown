@@ -232,7 +232,7 @@ export const Abilities: { [abilityid: string]: AbilityData } = {
 	},
 	badcompany: {
 		onModifyMove(move) {
-			move.mindBlownRecoil = false
+			move.mindBlownRecoil = false;
 		},
 		onBoost(boost, target, source, effect) {
 			if (source && target !== source) return;
