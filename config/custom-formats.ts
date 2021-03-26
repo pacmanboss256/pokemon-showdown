@@ -22,7 +22,7 @@ export const Formats: FormatList = [
 		],
 	},
 	{
-		name: "RR Natdex OU",
+		name: "[Gen 8] RR Natdex OU",
 		mod: 'gen8',
 		ruleset: ['Standard NatDex', 'OHKO Clause', 'Evasion Moves Clause', 'Species Clause', 'Dynamax Clause', 'Sleep Clause Mod'],
 		banlist: ['Uber', 'Moody', 'Power Construct', 'Battle Bond', 'Swagger', 'Baton Pass', 'Dark Hole', 'Misty Explosion', 'Explosion', 'Self-Destruct',
