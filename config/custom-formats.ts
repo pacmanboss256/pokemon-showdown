@@ -15,7 +15,7 @@ export const Formats: FormatList = [
 			// abilities
 			'Moody', 'Power Construct', 'Battle Bond',
 			// moves
-			'Swagger', 'Baton Pass', 'Dark Hole',
+			'Swagger', 'Baton Pass', 'Dark Hole', 'Misty Explosion', 'Explosion', 'Self-Destruct',
 		],
 		unbanlist: ['Pichu-Spiky-eared', 'Pikachu-Belle', 'Pikachu-Cosplay', 'Pikachu-Libre',
 		 'Pikachu-PhD', 'Pikachu-Pop-Star', 'Pikachu-Rock-Star', 'Pikachu-Starter',
