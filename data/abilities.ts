@@ -2536,15 +2536,15 @@ export const Abilities: { [abilityid: string]: AbilityData } = {
 		onPrepareHit(source, target, move) {
 			if (move.flags['punch'] && !move.spreadHit && !move.isZ && !move.isMax) {
 				move.multihit = 2;
-				move.multihitType = 'oraoraoraora';
+				move.multihitType = 'parentalbond';
 			}
 		},
 		onBasePowerPriority: 7,
 		onBasePower(basePower, pokemon, target, move) {
-			if (move.multihitType === 'oraoraoraora' && move.hit > 1) return this.chainModify(0.5);
+			if (move.multihitType === 'parentalbond' && move.hit > 1) return this.chainModify(0.5);
 		},
 		onSourceModifySecondaries(secondaries, target, source, move) {
-			if (move.multihitType === 'oraoraoraora' && move.hit < 2) {
+			if (move.multihitType === 'parentalbond' && move.hit < 2) {
 				// hack to prevent accidentally suppressing King's Rock/Razor Fang
 				return secondaries.filter(effect => effect.volatileStatus === 'flinch');
 			}
