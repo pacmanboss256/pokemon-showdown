@@ -92,6 +92,10 @@ export const AbilitiesText: {[k: string]: AbilityText} = {
 
 		start: "  [POKEMON] reversed all other Pok\u00E9mon's auras!",
 	},
+	badcompany: {
+		name: "Bad Company",
+		shortDesc: "Prevents self lowering stat drops and recoil."
+	}
 	baddreams: {
 		name: "Bad Dreams",
 		desc: "Causes adjacent opposing Pokemon to lose 1/8 of their maximum HP, rounded down, at the end of each turn if they are asleep.",
@@ -152,11 +156,11 @@ export const AbilitiesText: {[k: string]: AbilityText} = {
 	},
 	bonezone: {
 		name: "Bone Zone",
-		shortDesc: "Get boned lol",
+		shortDesc: "Bone moves ignore immunities and deal double damage on not very effective.",
 	},
 	bullrush: {
 		name: "Bull Rush",
-		shortDesc: "First move gets 1.5x dmg",
+		shortDesc: "The first move this Pokemon's uses gets a 1.5x damage boost.",
 	},
 	bulletproof: {
 		name: "Bulletproof",
@@ -225,7 +229,7 @@ export const AbilitiesText: {[k: string]: AbilityText} = {
 	},
 	corrosion: {
 		name: "Corrosion",
-		shortDesc: "This Pokemon can poison or badly poison other Pokemon regardless of their typing.",
+		shortDesc: "This Pokemon can use poison type moves on other Pokemon regardless of their typing.",
 	},
 	cottondown: {
 		name: "Cotton Down",
@@ -293,8 +297,8 @@ export const AbilitiesText: {[k: string]: AbilityText} = {
 	},
 	defeatist: {
 		name: "Defeatist",
-		desc: "While this Pokemon has 1/2 or less of its maximum HP, its Attack and Special Attack are halved.",
-		shortDesc: "While this Pokemon has 1/2 or less of its max HP, its Attack and Sp. Atk are halved.",
+		desc: "While this Pokemon has 1/3 or less of its maximum HP, its Attack and Special Attack are halved.",
+		shortDesc: "While this Pokemon has 1/3 or less of its max HP, its Attack and Sp. Atk are halved.",
 	},
 	defiant: {
 		name: "Defiant",
@@ -377,8 +381,7 @@ export const AbilitiesText: {[k: string]: AbilityText} = {
 	},
 	fatalprecision: {
 		name: "Fatal Precision",
-		desc: "Super effective moves cannot miss, and have 20% extra power",
-		shortDesc: "SE moves can't miss and get 20% BP",
+		shortDesc: "Super Effective Moves from this Pokemon can’t miss and receive a 20% damage boost.",
 	},
 	fairyaura: {
 		name: "Fairy Aura",
@@ -389,7 +392,7 @@ export const AbilitiesText: {[k: string]: AbilityText} = {
 	},
 	felinepower: {
 		name: "Feline Power",
-		shortDesc: "Doubles SpA",
+		shortDesc: "This Pokemon's Sp. Atk is doubled.",
 	},
 	filter: {
 		name: "Filter",
@@ -406,10 +409,14 @@ export const AbilitiesText: {[k: string]: AbilityText} = {
 			shortDesc: "1/3 chance a Pokemon making contact with this Pokemon will be burned.",
 		},
 	},
+	flamingsoul: {
+		name: "Flaming Soul",
+		shortDesc: "If this Pokemon is at full HP, its Fire-type moves have their priority increased by 1.",
+	}
 	flareboost: {
 		name: "Flare Boost",
-		desc: "While this Pokemon is burned, the power of its special attacks is multiplied by 1.5.",
-		shortDesc: "While this Pokemon is burned, its special attacks have 1.5x power.",
+		desc: "While this Pokemon is burned, the power of its special attacks is multiplied by 1.5. Immune to burn damage.",
+		shortDesc: "While this Pokemon is burned, its special attacks have 1.5x power; Immune to burn damage.",
 	},
 	flashfire: {
 		name: "Flash Fire",
@@ -423,8 +430,8 @@ export const AbilitiesText: {[k: string]: AbilityText} = {
 	},
 	flowergift: {
 		name: "Flower Gift",
-		desc: "If this Pokemon is a Cherrim and Sunny Day is active, it changes to Sunshine Form and the Attack and Special Defense of it and its allies are multiplied by 1.5. If this Pokemon is a Cherrim and it is holding Utility Umbrella, it remains in its regular form and the Attack and Special Defense stats of it and its allies are not boosted. If this Pokemon is a Cherrim in its Sunshine form and is given Utility Umbrella, it will immediately switch back to its regular form. If this Pokemon is a Cherrim holding Utility Umbrella and its item is removed while Sunny Day is active, it will transform into its Sunshine Form. If an ally is holding Utility Umbrella while Cherrim is in its Sunshine Form, they will not receive the Attack and Special Defense boosts.",
-		shortDesc: "If user is Cherrim and Sunny Day is active, it and allies' Attack and Sp. Def are 1.5x.",
+		desc: "If this Pokemon is a Cherrim and Sunny Day is active, it changes to Sunshine Form and its Attack and Speed are multiplied by 1.5. If this Pokemon is a Cherrim and it is holding Utility Umbrella, it remains in its regular form and its Attack and Speed stats are not boosted. If this Pokemon is a Cherrim in its Sunshine form and is given Utility Umbrella, it will immediately switch back to its regular form. If this Pokemon is a Cherrim holding Utility Umbrella and its item is removed while Sunny Day is active, it will transform into its Sunshine Form.",
+		shortDesc: "If user is Cherrim and Sunny Day is active, its Attack and Speed are 1.5x.",
 		gen7: {
 			desc: "If this Pokemon is a Cherrim and Sunny Day is active, it changes to Sunshine Form and the Attack and Special Defense of it and its allies are multiplied by 1.5.",
 		},
@@ -447,8 +454,8 @@ export const AbilitiesText: {[k: string]: AbilityText} = {
 	},
 	forecast: {
 		name: "Forecast",
-		desc: "If this Pokemon is a Castform, its type changes to the current weather condition's type, except Sandstorm. If this Pokemon is holding Utility Umbrella and the weather condition is Sunny Day, Desolate Land, Rain Dance, or Primordial Sea, it will not change types.",
-		shortDesc: "Castform's type changes to the current weather condition's type, except Sandstorm.",
+		desc: "If this Pokemon is a Castform, its type changes to the current weather condition's type, except Sandstorm. If this Pokemon is holding Utility Umbrella and the weather condition is Sunny Day, Desolate Land, Rain Dance, or Primordial Sea, it will not change types. If this pokemon is holding a weather rock, it will set the weather corrosponding to the rock it is holding.",
+		shortDesc: "Castform's type changes to the current weather condition's type, except Sandstorm. Summons weather if holding weather rock.",
 		gen7: {
 			desc: "If this Pokemon is a Castform, its type changes to the current weather condition's type, except Sandstorm.",
 		},
@@ -523,8 +530,8 @@ export const AbilitiesText: {[k: string]: AbilityText} = {
 	},
 	gulpmissile: {
 		name: "Gulp Missile",
-		desc: "If this Pokemon is a Cramorant, it changes forme when it hits a target with Surf or uses the first turn of Dive successfully. It becomes Gulping Form with an Arrokuda in its mouth if it has more than 1/2 of its maximum HP remaining, or Gorging Form with a Pikachu in its mouth if it has 1/2 or less of its maximum HP remaining. If Cramorant gets hit in Gulping or Gorging Form, it spits the Arrokuda or Pikachu at its attacker, even if it has no HP remaining. The projectile deals damage equal to 1/4 of the target's maximum HP, rounded down; this damage is blocked by the Magic Guard Ability but not by a substitute. An Arrokuda also lowers the target's Defense by 1 stage, and a Pikachu paralyzes the target. Cramorant will return to normal if it spits out a projectile, switches out, or Dynamaxes.",
-		shortDesc: "When hit after Surf/Dive, attacker takes 1/4 max HP and -1 Defense or paralysis.",
+		desc: "If this Pokemon is a Cramorant, it changes forme when it hits a target with Surf or uses the first turn of Dive successfully. It becomes Gulping Form with an Arrokuda in its mouth if it has more than 1/2 of its maximum HP remaining, or Gorging Form with a Pikachu in its mouth if it has 1/2 or less of its maximum HP remaining. If Cramorant gets hit in Gulping or Gorging Form, it spits the Arrokuda or Pikachu at its attacker, even if it has no HP remaining. The projectile deals damage equal to 1/4 of the target's maximum HP, rounded down; this damage is blocked by the Magic Guard Ability but not by a substitute. An Arrokuda also lowers the target's Speed by 1 stage, and a Pikachu paralyzes the target. Cramorant will return to normal if it spits out a projectile, switches out, or Dynamaxes.",
+		shortDesc: "When hit after Surf/Dive, attacker takes 1/4 max HP and -1 Speed or paralysis.",
 	},
 	guts: {
 		name: "Guts",
@@ -601,8 +608,8 @@ export const AbilitiesText: {[k: string]: AbilityText} = {
 	},
 	illusion: {
 		name: "Illusion",
-		desc: "When this Pokemon switches in, it appears as the last unfainted Pokemon in its party until it takes direct damage from another Pokemon's attack. This Pokemon's actual level and HP are displayed instead of those of the mimicked Pokemon.",
-		shortDesc: "This Pokemon appears as the last Pokemon in the party until it takes direct damage.",
+		desc: "When this Pokemon switches in, it appears as the last unfainted Pokemon in its party until it takes direct damage from another Pokemon's attack. This Pokemon's actual level and HP are displayed instead of those of the mimicked Pokemon. This Pokemon's moves are given a 1.3x boost when disguised.",
+		shortDesc: "This Pokemon appears as the last Pokemon in the party until it takes direct damage; 1.3x damage to moves when disguised.",
 
 		end: "  [POKEMON]'s illusion wore off!",
 	},
@@ -667,8 +674,8 @@ export const AbilitiesText: {[k: string]: AbilityText} = {
 	},
 	ironfist: {
 		name: "Iron Fist",
-		desc: "This Pokemon's punch-based attacks have their power multiplied by 1.2.",
-		shortDesc: "This Pokemon's punch-based attacks have 1.2x power. Sucker Punch is not boosted.",
+		desc: "This Pokemon's punch-based attacks have their power multiplied by 1.3.",
+		shortDesc: "This Pokemon's punch-based attacks have 1.3x power.",
 	},
 	justified: {
 		name: "Justified",
@@ -851,6 +858,10 @@ export const AbilitiesText: {[k: string]: AbilityText} = {
 		desc: "This Pokemon is immune to Electric-type moves and raises its Speed by 1 stage when hit by an Electric-type move.",
 		shortDesc: "This Pokemon's Speed is raised 1 stage if hit by an Electric move; Electric immunity.",
 	},
+	mountaineer: {
+		name: "Mountaineer",
+		shortDesc: "This Pokemon is immune to Rock; Avoids Stealth Rock.",
+	},
 	moxie: {
 		name: "Moxie",
 		desc: "This Pokemon's Attack is raised by 1 stage if it attacks and knocks out another Pokemon.",
@@ -926,7 +937,7 @@ export const AbilitiesText: {[k: string]: AbilityText} = {
 	},
 	oraoraoraora: {
 		name: "ORAORAORAORA",
-		shortDesc: "Punch moves hit twice",
+		shortDesc: "This Pokemon's punch moves hit twice. The second hit has its damage halved.",
 	},
 	overcoat: {
 		name: "Overcoat",
@@ -953,6 +964,10 @@ export const AbilitiesText: {[k: string]: AbilityText} = {
 			shortDesc: "This Pokemon cannot be confused.",
 		},
 	},
+	parasiticwaste: {
+		name: "Parasitic Waste",
+		shortDesc: "Attacks that can poison also heal for 50%",
+	}
 	parentalbond: {
 		name: "Parental Bond",
 		desc: "This Pokemon's damaging moves become multi-hit moves that hit twice. The second hit has its damage quartered. Does not affect multi-hit moves or moves that have multiple targets.",
@@ -1070,6 +1085,10 @@ export const AbilitiesText: {[k: string]: AbilityText} = {
 
 		start: "  [POKEMON] is exerting its pressure!",
 	},
+	primalarmor: {
+		name: "Primal Armor",
+		shortDesc: "This Pokemon receives 1/2 damage from supereffective attacks.",
+	}
 	primordialsea: {
 		name: "Primordial Sea",
 		desc: "On switch-in, the weather becomes heavy rain that prevents damaging Fire-type moves from executing, in addition to all the effects of Rain Dance. This weather remains in effect until this Ability is no longer active for any Pokemon, or the weather is changed by Delta Stream or Desolate Land.",
@@ -1174,8 +1193,8 @@ export const AbilitiesText: {[k: string]: AbilityText} = {
 	},
 	rivalry: {
 		name: "Rivalry",
-		desc: "This Pokemon's attacks have their power multiplied by 1.25 against targets of the same gender or multiplied by 0.75 against targets of the opposite gender. There is no modifier if either this Pokemon or the target is genderless.",
-		shortDesc: "This Pokemon's attacks do 1.25x on same gender targets; 0.75x on opposite gender.",
+		desc: "This Pokemon's attacks have their power multiplied by 1.25 against targets of the same gender. There is no modifier if either this Pokemon or the target is genderless, or if they have different genders.",
+		shortDesc: "This Pokemon's attacks do 1.25x on same gender targets.",
 	},
 	rkssystem: {
 		name: "RKS System",
@@ -1203,7 +1222,7 @@ export const AbilitiesText: {[k: string]: AbilityText} = {
 	},
 	sagepower: {
 		name: "Sage Power",
-		shortDesc: "Locks you into first move chosen, but doubles SpA",
+		shortDesc: "This Pokemon's Sp. Atk is 1.5x, but it can only select the first move it executes.",
 	},
 	sandforce: {
 		name: "Sand Force",
@@ -1299,7 +1318,7 @@ export const AbilitiesText: {[k: string]: AbilityText} = {
 	},
 	shielddust: {
 		name: "Shield Dust",
-		shortDesc: "This Pokemon is not affected by the secondary effect of another Pokemon's attack.",
+		shortDesc: "This Pokemon is not affected by the secondary effect of another Pokemon's attack; Avoids damage from entry hazards.",
 	},
 	shieldsdown: {
 		name: "Shields Down",
@@ -1352,8 +1371,8 @@ export const AbilitiesText: {[k: string]: AbilityText} = {
 	},
 	solarpower: {
 		name: "Solar Power",
-		desc: "If Sunny Day is active, this Pokemon's Special Attack is multiplied by 1.5 and it loses 1/8 of its maximum HP, rounded down, at the end of each turn. If this Pokemon is holding Utility Umbrella, its Special Attack remains the same and it does not lose any HP.",
-		shortDesc: "If Sunny Day is active, this Pokemon's Sp. Atk is 1.5x; loses 1/8 max HP per turn.",
+		desc: "If Sunny Day is active, this Pokemon's Special Attack is multiplied by 1.5. If this Pokemon is holding Utility Umbrella, its Special Attack remains the same and it does not gain a defense boost.",
+		shortDesc: "If Sunny Day is active, this Pokemon's Sp. Atk is 1.5x; boost defenses by 1.33x.",
 		gen7: {
 			desc: "If Sunny Day is active, this Pokemon's Special Attack is multiplied by 1.5 and it loses 1/8 of its maximum HP, rounded down, at the end of each turn.",
 		},
@@ -1461,8 +1480,7 @@ export const AbilitiesText: {[k: string]: AbilityText} = {
 	},
 	striker: {
 		name: "Striker",
-		desc: "this pokemon kicks harder than most",
-		shortDesc: "kick me lol",
+		shortDesc: "Boosts kicking moves by 1.3x",
 
 	},
 	strongjaw: {
@@ -1495,6 +1513,10 @@ export const AbilitiesText: {[k: string]: AbilityText} = {
 		name: "Surge Surfer",
 		shortDesc: "If Electric Terrain is active, this Pokemon's Speed is doubled.",
 	},
+	surprise: {
+		name: "Surprise",
+		shortDesc: "Random effect on switch-in.",
+	}
 	swarm: {
 		name: "Swarm",
 		desc: "When this Pokemon has 1/3 or less of its maximum HP, rounded down, its attacking stat is multiplied by 1.5 while using a Bug-type attack.",
@@ -1585,8 +1607,8 @@ export const AbilitiesText: {[k: string]: AbilityText} = {
 	},
 	toxicboost: {
 		name: "Toxic Boost",
-		desc: "While this Pokemon is poisoned, the power of its physical attacks is multiplied by 1.5.",
-		shortDesc: "While this Pokemon is poisoned, its physical attacks have 1.5x power.",
+		desc: "While this Pokemon is poisoned, the power of its physical attacks is multiplied by 1.5. Immune to poison damage.",
+		shortDesc: "While this Pokemon is poisoned, its physical attacks have 1.5x power; Immune to poison damage.",
 	},
 	trace: {
 		name: "Trace",
@@ -1608,7 +1630,7 @@ export const AbilitiesText: {[k: string]: AbilityText} = {
 	},
 	truant: {
 		name: "Truant",
-		shortDesc: "This Pokemon skips every other turn instead of using a move.",
+		shortDesc: "This Pokemon can only use healing moves every other turn.",
 
 		cant: "[POKEMON] is loafing around!",
 	},
@@ -1676,7 +1698,7 @@ export const AbilitiesText: {[k: string]: AbilityText} = {
 	},
 	watercompaction: {
 		name: "Water Compaction",
-		shortDesc: "This Pokemon's Defense is raised 2 stages after it is damaged by a Water-type move.",
+		shortDesc: "This Pokemon's Defense is raised 2 stages after it is damaged by a Water-type move; Reduces water damage by 50%.",
 	},
 	waterveil: {
 		name: "Water Veil",
@@ -1727,10 +1749,6 @@ export const AbilitiesText: {[k: string]: AbilityText} = {
 		transformEnd: "Zen Mode ended!",
 	},
 	// CAP
-	mountaineer: {
-		name: "Mountaineer",
-		shortDesc: "On switch-in, this Pokemon avoids all Rock-type attacks and Stealth Rock.",
-	},
 	rebound: {
 		name: "Rebound",
 		desc: "On switch-in, this Pokemon blocks certain status moves and instead uses the move against the original user.",
