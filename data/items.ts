@@ -47,14 +47,17 @@ export const Items: {[itemid: string]: ItemData} = {
 	adamantorb: {
 		name: "Adamant Orb",
 		spritenum: 4,
-		fling: {
-			basePower: 60,
-		},
-		onBasePowerPriority: 15,
-		onBasePower(basePower, user, target, move) {
-			if (move && user.baseSpecies.name === 'Dialga' && (move.type === 'Steel' || move.type === 'Dragon')) {
-				return this.chainModify([4915, 4096]);
+		onSwitchIn(pokemon) {
+			if (pokemon.isActive && pokemon.baseSpecies.name === 'Dialga') {
+				this.queue.insertChoice({choice: 'runPrimal', pokemon: pokemon});
 			}
+		},
+		onPrimal(pokemon) {
+			pokemon.formeChange('Dialga-Primal', this.effect, true);
+		},
+		onTakeItem(item, source) {
+			if (source.baseSpecies.baseSpecies === 'Dialga') return false;
+			return true;
 		},
 		itemUser: ["Dialga"],
 		num: 135,

@@ -13,7 +13,7 @@ export const ItemsText: {[k: string]: ItemText} = {
 	},
 	adamantorb: {
 		name: "Adamant Orb",
-		desc: "If held by a Dialga, its Steel- and Dragon-type attacks have 1.2x power.",
+		desc: "If held by a Dialga, this item triggers its Primal Reversion in battle.",
 	},
 	adrenalineorb: {
 		name: "Adrenaline Orb",
