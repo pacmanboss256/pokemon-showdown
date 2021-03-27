@@ -40,6 +40,8 @@ export const Formats: FormatList = [
 			'Rayquaza-Mega', 'Zacian-Crowned',
 			// moves
 			'Baton Pass', 'Dark Hole',
+			// abilities
+			'Shadow Tag', 'Moody',
 		],
 	},
 ];
