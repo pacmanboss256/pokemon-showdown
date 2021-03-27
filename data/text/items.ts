@@ -2331,4 +2331,79 @@ export const ItemsText: {[k: string]: ItemText} = {
 		name: "Crucibellite",
 		desc: "If held by a Crucibelle, this item allows it to Mega Evolve in battle.",
 	},
+
+	// RR items
+
+	machampite: {
+		name: "Machampite",
+		desc: "If held by a Machamp, this item allows it to Mega Evolve in battle.",
+	},
+	butterfreenite: {
+		name: "Butterfreenite",
+		desc: "If held by a Butterfree, this item allows it to Mega Evolve in battle.",
+	},
+	garbodorite: {
+		name: "Garbodorite",
+		desc: "If held by a Garbodor, this item allows it to Mega Evolve in battle.",
+	},
+	kinglerite: {
+		name: "Kinglerite",
+		desc: "If held by a Kingler, this item allows it to Mega Evolve in battle.",
+	},
+	snorlaxite: {
+		name: "Snorlaxite",
+		desc: "If held by a Snorlax, this item allows it to Mega Evolve in battle.",
+	},
+	laprasite: {
+		name: "Laprasite",
+		desc: "If held by a Lapras, this item allows it to Mega Evolve in battle.",
+	},
+	drednawite: {
+		name: "Drednawite",
+		desc: "If held by a Drednaw, this item allows it to Mega Evolve in battle.",
+	},
+	coalossalite: {
+		name: "Coalossalite",
+		desc: "If held by a Coalossal, this item allows it to Mega Evolve in battle.",
+	},
+	orbeetlite: {
+		name: "Orbeetlite",
+		desc: "If held by a Orbeetle, this item allows it to Mega Evolve in battle.",
+	},
+	toxtricite: {
+		name: "Toxtricite",
+		desc: "If held by a Toxtricity, this item allows it to Mega Evolve in battle.",
+	},
+	toxtricitelowkey: {
+		name: "Toxtricite Low Key",
+		desc: "If held by a Toxtricty-Low-Key, this item allows it to Mega Evolve in battle.",
+	},
+	duraludonite: {
+		name: "Duraludonite",
+		desc: "If held by a Duraludon, this item allows it to Mega Evolve in battle.",
+	},
+	copperajahnite: {
+		name: "Copperajahnite",
+		desc: "If held by a Copperajah, this item allows it to Mega Evolve in battle.",
+	},
+	centiskorchite: {
+		name: "Centiskorchite",
+		desc: "If held by a Centiskorch, this item allows it to Mega Evolve in battle.",
+	},
+	sandacondanite: {
+		name: "Sandacondanite",
+		desc: "If held by a Sandaconda, this item allows it to Mega Evolve in battle.",
+	},
+	flapplenite: {
+		name: "Flapplenite",
+		desc: "If held by a Flapple, this item allows it to Mega Evolve in battle.",
+	},
+	appletunite: {
+		name: "Appletunite",
+		desc: "If held by a Appletun, this item allows it to Mega Evolve in battle.",
+	},
+	alcremienite: {
+		name: "Alcremienite",
+		desc: "If held by a Alcremie, this item allows it to Mega Evolve in battle.",
+	},
 };
