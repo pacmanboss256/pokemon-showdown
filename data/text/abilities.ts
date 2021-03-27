@@ -95,7 +95,7 @@ export const AbilitiesText: {[k: string]: AbilityText} = {
 	badcompany: {
 		name: "Bad Company",
 		shortDesc: "Prevents self lowering stat drops and recoil."
-	}
+	},
 	baddreams: {
 		name: "Bad Dreams",
 		desc: "Causes adjacent opposing Pokemon to lose 1/8 of their maximum HP, rounded down, at the end of each turn if they are asleep.",
@@ -412,7 +412,7 @@ export const AbilitiesText: {[k: string]: AbilityText} = {
 	flamingsoul: {
 		name: "Flaming Soul",
 		shortDesc: "If this Pokemon is at full HP, its Fire-type moves have their priority increased by 1.",
-	}
+	},
 	flareboost: {
 		name: "Flare Boost",
 		desc: "While this Pokemon is burned, the power of its special attacks is multiplied by 1.5. Immune to burn damage.",
@@ -967,7 +967,7 @@ export const AbilitiesText: {[k: string]: AbilityText} = {
 	parasiticwaste: {
 		name: "Parasitic Waste",
 		shortDesc: "Attacks that can poison also heal for 50%",
-	}
+	},
 	parentalbond: {
 		name: "Parental Bond",
 		desc: "This Pokemon's damaging moves become multi-hit moves that hit twice. The second hit has its damage quartered. Does not affect multi-hit moves or moves that have multiple targets.",
@@ -1088,7 +1088,7 @@ export const AbilitiesText: {[k: string]: AbilityText} = {
 	primalarmor: {
 		name: "Primal Armor",
 		shortDesc: "This Pokemon receives 1/2 damage from supereffective attacks.",
-	}
+	},
 	primordialsea: {
 		name: "Primordial Sea",
 		desc: "On switch-in, the weather becomes heavy rain that prevents damaging Fire-type moves from executing, in addition to all the effects of Rain Dance. This weather remains in effect until this Ability is no longer active for any Pokemon, or the weather is changed by Delta Stream or Desolate Land.",
@@ -1516,7 +1516,7 @@ export const AbilitiesText: {[k: string]: AbilityText} = {
 	surprise: {
 		name: "Surprise",
 		shortDesc: "Random effect on switch-in.",
-	}
+	},
 	swarm: {
 		name: "Swarm",
 		desc: "When this Pokemon has 1/3 or less of its maximum HP, rounded down, its attacking stat is multiplied by 1.5 while using a Bug-type attack.",
