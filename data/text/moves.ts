@@ -141,7 +141,7 @@ export const MovesText: { [k: string]: MoveText } = {
 	},
 	aquafang: {
 		name: "Aqua Fang",
-		shortDesc: "Water type biting move",
+		shortDesc: "No additional effect.",
 	},
 	aquajet: {
 		name: "Aqua Jet",
@@ -1431,7 +1431,7 @@ export const MovesText: { [k: string]: MoveText } = {
 	},
 	drillpeck: {
 		name: "Drill Peck",
-		shortDesc: "No additional effect.",
+		shortDesc: "High critical hit ratio.",
 	},
 	drillrun: {
 		name: "Drill Run",
@@ -1637,8 +1637,8 @@ export const MovesText: { [k: string]: MoveText } = {
 	},
 	explosion: {
 		name: "Explosion",
-		desc: "The user faints after using this move, even if this move fails for having no target. This move is prevented from executing if any active Pokemon has the Damp Ability.",
-		shortDesc: "Hits adjacent Pokemon. The user faints.",
+		desc: "The user faints after using this move, even if this move fails for having no target. The target's Defense is halved during damage calculation. This move is prevented from executing if any active Pokemon has the Damp Ability.",
+		shortDesc: "Hits adjacent Pokemon. The user faints. The target's Defense is halved during damage calculation.",
 		gen4: {
 			desc: "The user faints after using this move, unless this move has no target. The target's Defense is halved during damage calculation. This move is prevented from executing if any active Pokemon has the Damp Ability.",
 			shortDesc: "Target's Def halved during damage. User faints.",
@@ -1896,8 +1896,8 @@ export const MovesText: { [k: string]: MoveText } = {
 	},
 	flash: {
 		name: "Flash",
-		desc: "Lowers the target's accuracy by 1 stage.",
-		shortDesc: "Lowers the target's accuracy by 1.",
+		desc: "Has a 50% chance to lower the target's Attack by 1 stage.",
+		shortDesc: "50% chance to lower the target's Attack by 1.",
 	},
 	flashcannon: {
 		name: "Flash Cannon",
@@ -3136,8 +3136,8 @@ export const MovesText: { [k: string]: MoveText } = {
 	},
 	kingsshield: {
 		name: "King's Shield",
-		desc: "The user is protected from most attacks made by other Pokemon during this turn, and Pokemon trying to make contact with the user have their Attack lowered by 1 stage. Non-damaging moves go through this protection. This move has a 1/X chance of being successful, where X starts at 1 and triples each time this move is successfully used. X resets to 1 if this move fails, if the user's last move used is not Baneful Bunker, Detect, Endure, King's Shield, Obstruct, Protect, Quick Guard, Spiky Shield, or Wide Guard, or if it was one of those moves and the user's protection was broken. Fails if the user moves last this turn.",
-		shortDesc: "Protects from damaging attacks. Contact: -1 Atk.",
+		desc: "The user is protected from most attacks made by other Pokemon during this turn. Non-damaging moves go through this protection. This move has a 1/X chance of being successful, where X starts at 1 and triples each time this move is successfully used. X resets to 1 if this move fails, if the user's last move used is not Baneful Bunker, Detect, Endure, King's Shield, Obstruct, Protect, Quick Guard, Spiky Shield, or Wide Guard, or if it was one of those moves and the user's protection was broken. Fails if the user moves last this turn.",
+		shortDesc: "Protects from damaging attacks.",
 		gen7: {
 			desc: "The user is protected from most attacks made by other Pokemon during this turn, and Pokemon trying to make contact with the user have their Attack lowered by 2 stages. Non-damaging moves go through this protection. This move has a 1/X chance of being successful, where X starts at 1 and triples each time this move is successfully used. X resets to 1 if this move fails, if the user's last move used is not Baneful Bunker, Detect, Endure, King's Shield, Protect, Quick Guard, Spiky Shield, or Wide Guard, or if it was one of those moves and the user's protection was broken. Fails if the user moves last this turn.",
 			shortDesc: "Protects from damaging attacks. Contact: -2 Atk.",
@@ -3860,8 +3860,8 @@ export const MovesText: { [k: string]: MoveText } = {
 	},
 	mistyexplosion: {
 		name: "Misty Explosion",
-		desc: "If the current terrain is Misty Terrain and the user is grounded, this move's power is multiplied by 1.5. The user faints after using this move, even if this move fails for having no target. This move is prevented from executing if any active Pokemon has the Damp Ability.",
-		shortDesc: "User faints. User on Misty Terrain: 1.5x power.",
+		desc: "If the current terrain is Misty Terrain and the user is grounded, this move's power is multiplied by 1.5. The user faints after using this move, even if this move fails for having no target. The target's Defense is halved during damage calculation. This move is prevented from executing if any active Pokemon has the Damp Ability.",
+		shortDesc: "User faints. User on Misty Terrain: 1.5x power. The target's Defense is halved during damage calculation.",
 	},
 	mistyterrain: {
 		name: "Misty Terrain",
@@ -4070,8 +4070,8 @@ export const MovesText: { [k: string]: MoveText } = {
 	},
 	octazooka: {
 		name: "Octazooka",
-		desc: "Has a 50% chance to lower the target's accuracy by 1 stage.",
-		shortDesc: "50% chance to lower the target's accuracy by 1.",
+		desc: "Has a 100% chance to lower the target's speed by 1 stage.",
+		shortDesc: "100% chance to lower the target's speed by 1.",
 	},
 	octolock: {
 		name: "Octolock",
@@ -4640,8 +4640,8 @@ export const MovesText: { [k: string]: MoveText } = {
 	},
 	razorshell: {
 		name: "Razor Shell",
-		desc: "Has a 50% chance to lower the target's Defense by 1 stage.",
-		shortDesc: "50% chance to lower the target's Defense by 1.",
+		desc: "Has a higher chance for a critical hit.",
+		shortDesc: "High critical hit ratio.",
 	},
 	razorwind: {
 		name: "Razor Wind",
@@ -4809,8 +4809,8 @@ export const MovesText: { [k: string]: MoveText } = {
 	},
 	roaroftime: {
 		name: "Roar of Time",
-		desc: "If this move is successful, the user must recharge on the following turn and cannot select a move.",
-		shortDesc: "User cannot move next turn.",
+		desc: "If both the user and the target have not fainted, the target is forced to switch out and be replaced with a random unfainted ally. This effect fails if the target used Ingrain previously, has the Suction Cups Ability, or this move hit a substitute.",
+		shortDesc: "Forces the target to switch to a random ally.",
 	},
 	rockblast: {
 		name: "Rock Blast",
@@ -5076,8 +5076,8 @@ export const MovesText: { [k: string]: MoveText } = {
 	},
 	selfdestruct: {
 		name: "Self-Destruct",
-		desc: "The user faints after using this move, even if this move fails for having no target. This move is prevented from executing if any active Pokemon has the Damp Ability.",
-		shortDesc: "Hits adjacent Pokemon. The user faints.",
+		desc: "The user faints after using this move, even if this move fails for having no target. The target's Defense is halved during damage calculation. This move is prevented from executing if any active Pokemon has the Damp Ability.",
+		shortDesc: "Hits adjacent Pokemon. The user faints. The target's Defense is halved during damage calculation.",
 		gen4: {
 			desc: "The user faints after using this move, unless this move has no target. The target's Defense is halved during damage calculation. This move is prevented from executing if any active Pokemon has the Damp Ability.",
 			shortDesc: "Target's Def halved during damage. User faints.",
@@ -5266,8 +5266,8 @@ export const MovesText: { [k: string]: MoveText } = {
 	},
 	skullbash: {
 		name: "Skull Bash",
-		desc: "This attack charges on the first turn and executes on the second. Raises the user's Defense by 1 stage on the first turn. If the user is holding a Power Herb, the move completes in one turn.",
-		shortDesc: "Raises user's Defense by 1 on turn 1. Hits turn 2.",
+		desc: "This attack charges on the first turn and executes on the second. Raises the user's Attack and Defense by 1 stage on the first turn. If the user is holding a Power Herb, the move completes in one turn.",
+		shortDesc: "Raises user's Attack and Defense by 1 on turn 1. Hits turn 2.",
 		gen3: {
 			desc: "This attack charges on the first turn and executes on the second. Raises the user's Defense by 1 stage on the first turn.",
 		},
@@ -6840,8 +6840,7 @@ export const MovesText: { [k: string]: MoveText } = {
 	// rr moves
 	darkhole: {
 		name: "Dark Hole",
-		shortDesc: "Imagine dark void that dealt damage",
-		desc: "Bypasses substitute, 40% chance of putting foe to sleep",
+		shortDesc: "40% chance of putting foe to sleep, bypasses substitute.",
 	},
 	forbiddenspell: {
 		name: "Forbidden Spell",
@@ -6850,6 +6849,9 @@ export const MovesText: { [k: string]: MoveText } = {
 	},
 	soulrobbery: {
 		name: "Soul Robbery",
-		shortDesc: "Steals opponent's boosts before attacking",
+		desc: "The target's stat stages greater than 0 are stolen from it and applied to the user before dealing damage.",
+		shortDesc: "Steals target's boosts before dealing damage.",
+
+		clearBoost: "  [SOURCE] stole the target's boosted stats!",
 	},
 };
