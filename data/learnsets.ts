@@ -28948,6 +28948,7 @@ export const Learnsets: {[speciesid: string]: LearnsetData} = {
 			spite: ["8L1", "8T"],
 			shadowsneak: ["8L1", "8E"],
 			feintattack: ["8L7"],
+			partingshot: ["8L8"],
 			hypnosis: ["8L13"],
 			dreameater: ["8L19"],
 			ominouswind: ["8L25"],
