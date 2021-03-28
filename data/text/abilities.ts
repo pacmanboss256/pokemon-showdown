@@ -94,7 +94,7 @@ export const AbilitiesText: {[k: string]: AbilityText} = {
 	},
 	badcompany: {
 		name: "Bad Company",
-		shortDesc: "Prevents self lowering stat drops and recoil."
+		shortDesc: "Prevents self lowering stat drops and recoil.",
 	},
 	baddreams: {
 		name: "Bad Dreams",
