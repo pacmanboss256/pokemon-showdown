@@ -451,7 +451,7 @@ export const Formats: FormatList = [
 	{
 		section: "National Dex",
 	},
-	{
+	/* {
 		name: "[Gen 8] National Dex",
 		threads: [
 			`&bullet; <a href="https://www.smogon.com/forums/threads/3666135/">National Dex Metagame Discussion</a>`,
@@ -520,7 +520,7 @@ export const Formats: FormatList = [
 			'Rayquaza', 'Reshiram', 'Salamence-Mega', 'Shaymin-Sky', 'Solgaleo', 'Xerneas', 'Yveltal', 'Zacian', 'Zacian-Crowned', 'Zamazenta', 'Zamazenta-Crowned', 'Zekrom', 'Zygarde-Base',
 			'Battle Bond', 'Moody', 'Power Construct', 'Shadow Tag', 'Damp Rock', 'Smooth Rock', 'Terrain Extender', 'Baton Pass',
 		],
-	},
+	}, */
 	{
 		name: "[Gen 8] National Dex AG",
 		threads: [
