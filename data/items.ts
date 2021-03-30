@@ -2703,19 +2703,6 @@ export const Items: {[itemid: string]: ItemData} = {
 			basePower: 30,
 			volatileStatus: 'flinch',
 		},
-		onModifyMovePriority: -1,
-		onModifyMove(move) {
-			if (move.category !== "Status") {
-				if (!move.secondaries) move.secondaries = [];
-				for (const secondary of move.secondaries) {
-					if (secondary.volatileStatus === 'flinch') return;
-				}
-				move.secondaries.push({
-					chance: 10,
-					volatileStatus: 'flinch',
-				});
-			}
-		},
 		num: 221,
 		gen: 2,
 	},
