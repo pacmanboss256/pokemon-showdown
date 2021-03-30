@@ -29704,6 +29704,18 @@ export const Learnsets: {[speciesid: string]: LearnsetData} = {
 			electroweb: ["8T"],
 			uproar: ["8T"],
 		},
+		eventData: [
+			{generation: 4, level: 70, shiny: 1, moves: ["scaryface", "lavaplume", "firespin", "ironhead"]},
+			{generation: 4, level: 50, shiny: 1, moves: ["metalsound", "crunch", "scaryface", "lavaplume"]},
+			{generation: 4, level: 50, gender: "M", nature: "Quiet", moves: ["eruption", "magmastorm", "earthpower", "ancientpower"], pokeball: "pokeball"},
+			{generation: 5, level: 68, shiny: 1, moves: ["scaryface", "lavaplume", "firespin", "ironhead"]},
+			{generation: 6, level: 50, shiny: 1, moves: ["metalsound", "crunch", "scaryface", "lavaplume"]},
+			{generation: 7, level: 60, shiny: 1, moves: ["crunch", "scaryface", "lavaplume", "firespin"]},
+			{generation: 7, level: 60, moves: ["crunch", "scaryface", "lavaplume", "firespin"], pokeball: "cherishball"},
+			{generation: 7, level: 100, moves: ["magmastorm", "heatwave", "earthpower", "flashcannon"], pokeball: "cherishball"},
+			{generation: 8, level: 70, shiny: 1, moves: ["metalsound", "lavaplume", "crunch", "ironhead"]},
+		],
+		eventOnly: true,
 	},
 	gallade: {
 		learnset: {
