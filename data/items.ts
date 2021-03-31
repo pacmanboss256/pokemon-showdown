@@ -7196,7 +7196,7 @@ export const Items: {[itemid: string]: ItemData} = {
 		name: "Drednawite",
 		spritenum: 575,
 		megaStone: "Drednaw-Mega",
-		megaEvolves: "Drewdnaw",
+		megaEvolves: "Drednaw",
 		itemUser: ["Drednaw"],
 		onTakeItem(item, source) {
 			if (item.megaEvolves === source.baseSpecies.baseSpecies) return false;
