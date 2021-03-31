@@ -7251,9 +7251,9 @@ export const Items: {[itemid: string]: ItemData} = {
 	toxtricitelowkey: {
 		name: "Toxtricite Low Key",
 		spritenum: 582,
-		megaStone: "Toxtricity-Low-Key-Mega",
-		megaEvolves: "Toxtricity-Low-Key",
-		itemUser: ["Toxtricity-Low-Key"],
+		megaStone: "ToxtricityLowKey-Mega",
+		megaEvolves: "ToxtricityLowKey",
+		itemUser: ["ToxtricityLowKey"],
 		onTakeItem(item, source) {
 			if (item.megaEvolves === source.baseSpecies.baseSpecies) return false;
 			return true;

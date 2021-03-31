@@ -14899,7 +14899,7 @@ export const Pokedex: { [speciesid: string]: SpeciesData } = {
 	},
 	toxtricitylowkey: {
 		num: 849,
-		name: "Toxtricity-Low-Key",
+		name: "ToxtricityLowKey",
 		baseSpecies: "Toxtricity",
 		forme: "Low-Key",
 		types: ["Electric", "Poison"],
@@ -14928,7 +14928,7 @@ export const Pokedex: { [speciesid: string]: SpeciesData } = {
 	},
 	toxtricitylowkeymega: {
 		num: 849,
-		name: "Toxtricity-Low-Key-Mega",
+		name: "ToxtricityLowKey-Mega",
 		baseSpecies: "Toxtricity",
 		forme: "Low-Key-Mega",
 		types: ["Electric", "Poison"],
