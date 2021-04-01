@@ -52421,6 +52421,13 @@ export const Learnsets: {[speciesid: string]: LearnsetData} = {
 			dragondance: ["8T"],
 			breakingswipe: ["8T"],
 		},
+		eventData: [
+			{generation: 7, level: 75, moves: ["stealthrock", "irondefense", "wringout", "prismaticlaser"]},
+			{generation: 7, level: 65, moves: ["photongeyser", "irondefense", "powergem", "nightslash"]},
+			{generation: 7, level: 75, shiny: true, moves: ["lightscreen", "substitute", "moonlight"], pokeball: "cherishball"},
+			{generation: 8, level: 70, shiny: 1, moves: ["psychocut", "chargebeam", "powergem", "autotomize"]},
+		],
+		eventOnly: true,
 	},
 	necrozmaduskmane: {
 		learnset: {
