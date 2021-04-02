@@ -7335,7 +7335,7 @@ export const Items: {[itemid: string]: ItemData} = {
 	appletunite: {
 		name: "Appletunite",
 		spritenum: 608,
-		megaStone: "Appletunite-Mega",
+		megaStone: "Appletun-Mega",
 		megaEvolves: "Appletun",
 		itemUser: ["Appletun"],
 		onTakeItem(item, source) {
