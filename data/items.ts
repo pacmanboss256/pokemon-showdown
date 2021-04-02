@@ -4400,7 +4400,7 @@ export const Items: {[itemid: string]: ItemData} = {
 		},
 		onModifyMove(move, pokemon, target) {
 			if (pokemon.baseSpecies.baseSpecies === "Dusknoir") {
-				move.accuracy = true
+				move.accuracy = true;
 			}
 		},
 		itemUser: ["Dusknoir"],
