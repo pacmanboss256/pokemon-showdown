@@ -22832,6 +22832,7 @@ export const Learnsets: {[speciesid: string]: LearnsetData} = {
 			leechseed: ["8E"],
 			curse: ["8E"],
 			dragonhammer: ["8E"],
+			dracometeor: ["8T"],
 		},
 	},
 	whismur: {

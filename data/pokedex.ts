@@ -6279,7 +6279,7 @@ export const Pokedex: { [speciesid: string]: SpeciesData } = {
 	tropius: {
 		num: 357,
 		name: "Tropius",
-		types: ["Grass", "Flying"],
+		types: ["Grass", "Dragon"],
 		baseStats: {hp: 99, atk: 68, def: 83, spa: 92, spd: 87, spe: 81},
 		abilities: {0: "Chlorophyll", 1: "Solar Power", H: "Harvest"},
 		heightm: 2,
