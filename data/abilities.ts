@@ -2327,6 +2327,7 @@ export const Abilities: { [abilityid: string]: AbilityData } = {
 		},
 		onBasePower(basePower, pokemon, target, move) {
 			if (move.multihitType === 'parentalbond' && move.hit > 1) return this.chainModify(0.25);
+			if (move.multihitType === 'oraoraoraora' && move.hit > 1) return this.chainModify(0.5);
 		},
 		rating: 2,
 		num: 152,
@@ -2530,23 +2531,24 @@ export const Abilities: { [abilityid: string]: AbilityData } = {
 	},
 	oraoraoraora: {
 		onPrepareHit(source, target, move) {
+			if (move.category === 'Status' || move.selfdestruct || move.multihit) return;
 			if (move.flags['punch'] && !move.spreadHit && !move.isZ && !move.isMax) {
 				move.multihit = 2;
-				move.multihitType = 'parentalbond';
+				move.multihitType = 'oraoraoraora';
 			}
 		},
 		onBasePowerPriority: 7,
 		onBasePower(basePower, pokemon, target, move) {
-			if (move.multihitType === 'parentalbond' && move.hit > 1) return this.chainModify(0.5);
+			if (move.multihitType === 'oraoraoraora' && move.hit > 1) return this.chainModify(0.5);
 		},
 		onSourceModifySecondaries(secondaries, target, source, move) {
-			if (move.multihitType === 'parentalbond' && move.hit < 2) {
+			if (move.multihitType === 'oraoraoraora' && move.id === 'secretpower' && move.hit < 2) {
 				// hack to prevent accidentally suppressing King's Rock/Razor Fang
 				return secondaries.filter(effect => effect.volatileStatus === 'flinch');
 			}
 		},
 		name: "ORAORAORAORA",
-		rating: 4.5,
+		rating: 5,
 		num: 280,
 	},
 	overcoat: {
