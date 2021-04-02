@@ -25177,6 +25177,7 @@ export const Learnsets: {[speciesid: string]: LearnsetData} = {
 	},
 	rayquaza: {
 		learnset: {
+			dragonascent: ["8L1"],
 			twister: ["8L1"],
 			scaryface: ["8L5", "8T"],
 			ancientpower: ["8L15"],
