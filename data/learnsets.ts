@@ -54056,7 +54056,7 @@ export const Learnsets: {[speciesid: string]: LearnsetData} = {
 			bind: ["8T"],
 		},
 	},
-	lycanrocn: {
+	lycanrocmidnight: {
 		learnset: {
 			counter: ["8L1"],
 			reversal: ["8L1", "8T"],
