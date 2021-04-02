@@ -164,7 +164,7 @@ export const Formats: {[k: string]: FormatData} = {
 		onValidateSet(set) {
 			// These Pokemon are still unobtainable
 			const unobtainables = [
-				'Eevee-Starter', 'Floette-Eternal', 'Pikachu-Starter', 'Eternatus-Eternamax',
+				'Eevee-Starter', 'Floette-Eternal', 'Pikachu-Starter', 'Eternatus-Eternamax', 'Slaking',
 			];
 			const species = this.dex.getSpecies(set.species);
 			if (unobtainables.includes(species.name)) {
