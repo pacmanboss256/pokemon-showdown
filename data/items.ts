@@ -4398,7 +4398,11 @@ export const Items: {[itemid: string]: ItemData} = {
 		fling: {
 			basePower: 10,
 		},
-		// hardcoded in battle.ts
+		onModifyMove(move, pokemon, target) {
+			if (pokemon.baseSpecies.baseSpecies === "Dusknoir") {
+				move.accuracy = true
+			}
+		},
 		itemUser: ["Dusknoir"],
 		num: 325,
 		gen: 4,

@@ -2267,6 +2267,23 @@ export const Abilities: { [abilityid: string]: AbilityData } = {
 		rating: 3,
 		num: 78,
 	},
+	mountaineer: {
+		onDamage(damage, target, source, effect) {
+			if (effect && effect.id === 'stealthrock') {
+				return false;
+			}
+		},
+		onTryHit(source, target, move) {
+			if (move.type === 'Rock' && !target.activeTurns) {
+				this.add('-immune', target, '[from] ability: Mountaineer');
+				return null;
+			}
+		},
+		isNonstandard: "CAP",
+		name: "Mountaineer",
+		rating: 3,
+		num: 293,
+	},
 	moxie: {
 		onSourceAfterFaint(length, target, source, effect) {
 			if (effect && effect.effectType === 'Move') {
@@ -4606,23 +4623,6 @@ export const Abilities: { [abilityid: string]: AbilityData } = {
 	},
 
 	// CAP
-	mountaineer: {
-		onDamage(damage, target, source, effect) {
-			if (effect && effect.id === 'stealthrock') {
-				return false;
-			}
-		},
-		onTryHit(target, source, move) {
-			if (move.type === 'Rock' && !target.activeTurns) {
-				this.add('-immune', target, '[from] ability: Mountaineer');
-				return null;
-			}
-		},
-		isNonstandard: "CAP",
-		name: "Mountaineer",
-		rating: 3,
-		num: 293,
-	},
 	rebound: {
 		isNonstandard: "CAP",
 		name: "Rebound",

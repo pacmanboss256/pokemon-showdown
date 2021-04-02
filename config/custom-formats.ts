@@ -20,10 +20,10 @@ export const Formats: FormatList = [
 	{
 		name: "[Gen 8] National Dex RR Ubers",
 		mod: 'gen8',
-		ruleset: ['Standard NatDex', 'OHKO Clause', 'Evasion Moves Clause', 'Species Clause', 'Sleep Clause Mod', 'Dynamax Clause', 'CFZ Clause', 'Z-Move Clause'],
+		ruleset: ['Standard NatDex', 'OHKO Clause', 'Evasion Moves Clause', 'Species Clause', 'Sleep Clause Mod', 'Dynamax Clause', 'CFZ Clause', 'Z-Move Clause', 'Mega Rayquaza Clause'],
 		banlist: [
 			// AG
-			'Rayquaza-Mega', 'Zacian-Crowned',
+			'Zacian-Crowned',
 			// moves
 			'Baton Pass', 'Dark Hole',
 			// abilities
@@ -36,7 +36,7 @@ export const Formats: FormatList = [
 		ruleset: ['Standard NatDex', 'OHKO Clause', 'Evasion Moves Clause', 'Species Clause', 'Sleep Clause Mod', 'Dynamax Clause', 'CFZ Clause', 'Z-Move Clause'],
 		banlist: [
 			// ou
-			'Magearna', 'Spectrier', 'Cinderace', 'Tornadus-Therian', 'Landorus-Therian', 'Zapdos-Base', 'Gliscor', 'Heatran', 'Dragapult', 'Tapu Bulu', 'Tapu Fini', 'Tapu Lele', 'Clefable', 'Kartana', 'Hydreigon', 'Lopunny-Mega', 'Ferrothorn', 'Tangrowth', 'Magnezone', 'Dracovish', 'Centiskorch-Mega', 'Corviknight', 'Darmanitan-Galar', 'Latias-Mega', 'Garchomp', 'Garchomp-Mega', 'Excadrill', 'Tyranitar-Mega', 'Infernape', 'Blissey', 'Toxtricity-Mega', 'Greninja', 'Greninja-Ash', 'Medicham-Mega', 'Swampert-Mega', 'Pelipper', 'Regieleki', 'Rotom-Heat', 'Slowbro-Base', 'Slowbro-Mega', 'Volcarona', 'Mawile-Mega', 'Moltres-Galar',
+			'Magearna', 'Spectrier', 'Cinderace', 'Tornadus-Therian', 'Landorus-Therian', 'Zapdos-Base', 'Gliscor', 'Heatran', 'Dragapult', 'Tapu Bulu', 'Tapu Fini', 'Tapu Lele', 'Clefable', 'Kartana', 'Hydreigon', 'Lopunny-Mega', 'Ferrothorn', 'Tangrowth', 'Magnezone', 'Dracovish', 'Centiskorch-Mega', 'Corviknight', 'Darmanitan-Galar', 'Latias-Mega', 'Garchomp', 'Garchomp-Mega', 'Excadrill', 'Tyranitar-Mega', 'Infernape', 'Blissey', 'Toxtricity-Mega', 'Greninja', 'Greninja-Ash', 'Medicham-Mega', 'Swampert-Mega', 'Pelipper', 'Regieleki', 'Rotom-Heat', 'Slowbro-Base', 'Slowbro-Mega', 'Volcarona', 'Mawile-Mega', 'Moltres-Galar', 'Floette-Eternal',
 			// uubl (add mons after nduubl)
 			'nduubl',
 			// abilities

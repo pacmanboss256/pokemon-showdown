@@ -21746,6 +21746,7 @@ export const Learnsets: {[speciesid: string]: LearnsetData} = {
 			substitute: ["8M"],
 			voltswitch: ["8M"],
 			wildcharge: ["8M"],
+			surf: ["8M"],
 			covet: ["8T"],
 			signalbeam: ["8T"],
 			magnetrise: ["8T"],
@@ -21757,6 +21758,8 @@ export const Learnsets: {[speciesid: string]: LearnsetData} = {
 			faketears: ["8T", "8E"],
 			uproar: ["8T"],
 			bodyslam: ["8T"],
+			weatherball: ["8T"],
+			knockoff: ["8T"],
 			wish: ["8E"],
 			sing: ["8E"],
 			sweetkiss: ["8E"],
@@ -21808,6 +21811,7 @@ export const Learnsets: {[speciesid: string]: LearnsetData} = {
 			substitute: ["8M"],
 			voltswitch: ["8M"],
 			wildcharge: ["8M"],
+			surf: ["8M"],
 			covet: ["8T"],
 			signalbeam: ["8T"],
 			magnetrise: ["8T"],
@@ -21819,6 +21823,7 @@ export const Learnsets: {[speciesid: string]: LearnsetData} = {
 			batonpass: ["8T"],
 			uproar: ["8T"],
 			bodyslam: ["8T"],
+			knockoff: ["8T"],
 			wish: ["8E"],
 			sing: ["8E"],
 			sweetkiss: ["8E"],
@@ -57984,6 +57989,9 @@ export const Learnsets: {[speciesid: string]: LearnsetData} = {
 			substitute: ["8M"],
 			flashcannon: ["8M"],
 			workup: ["8M"],
+			flamethrower: ["8M"],
+			fireblast: ["8M"],
+			focusblast: ["8M"],
 			powerwhip: ["8T"],
 			zenheadbutt: ["8T"],
 			snore: ["8T"],
@@ -58482,6 +58490,16 @@ export const Learnsets: {[speciesid: string]: LearnsetData} = {
 			reversal: ["8T"],
 			icefang: ["8T"],
 		},
+		eventData: [
+			{generation: 8, level: 70, perfectIVs: 3, moves: ["sacredsword", "swordsdance", "ironhead", "crunch"]},
+		],
+		eventOnly: true,
+	},
+	zaciancrowned: {
+		learnset: {
+			behemothblade: ["8M", "8L33"],
+		},
+		eventOnly: true,
 	},
 	zamazenta: {
 		learnset: {
@@ -58537,6 +58555,16 @@ export const Learnsets: {[speciesid: string]: LearnsetData} = {
 			reversal: ["8T"],
 			icefang: ["8T"],
 		},
+		eventData: [
+			{generation: 8, level: 70, perfectIVs: 3, moves: ["slash", "crunch", "ironhead", "irondefense"]},
+		],
+		eventOnly: true,
+	},
+	zamazentacrowned: {
+		learnset: {
+			behemothbash: ["8M", "8L33"],
+		},
+		eventOnly: true,
 	},
 	eternatus: {
 		learnset: {
