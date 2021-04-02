@@ -2273,16 +2273,15 @@ export const Abilities: { [abilityid: string]: AbilityData } = {
 				return false;
 			}
 		},
-		onTryHit(source, target, move) {
-			if (move.type === 'Rock' && !target.activeTurns) {
-				this.add('-immune', target, '[from] ability: Mountaineer');
+		onTryHit(pokemon, target, move) {
+			if (target !== pokemon && move.type === 'Rock') {
+				this.add('-immune', pokemon, '[from] ability: Mountaineer');
 				return null;
 			}
 		},
-		isNonstandard: "CAP",
 		name: "Mountaineer",
 		rating: 3,
-		num: 293,
+		num: 270,
 	},
 	moxie: {
 		onSourceAfterFaint(length, target, source, effect) {
