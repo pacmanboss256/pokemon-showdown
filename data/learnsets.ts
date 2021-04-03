@@ -5002,6 +5002,7 @@ export const Learnsets: {[speciesid: string]: LearnsetData} = {
 			return: ["8M"],
 			reflect: ["8M"],
 			sludgebomb: ["8M"],
+			nastyplot: ["8M"],
 			facade: ["8M"],
 			rest: ["8M"],
 			thief: ["8M"],

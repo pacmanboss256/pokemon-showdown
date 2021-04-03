@@ -1061,16 +1061,16 @@ export const Abilities: { [abilityid: string]: AbilityData } = {
 	},
 	flareboost: {
 		onBasePowerPriority: 19,
+		onModifySpAPriority: 2,
 		onBasePower(basePower, attacker, defender, move) {
-			if (attacker.status === 'brn' && move.category === 'Special') {
+			if ((attacker.status === 'brn') && move.category === 'Special') {
 				return this.chainModify(1.5);
 			}
 		},
 		onDamage(damage, target, source, effect) {
-			if (effect && effect.id === 'brn') {
-				damage = 0;
+			if (effect.id === 'brn') {
+				return false;
 			}
-			return damage;
 		},
 		name: "Flare Boost",
 		rating: 2,
