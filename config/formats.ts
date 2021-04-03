@@ -444,7 +444,7 @@ export const Formats: FormatList = [
 		// no restrictions, for serious (other than team preview)
 		ruleset: ['Team Preview', 'Cancel Mod'],
 	},
-*/
+
 	// National Dex
 	///////////////////////////////////////////////////////////////////
 
@@ -521,7 +521,7 @@ export const Formats: FormatList = [
 			'Spectrier', 'Xerneas', 'Yveltal', 'Zacian', 'Zacian-Crowned', 'Zamazenta', 'Zamazenta-Crowned', 'Zekrom', 'Zygarde-Base',
 			'Battle Bond', 'Moody', 'Power Construct', 'Shadow Tag', 'Damp Rock', 'Smooth Rock', 'Terrain Extender', 'Baton Pass',
 		],
-	}, */
+	},
 	{
 		name: "[Gen 8] National Dex AG",
 		threads: [

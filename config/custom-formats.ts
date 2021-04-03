@@ -46,6 +46,15 @@ export const Formats: FormatList = [
 		],
 	},
 	{
+		name: "[Gen 8] National Dex AG",
+		threads: [
+			`&bullet; <a href="https://www.smogon.com/forums/threads/3672423/">National Dex AG</a>`,
+		],
+
+		mod: 'gen8',
+		ruleset: ['Standard NatDex'],
+	},
+	{
 		name: "[Gen 8] Custom Game",
 		mod: 'gen8',
 		searchShow: false,
