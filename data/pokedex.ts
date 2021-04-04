@@ -11296,7 +11296,7 @@ export const Pokedex: { [speciesid: string]: SpeciesData } = {
 		baseSpecies: "Greninja",
 		forme: "Ash",
 		types: ["Water", "Dark"],
-		gender: "M",
+		genderRatio: {M: 0.875, F: 0.125},
 		baseStats: {hp: 72, atk: 145, def: 67, spa: 153, spd: 71, spe: 132},
 		abilities: {0: "Battle Bond"},
 		heightm: 1.5,
