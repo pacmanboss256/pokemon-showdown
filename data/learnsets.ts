@@ -59668,6 +59668,7 @@ export const Learnsets: {[speciesid: string]: LearnsetData} = {
 			sleeptalk: ["8M"],
 			uturn: ["8M"],
 			substitute: ["8M"],
+			defog: ["8M"],
 			blazekick: ["8T"],
 			signalbeam: ["8T"],
 			tailwind: ["8T"],
