@@ -6480,7 +6480,7 @@ export const Pokedex: { [speciesid: string]: SpeciesData } = {
 		types: ["Water", "Fairy"],
 		genderRatio: {M: 0.25, F: 0.75},
 		baseStats: {hp: 43, atk: 30, def: 55, spa: 100, spd: 65, spe: 97},
-		abilities: {0: "Swift Swim", H: "Soul Heart"},
+		abilities: {0: "Swift Swim", H: "Soul-Heart"},
 		heightm: 0.6,
 		weightkg: 8.7,
 		color: "Pink",
