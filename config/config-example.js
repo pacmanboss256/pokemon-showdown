@@ -410,6 +410,7 @@ exports.autolockdown = true;
  */
 exports.noguestsecurity = false;
 
+exports.privatecrashterms = [/(.*)/];
 /**
  * Custom avatars.
  * This allows you to specify custom avatar images for users on your server.
