@@ -5553,7 +5553,7 @@ export const Moves: { [moveid: string]: MoveData } = {
 		category: "Status",
 		name: "Forbidden Spell",
 		secondary: null,
-		target: "normal",
+		target: "self",
 		type: "Psychic",
 		flags: {},
 		pp: 5,
