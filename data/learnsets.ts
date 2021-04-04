@@ -42624,7 +42624,7 @@ export const Learnsets: {[speciesid: string]: LearnsetData} = {
 			storedpower: ["8T"],
 		},
 	},
-	rotomcut: {
+	rotommow: {
 		learnset: {
 			leafstorm: ["8L1"],
 			discharge: ["8L64"],
