@@ -16025,7 +16025,7 @@ export const Moves: { [moveid: string]: MoveData } = {
 		name: "Snipe Shot",
 		pp: 15,
 		priority: 0,
-		flags: {bullet: 1, protect: 1, mirror: 1, pulse: 1},
+		flags: {bullet: 1, protect: 1, pulse: 1, mirror: 1},
 		critRatio: 3,
 		tracksTarget: true,
 		secondary: null,
