@@ -892,9 +892,10 @@ export const ItemsText: {[k: string]: ItemText} = {
 			desc: "Evolves Gloom into Vileplume, Weepinbell into Victreebel, Exeggcute into Exeggutor or Alolan Exeggutor, Nuzleaf into Shiftry, and Pansage into Simisage when used.",
 		},
 	},
-	leek: {
+	leekstick: {
 		name: "Leek",
-		desc: "If held by a Farfetch’d or Sirfetch’d, its critical hit ratio is raised by 2 stages.",
+		desc: "If held by a Farfetch’d, its critical hit ratio is raised by 1 stage and it gets a 1.5x speed boost.",
+		shortDesc: "If held by a Farfetch’d, +1 critical hit ratio and 1.5x speed."
 	},
 	leftovers: {
 		name: "Leftovers",
@@ -1671,13 +1672,6 @@ export const ItemsText: {[k: string]: ItemText} = {
 	steeliumz: {
 		name: "Steelium Z",
 		desc: "If holder has a Steel move, this item allows it to use a Steel Z-Move.",
-	},
-	stick: {
-		name: "Stick",
-		desc: "If held by a Farfetch’d, its critical hit ratio is raised by 2 stages.",
-		gen2: {
-			desc: "If held by a Farfetch’d, its critical hit ratio is always at stage 2. (25% crit rate)",
-		},
 	},
 	stickybarb: {
 		name: "Sticky Barb",
