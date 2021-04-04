@@ -895,7 +895,7 @@ export const ItemsText: {[k: string]: ItemText} = {
 	leekstick: {
 		name: "Leek",
 		desc: "If held by a Farfetch’d, its critical hit ratio is raised by 1 stage and it gets a 1.5x speed boost.",
-		shortDesc: "If held by a Farfetch’d, +1 critical hit ratio and 1.5x speed."
+		shortDesc: "If held by a Farfetch’d, +1 critical hit ratio and 1.5x speed.",
 	},
 	leftovers: {
 		name: "Leftovers",
