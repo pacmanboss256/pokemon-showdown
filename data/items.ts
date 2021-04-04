@@ -2792,18 +2792,23 @@ export const Items: {[itemid: string]: ItemData} = {
 		num: 85,
 		gen: 1,
 	},
-	leek: {
-		name: "Leek",
+	leekstick: {
+		name: "Leek Stick",
 		fling: {
 			basePower: 60,
 		},
 		spritenum: 475,
 		onModifyCritRatio(critRatio, user) {
-			if (["farfetchd", "sirfetchd"].includes(this.toID(user.baseSpecies.baseSpecies))) {
-				return critRatio + 2;
+			if (this.toID(user.baseSpecies.baseSpecies) === 'farfetchd') {
+				return critRatio + 1;
 			}
 		},
-		itemUser: ["Farfetch\u2019d", "Sirfetch\u2019d"],
+		onModifySpe(spe, user) {
+			if (this.toID(user.baseSpecies.baseSpecies) === 'farfetchd') {
+				return this.chainModify(1.5);
+		    }
+		},
+		itemUser: ["Farfetch\u2019d"],
 		num: 259,
 		gen: 8,
 	},
@@ -5283,27 +5288,6 @@ export const Items: {[itemid: string]: ItemData} = {
 		forcedForme: "Arceus-Steel",
 		num: 792,
 		gen: 7,
-		isNonstandard: "Past",
-	},
-	stick: {
-		name: "Stick",
-		fling: {
-			basePower: 60,
-		},
-		spritenum: 475,
-		onModifyCritRatio(critRatio, user) {
-			if (this.toID(user.baseSpecies.baseSpecies) === 'farfetchd') {
-				return critRatio + 1;
-			}
-		},
-		onModifySpe(spe, user) {
-			if (this.toID(user.baseSpecies.baseSpecies) === 'farfetchd') {
-				return this.chainModify(1.5);
-		    }
-		},
-		itemUser: ["Farfetch\u2019d"],
-		num: 259,
-		gen: 2,
 		isNonstandard: "Past",
 	},
 	stickybarb: {
