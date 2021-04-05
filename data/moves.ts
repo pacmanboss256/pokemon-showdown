@@ -5558,13 +5558,11 @@ export const Moves: { [moveid: string]: MoveData } = {
 		flags: {},
 		pp: 5,
 		priority: 0,
-		onHit(target, source, effect) {
-			let usespell = '';
-			// eslint-disable-next-line max-len
-			const spellmoves = ['Shell Smash', 'Healing Wish', 'Dark Hole', 'Tail Glow', 'Roar of Time', 'Quiver Dance', 'No Retreat', 'Soul Robbery'];
-			const i = Math.floor(this.random(0, 7));
-			usespell = spellmoves[i];
-			this.actions.useMove(usespell, target);
+		onHit(target) {
+			const spellMoves = [
+				'Shell Smash', 'Healing Wish', 'Dark Hole', 'Tail Glow', 'Roar of Time', 'Quiver Dance', 'No Retreat', 'Soul Robbery',
+			];
+			this.actions.useMove(spellMoves[this.random(spellMoves.length)], target);
 		},
 	},
 	forcepalm: {
