@@ -4184,11 +4184,9 @@ export const Abilities: { [abilityid: string]: AbilityData } = {
 		},
 		onDamage(damage, target, source, effect) {
 			if (effect && effect.id === ('psn' || 'tox')) {
-				damage = 0;
+				return false;
 			}
-			return damage;
 		},
-
 		name: "Toxic Boost",
 		rating: 2.5,
 		num: 137,
