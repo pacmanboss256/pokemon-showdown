@@ -5558,11 +5558,36 @@ export const Moves: { [moveid: string]: MoveData } = {
 		flags: {},
 		pp: 5,
 		priority: 0,
-		onHit(target) {
-			const spellMoves = [
-				'Shell Smash', 'Healing Wish', 'Dark Hole', 'Tail Glow', 'Roar of Time', 'Quiver Dance', 'No Retreat', 'Soul Robbery',
-			];
-			this.actions.useMove(spellMoves[this.random(spellMoves.length)], target);
+		onHit(target, effect) {
+			const spellMove = this.random(8);
+			let chosen = '';
+			switch (spellMove) {
+			case 0:
+				chosen = 'Shell Smash';
+				break;
+			case 1:
+				chosen = 'Healing Wish';
+				break;
+			case 2:
+				chosen = 'Dark Hole';
+				break;
+			case 3:
+				chosen = 'Tail Glow';
+				break;
+			case 4:
+				chosen = 'Roar of Time';
+				break;
+			case 5:
+				chosen = 'Quiver Dance';
+				break;
+			case 6:
+				chosen = 'No Retreat';
+				break;
+			case 7:
+				chosen = 'Soul Robbery';
+				break;
+			}
+			this.actions.useMove(chosen, target);
 		},
 	},
 	forcepalm: {
