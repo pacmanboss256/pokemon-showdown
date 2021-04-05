@@ -5174,7 +5174,7 @@ export const Moves: { [moveid: string]: MoveData } = {
 		name: "Flash Cannon",
 		pp: 10,
 		priority: 0,
-		flags: {bullet: 1, protect: 1, mirror: 1},
+		flags: {bullet: 1, protect: 1, pulse: 1, mirror: 1},
 		secondary: {
 			chance: 10,
 			boosts: {
@@ -12135,7 +12135,7 @@ export const Moves: { [moveid: string]: MoveData } = {
 		name: "Octazooka",
 		pp: 10,
 		priority: 0,
-		flags: {bullet: 1, protect: 1, mirror: 1},
+		flags: {bullet: 1, protect: 1, pulse: 1, mirror: 1},
 		secondary: {
 			chance: 100,
 			boosts: {
