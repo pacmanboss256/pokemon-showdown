@@ -3949,23 +3949,23 @@ export const Abilities: { [abilityid: string]: AbilityData } = {
 	},
 	surprise: {
 		onStart(pokemon) {
-			const effectNum = this.random(5)
-			switch(effectNum) {
-				case 0:
-					this.boost({spe: 1}, pokemon);
-					break;
-				case 1:
-					this.boost({atk: 1}, pokemon);
-					break;
-				case 2:
-					this.field.setWeather('hail');
-					break;
-				case 3:
-					pokemon.setAbility("Intimidate");
-					break;
-				case 4:
-					pokemon.setAbility("Slow Start");
-					break;				
+			const effectNum = this.random(5);
+			switch (effectNum) {
+			case 0:
+				this.boost({spe: 1}, pokemon);
+				break;
+			case 1:
+				this.boost({atk: 1}, pokemon);
+				break;
+			case 2:
+				this.field.setWeather('hail');
+				break;
+			case 3:
+				pokemon.setAbility("Intimidate");
+				break;
+			case 4:
+				pokemon.setAbility("Slow Start");
+				break;
 			}
 		},
 		name: "Surprise",
