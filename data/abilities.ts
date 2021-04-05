@@ -760,14 +760,6 @@ export const Abilities: { [abilityid: string]: AbilityData } = {
 		rating: 2.5,
 		num: 128,
 	},
-	delibirdspeedup: {
-		onStart(pokemon) {
-			this.boost({spe: 1}, pokemon);
-		},
-		name: "delibirdspeedup",
-		num: 2000,
-		rating: 0.1,
-	},
 	deltastream: {
 		onStart(source) {
 			this.field.setWeather('deltastream');
@@ -3957,10 +3949,24 @@ export const Abilities: { [abilityid: string]: AbilityData } = {
 	},
 	surprise: {
 		onStart(pokemon) {
-			const choices = ["delibirdspeedup", "Intimidate", "Intrepid Sword", "Slow Start", "Snow Warning"];
-			const i = Math.floor(Math.random() * choices.length);
-			pokemon.setAbility(choices[i]);
-			return;
+			const effectNum = this.random(5)
+			switch(effectNum) {
+				case 0:
+					this.boost({spe: 1}, pokemon);
+					break;
+				case 1:
+					this.boost({atk: 1}, pokemon);
+					break;
+				case 2:
+					this.field.setWeather('hail');
+					break;
+				case 3:
+					pokemon.setAbility("Intimidate");
+					break;
+				case 4:
+					pokemon.setAbility("Slow Start");
+					break;				
+			}
 		},
 		name: "Surprise",
 		rating: 2,
