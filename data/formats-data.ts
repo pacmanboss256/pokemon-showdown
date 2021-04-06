@@ -4327,7 +4327,8 @@ export const FormatsData: {[k: string]: SpeciesFormatsData} = {
 		tier: "Illegal",
 	},
 	floetteeternal: {
-		tier: "NU",
+		isNonstandard: "Past",
+		tier: "Illegal",
 	},
 	florges: {
 		isNonstandard: "Past",
