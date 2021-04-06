@@ -105,7 +105,7 @@ export const Formats: FormatList = [
 			for (const set of team) {
 				const species = this.dex.getSpecies(set.species);
 				if (this.ruleTable.isRestrictedSpecies(species)) n++;
-				if (n > 2) return [`You can only use up to two restricted legendary Pok\u00E9mon.`];
+				if (n > 1) return [`You can only use one restricted  Pok\u00E9mon.`];
 			}
 	}, */
 ];
