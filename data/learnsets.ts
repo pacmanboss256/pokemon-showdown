@@ -6794,6 +6794,8 @@ export const Learnsets: {[speciesid: string]: LearnsetData} = {
 			flashcannon: ["8M"],
 			voltswitch: ["8M"],
 			wildcharge: ["8M"],
+			hypervoice: ["8M"],
+			focusblast: ["8M"],
 			signalbeam: ["8T"],
 			magiccoat: ["8T"],
 			snore: ["8T"],
