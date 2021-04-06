@@ -85,4 +85,27 @@ export const Formats: FormatList = [
 		// no restrictions, for serious (other than team preview)
 		ruleset: ['Team Preview', 'Cancel Mod'],
 	},
+	/* {
+		section: "RR Doubles",
+	},
+	{
+		name: "[Gen 8] Doubles OU",
+		mod: 'gen8',
+		gameType: 'doubles',
+		ruleset: ['Standard Natdex', 'Standard Doubles', 'Dynamax Clause', 'Swagger Clause'],
+		restricted: [
+			'Alakazam-Mega', 'Arceus', 'Blastoise-Mega', 'Blaziken-Mega', 'Calyrex-Ice', 'Calyrex-Shadow', 'Darkrai', 'Deoxys-Attack', 'Deoxys-Base', 'Deoxys-Speed', 'Dialga', 'Eternatus', 'Genesect', 'Gengar-Mega', 'Giratina', 'Giratina-Origin', 'Groudon', 'Ho-Oh', 'Kangaskhan-Mega', 'Kyogre', 'Kyurem-Black', 'Kyurem-White', 'Landorus-Base', 'Lucario-Mega', 'Lugia', 'Lunala', 'Marshadow', 'Metagross-Mega', 'Mewtwo', 'Naganadel', 'Necrozma-Dawn-Wings', 'Necrozma-Dusk-Mane', 'Necrozma-Ultra', 'Urshifu-Base', 'Palkia', 'Pheromosa', 'Rayquaza', 'Reshiram', 'Salamence-Mega', 'Shaymin-Sky', 'Solgaleo', 'Tapu Koko', 'Xerneas', 'Yveltal', 'Zacian', 'Zacian-Crowned', 'Zamazenta', 'Zamazenta-Crowned', 'Zekrom', 'Zygarde-Complete',
+			// abilities
+			'Moody', 'Power Construct', 'Shadow Tag', 'Arena Trap',
+			// moves
+			'Swagger', 'Baton Pass', 'Dark Hole', 'Misty Explosion',
+		],
+		onValidateTeam(team) {
+			let n = 0;
+			for (const set of team) {
+				const species = this.dex.getSpecies(set.species);
+				if (this.ruleTable.isRestrictedSpecies(species)) n++;
+				if (n > 2) return [`You can only use up to two restricted legendary Pok\u00E9mon.`];
+			}
+	}, */
 ];
