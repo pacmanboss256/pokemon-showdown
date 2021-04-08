@@ -92,7 +92,10 @@ export const Formats: FormatList = [
 		name: "[Gen 8] RRC",
 		mod: 'gen8',
 		gameType: 'doubles',
-		ruleset: ['Radical Red Cup'],
+		ruleset: ['Standard Natdex', 'Item Clause', 'Species Clause', 'Z-Move Clause', 'CFZ Clause', 'Dynamax Clause'],
+		banlist: [
+			'Arceus', 'Cosmoem', 'Cosmog', 'Calyrex', 'Cresselia', 'Darkrai', 'Deoxys', 'Dialga', 'Eternatus', 'Giratina', 'Groudon', 'Heatran', 'Ho-Oh', 'Kyogre', 'Kyurem', 'Lugia', 'Lunala', 'Magearna', 'Marshadow', 'Regigigas', 'Mewtwo', 'Necrozma', 'Palkia', 'Rayquaza', 'Reshiram', 'Shaymin', 'Solgaleo', 'Unown', 'Xerneas', 'Yveltal', 'Zacian', 'Zamazenta', 'Zekrom', 'Zygarde',
+		],
 		forcedLevel: 50,
 		teamLength: {
 			validate: [4, 6],

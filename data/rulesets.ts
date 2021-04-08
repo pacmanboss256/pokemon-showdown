@@ -1279,13 +1279,4 @@ export const Formats: {[k: string]: FormatData} = {
 			}
 		},
 	},
-	rrc: {
-		effectType: 'ValidatorRule',
-		name: 'Radical Red Cup',
-		desc: "like vgc but for RR",
-		ruleset: ['Standard Natdex', 'Item Clause', 'Species Clause', 'Z-Move Clause', 'CFZ Clause', 'Dynamax Clause'],
-		banlist: [
-			'Arceus', "Cosmoem", 'Cosmog', 'Calyrex', 'Cresselia', 'Darkrai', 'Deoxys', 'Dialga', 'Eternatus', 'Giratina', 'Groudon', 'Heatran', 'Ho-Oh', 'Kyogre', 'Kyurem', 'Lugia', 'Lunala', 'Magearna', 'Marshadow', 'Regigigas', 'Mewtwo', 'Necrozma', 'Palkia', 'Rayquaza', 'Reshiram', 'Shaymin', 'Solgaleo', 'Unown', 'Xerneas', 'Yveltal', 'Zacian', 'Zamazenta', 'Zekrom', 'Zygarde',
-		],
-	},
 };
