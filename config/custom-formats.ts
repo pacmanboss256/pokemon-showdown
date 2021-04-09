@@ -31,6 +31,8 @@ export const Formats: FormatList = [
 			'Moody', 'Power Construct', 'Shadow Tag', 'Arena Trap',
 			// moves
 			'Swagger', 'Baton Pass', 'Dark Hole', 'Misty Explosion',
+			// custom mons
+			'Tyrogunk',
 		],
 	},
 	{
@@ -39,7 +41,7 @@ export const Formats: FormatList = [
 		ruleset: ['Standard NatDex', 'OHKO Clause', 'Evasion Moves Clause', 'Species Clause', 'Sleep Clause Mod', 'Dynamax Clause', 'CFZ Clause', 'Z-Move Clause', 'Mega Rayquaza Clause'],
 		banlist: [
 			// AG
-			'Zacian-Crowned',
+			'Zacian-Crowned', 'Tyrogunk',
 			// moves
 			'Baton Pass', 'Dark Hole',
 			// abilities
@@ -59,6 +61,8 @@ export const Formats: FormatList = [
 			'Moody', 'Power Construct', 'Shadow Tag', 'Arena Trap',
 			// moves
 			'Swagger', 'Baton Pass', 'Dark Hole', 'Misty Explosion',
+			// customs
+			'Tyrogunk',
 		],
 	},
 	{
@@ -69,6 +73,9 @@ export const Formats: FormatList = [
 
 		mod: 'gen8',
 		ruleset: ['Standard NatDex'],
+		banlist: [
+			'Tyrogunk',
+		],
 	},
 	{
 		name: "[Gen 8] Custom Game",

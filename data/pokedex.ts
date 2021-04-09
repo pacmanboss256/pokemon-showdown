@@ -15928,6 +15928,18 @@ export const Pokedex: { [speciesid: string]: SpeciesData } = {
 		color: "Gray",
 		eggGroups: ["Undiscovered"],
 	},
+	// rr capmon
+	tyrogunk: {
+		num: 42069,
+		name: "Tyrogunk",
+		types: ["Poison", "Fighting"],
+		baseStats: {hp: 83, atk: 96, def: 75, spa: 96, spd: 75, spe: 85},
+		abilities: {0: "Prankster", 1: "Sheer Force", H: "Illusion"},
+		heightm: 0.7,
+		weightkg: 22,
+		color: "Purple",
+		eggGroups: ["Undiscovered"],
+	},
 	syclar: {
 		num: -1,
 		name: "Syclar",
