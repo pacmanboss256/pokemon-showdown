@@ -3963,7 +3963,7 @@ export const Pokedex: { [speciesid: string]: SpeciesData } = {
 		num: 206,
 		name: "Dunsparce",
 		types: ["Normal"],
-		baseStats: {hp: 100, atk: 70, def: 50, spa: 65, spd: 75, spe: 45},
+		baseStats: {hp: 100, atk: 70, def: 80, spa: 65, spd: 75, spe: 45},
 		abilities: {0: "Serene Grace", 1: "Run Away"},
 		heightm: 1.5,
 		weightkg: 14,
