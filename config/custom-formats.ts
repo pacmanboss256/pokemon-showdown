@@ -102,6 +102,7 @@ export const Formats: FormatList = [
 		ruleset: ['Standard Natdex', 'Item Clause', 'Species Clause', 'Z-Move Clause', 'CFZ Clause', 'Dynamax Clause'],
 		banlist: [
 			'Arceus', 'Cosmoem', 'Cosmog', 'Calyrex', 'Cresselia', 'Darkrai', 'Deoxys', 'Dialga', 'Eternatus', 'Giratina', 'Groudon', 'Heatran', 'Ho-Oh', 'Kyogre', 'Kyurem', 'Lugia', 'Lunala', 'Magearna', 'Marshadow', 'Regigigas', 'Mewtwo', 'Necrozma', 'Palkia', 'Rayquaza', 'Reshiram', 'Shaymin', 'Solgaleo', 'Unown', 'Xerneas', 'Yveltal', 'Zacian', 'Zamazenta', 'Zekrom', 'Zygarde',
+			'Tyrogunk',
 		],
 		forcedLevel: 50,
 		teamLength: {
