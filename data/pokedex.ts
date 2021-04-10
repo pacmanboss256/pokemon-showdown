@@ -15940,6 +15940,18 @@ export const Pokedex: { [speciesid: string]: SpeciesData } = {
 		color: "Purple",
 		eggGroups: ["Undiscovered"],
 	},
+	clefpex: {
+		num: 1000,
+		name: "Clefpex",
+		types: ["Poison", "Fairy"],
+		baseStats: {hp: 85, atk: 70, def: 100, spa: 95, spd: 105, spe: 80},
+		abilities: {0: "Regenerator", 1: "Magic Guard", H: "Neutralizing Gas"},
+		heightm: 2,
+		weightkg: 54.5,
+		color: "Pink",
+		eggGroups: ["Undiscovered"],
+	},
+	// reg capmons
 	syclar: {
 		num: -1,
 		name: "Syclar",

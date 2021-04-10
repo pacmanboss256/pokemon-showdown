@@ -41,7 +41,7 @@ export const Formats: FormatList = [
 		ruleset: ['Standard NatDex', 'OHKO Clause', 'Evasion Moves Clause', 'Species Clause', 'Sleep Clause Mod', 'Dynamax Clause', 'CFZ Clause', 'Z-Move Clause', 'Mega Rayquaza Clause'],
 		banlist: [
 			// AG
-			'Zacian-Crowned', 'Tyrogunk',
+			'Zacian-Crowned', 'Tyrogunk', 'Clefpex',
 			// moves
 			'Baton Pass', 'Dark Hole',
 			// abilities
@@ -62,7 +62,7 @@ export const Formats: FormatList = [
 			// moves
 			'Swagger', 'Baton Pass', 'Dark Hole', 'Misty Explosion',
 			// customs
-			'Tyrogunk',
+			'Tyrogunk', 'Clefpex',
 		],
 	},
 	{
@@ -74,7 +74,7 @@ export const Formats: FormatList = [
 		mod: 'gen8',
 		ruleset: ['Standard NatDex'],
 		banlist: [
-			'Tyrogunk',
+			'Tyrogunk', 'Clefpex',
 		],
 	},
 	{
@@ -102,7 +102,7 @@ export const Formats: FormatList = [
 		ruleset: ['Standard Natdex', 'Item Clause', 'Species Clause', 'Z-Move Clause', 'CFZ Clause', 'Dynamax Clause'],
 		banlist: [
 			'Arceus', 'Cosmoem', 'Cosmog', 'Calyrex', 'Cresselia', 'Darkrai', 'Deoxys', 'Dialga', 'Eternatus', 'Giratina', 'Groudon', 'Heatran', 'Ho-Oh', 'Kyogre', 'Kyurem', 'Lugia', 'Lunala', 'Magearna', 'Marshadow', 'Regigigas', 'Mewtwo', 'Necrozma', 'Palkia', 'Rayquaza', 'Reshiram', 'Shaymin', 'Solgaleo', 'Unown', 'Xerneas', 'Yveltal', 'Zacian', 'Zamazenta', 'Zekrom', 'Zygarde',
-			'Tyrogunk',
+			'Tyrogunk', 'Clefpex',
 		],
 		forcedLevel: 50,
 		teamLength: {
