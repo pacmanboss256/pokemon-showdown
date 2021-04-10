@@ -15941,7 +15941,7 @@ export const Pokedex: { [speciesid: string]: SpeciesData } = {
 		eggGroups: ["Undiscovered"],
 	},
 	clefpex: {
-		num: 1000,
+		num: 14000,
 		name: "Clefpex",
 		types: ["Poison", "Fairy"],
 		baseStats: {hp: 85, atk: 70, def: 100, spa: 95, spd: 105, spe: 80},
