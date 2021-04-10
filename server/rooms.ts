@@ -1822,6 +1822,14 @@ export class GameRoom extends BasicRoom {
 		const lastHyphen = this.roomid.lastIndexOf('-', end);
 		return {id: this.roomid.slice(7, lastHyphen), password: this.roomid.slice(lastHyphen + 1, end)};
 	}
+
+	expire() {
+		if (!Rooms.global) {
+			console.trace(this.roomid);
+		} else {
+			return super.expire();
+		}
+	}
 }
 
 function getRoom(roomid?: string | BasicRoom) {
