@@ -32,7 +32,7 @@ export const Formats: FormatList = [
 			// moves
 			'Swagger', 'Baton Pass', 'Dark Hole', 'Misty Explosion',
 			// custom mons
-			'Tyrogunk',
+			'Tyrogunk', 'Clefpex'
 		],
 	},
 	{
