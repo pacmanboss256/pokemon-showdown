@@ -3677,4 +3677,7 @@ export const PokedexText: {[k: string]: PokedexText} = {
 	tyrogunk: {
 		name: "Tyrogunk",
 	},
+	clefpex: {
+		name: "Clefpex",
+	},
 };
