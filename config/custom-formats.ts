@@ -18,6 +18,7 @@ export const Formats: FormatList = [
 			// complex bans
 			'Darkrai + Dark Hole', 'Blastoise-Mega + Shell Smash', 'Blaziken + Speed Boost', 'Kangaskhan-Mega + Seismic Toss', 'Greninja + Protean', 'Cinderace + Libero',
 		],
+		unbanlist: ['Tyrogunk', 'Clefpex'],
 		searchShow: false,
 	},
 	{
