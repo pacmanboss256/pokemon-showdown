@@ -15944,7 +15944,7 @@ export const Pokedex: { [speciesid: string]: SpeciesData } = {
 		num: 14000,
 		name: "Clefpex",
 		types: ["Poison", "Fairy"],
-		baseStats: {hp: 85, atk: 70, def: 100, spa: 95, spd: 105, spe: 80},
+		baseStats: {hp: 85, atk: 50, def: 100, spa: 80, spd: 105, spe: 80},
 		abilities: {0: "Regenerator", 1: "Magic Guard", H: "Neutralizing Gas"},
 		heightm: 2,
 		weightkg: 54.5,
