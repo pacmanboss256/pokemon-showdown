@@ -349,7 +349,7 @@ export const Formats: FormatList = [
 		gameType: 'doubles',
 		searchShow: false,
 		maxLevel: 5,
-		ruleset: ['Standard Doubles', 'Little Cup', 'Dynamax Clause', 'Swagger Clause'],
+		ruleset: ['Standard Doubles', 'Little Cup', 'Dynamax Clause', 'Swagger Clause', 'Sleep Clause Mod'],
 		banlist: ['Corsola-Galar', 'Cutiefly', 'Scyther', 'Sneasel', 'Swirlix', 'Tangela', 'Vulpix', 'Vulpix-Alola'],
 	},
 	{
@@ -614,24 +614,24 @@ export const Formats: FormatList = [
 		mod: 'gen8',
 		ruleset: ['Standard', 'Dynamax Clause'],
 		banlist: [
-			'Calyrex-Ice', 'Calyrex-Shadow', 'Darmanitan-Galar', 'Dialga', 'Dracovish', 'Eternatus', 'Giratina', 'Giratina-Origin',
-			'Groudon', 'Ho-Oh', 'Kyogre', 'Kyurem-Black', 'Kyurem-White', 'Landorus-Base', 'Lugia', 'Lunala', 'Marshadow', 'Mewtwo',
-			'Naganadel', 'Necrozma-Dawn-Wings', 'Necrozma-Dusk-Mane', 'Palkia', 'Pheromosa', 'Rayquaza', 'Shedinja', 'Solgaleo',
-			'Spectrier', 'Swoobat', 'Xerneas', 'Yveltal', 'Zacian', 'Zacian-Crowned', 'Zamazenta', 'Zamazenta-Crowned', 'Zekrom',
-			'Zygarde-Base', 'Arena Trap', 'Moody', 'Power Construct', 'Shadow Tag', 'King\'s Rock', 'Baton Pass',
+			'Calyrex-Ice', 'Calyrex-Shadow', 'Darmanitan-Galar', 'Dialga', 'Dracovish', 'Dragapult', 'Eternatus', 'Genesect', 'Giratina',
+			'Giratina-Origin', 'Groudon', 'Ho-Oh', 'Kartana', 'Kyogre', 'Kyurem-Black', 'Kyurem-White', 'Landorus-Base', 'Lugia', 'Lunala',
+			'Marshadow', 'Mewtwo', 'Naganadel', 'Necrozma-Dawn-Wings', 'Necrozma-Dusk-Mane', 'Palkia', 'Pheromosa', 'Porygon-Z', 'Rayquaza',
+			'Reshiram', 'Shedinja', 'Solgaleo', 'Spectrier', 'Swoobat', 'Xerneas', 'Yveltal', 'Zacian', 'Zacian-Crowned', 'Zamazenta',
+			'Zamazenta-Crowned', 'Zekrom', 'Zygarde-Base', 'Arena Trap', 'Moody', 'Power Construct', 'Shadow Tag', 'King\'s Rock', 'Baton Pass',
 		],
 		restricted: [
-			'Acupressure', 'Belly Drum', 'Bolt Beak', 'Double Iron Bash', 'Electrify', 'Fishious Rend', 'Geomancy', 'Glacial Lance',
-			'Lovely Kiss', 'Octolock', 'Quiver Dance', 'Shell Smash', 'Shift Gear', 'Sleep Powder', 'Spore', 'V-create', 'Wicked Blow',
+			'Acupressure', 'Belly Drum', 'Bolt Beak', 'Double Iron Bash', 'Electrify', 'Fishious Rend', 'Geomancy', 'Glacial Lance', 'Lovely Kiss',
+			'Octolock', 'Quiver Dance', 'Shell Smash', 'Shift Gear', 'Sleep Powder', 'Spore', 'Thousand Arrows', 'V-create', 'Wicked Blow',
 		],
 		checkCanLearn(move, species, lsetData, set) {
 			const problem = this.checkCanLearn(move, species, lsetData, set);
 			if (!problem) return null;
-			if (move.isZ || move.isMax || this.format.ruleTable?.isRestricted(`move:${move.id}`)) return problem;
+			if (move.isZ || move.isMax || this.ruleTable.isRestricted(`move:${move.id}`)) return problem;
 			if ((set as any).sketchMove) {
-				return ` already has ${this.dex.moves.get((set as any).sketchMove).name} as a sketched move.\n(${species.name} doesn't learn ${move.name}.)`;
+				return ` already has ${(set as any).sketchMove} as a sketched move.\n(${species.name} doesn't learn ${move.name}.)`;
 			}
-			(set as any).sketchMove = move.id;
+			(set as any).sketchMove = move.name;
 			return null;
 		},
 		onValidateTeam(team) {
@@ -641,10 +641,10 @@ export const Formats: FormatList = [
 					sketches.set((set as any).sketchMove, (sketches.get((set as any).sketchMove) || 0) + 1);
 				}
 			}
-			const overSketched = [...sketches.keys()].filter(move => sketches.get(move)! > 1);
+			const overSketched = [...sketches.entries()].filter(([moveName, count]) => count > 1);
 			if (overSketched.length) {
-				return overSketched.map(move => (
-					`You are limited to 1 of ${this.dex.moves.get(move).name} by Sketch Clause.\n(You have sketched ${this.dex.moves.get(move).name} ${sketches.get(move)!} times.)`
+				return overSketched.map(([moveName, count]) => (
+					`You are limited to 1 of ${moveName} by Sketch Clause.\n(You have sketched ${moveName} ${count} times.)`
 				));
 			}
 		},
@@ -659,10 +659,10 @@ export const Formats: FormatList = [
 		mod: 'gen8',
 		ruleset: ['Standard', 'Dynamax Clause', 'Inverse Mod'],
 		banlist: [
-			'Calyrex-Ice', 'Calyrex-Shadow', 'Darmanitan-Galar', 'Dialga', 'Diggersby', 'Dracovish', 'Eternatus', 'Giratina', 'Giratina-Origin', 'Groudon',
-			'Ho-Oh', 'Kartana', 'Kyogre', 'Kyurem-Black', 'Kyurem-White', 'Lugia', 'Lunala', 'Marshadow', 'Mewtwo', 'Naganadel', 'Necrozma-Dawn-Wings',
-			'Necrozma-Dusk-Mane', 'Palkia', 'Pheromosa', 'Rayquaza', 'Regieleki', 'Reshiram', 'Rillaboom', 'Solgaleo', 'Spectrier', 'Urshifu-Base', 'Xerneas',
-			'Yveltal', 'Zacian', 'Zacian-Crowned', 'Zekrom',
+			'Calyrex-Ice', 'Calyrex-Shadow', 'Darmanitan-Galar', 'Dialga', 'Diggersby', 'Dracovish', 'Dracozolt', 'Eternatus', 'Giratina',
+			'Giratina-Origin', 'Groudon', 'Ho-Oh', 'Kartana', 'Kyogre', 'Kyurem-Black', 'Kyurem-White', 'Lugia', 'Lunala', 'Marshadow',
+			'Mewtwo', 'Naganadel', 'Necrozma-Dawn-Wings', 'Necrozma-Dusk-Mane', 'Palkia', 'Pheromosa', 'Porygon-Z', 'Rayquaza', 'Regieleki',
+			'Reshiram', 'Rillaboom', 'Solgaleo', 'Spectrier', 'Urshifu-Base', 'Xerneas', 'Yveltal', 'Zacian', 'Zacian-Crowned', 'Zekrom',
 		],
 	},
 

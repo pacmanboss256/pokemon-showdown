@@ -1242,6 +1242,12 @@ export const Abilities: {[abilityid: string]: AbilityData} = {
 		num: 206,
 	},
 	gluttony: {
+		onStart(pokemon) {
+			pokemon.abilityState.gluttony = false;
+		},
+		onDamage(damage, pokemon) {
+			pokemon.abilityState.gluttony = true;
+		},
 		name: "Gluttony",
 		rating: 1.5,
 		num: 82,
@@ -2767,10 +2773,10 @@ export const Abilities: {[abilityid: string]: AbilityData} = {
 		num: 232,
 	},
 	propellertail: {
+		onModifyMovePriority: 1,
 		onModifyMove(move) {
-			// this doesn't actually do anything because ModifyMove happens after the tracksTarget check
-			// the actual implementation is in Battle#getTarget
-			move.tracksTarget = true;
+			// most of the implementation is in Battle#getTarget
+			move.tracksTarget = move.target !== 'scripted';
 		},
 		name: "Propeller Tail",
 		rating: 0,
@@ -2963,6 +2969,7 @@ export const Abilities: {[abilityid: string]: AbilityData} = {
 		onSourceModifyDamagePriority: -1,
 		onSourceModifyDamage(damage, source, target, move) {
 			if (target.abilityState.berryWeaken) {
+				target.abilityState.berryWeaken = false;
 				return this.chainModify(0.5);
 			}
 		},
@@ -3514,10 +3521,10 @@ export const Abilities: {[abilityid: string]: AbilityData} = {
 		num: 100,
 	},
 	stalwart: {
+		onModifyMovePriority: 1,
 		onModifyMove(move) {
-			// this doesn't actually do anything because ModifyMove happens after the tracksTarget check
-			// the actual implementation is in Battle#getTarget
-			move.tracksTarget = true;
+			// most of the implementation is in Battle#getTarget
+			move.tracksTarget = move.target !== 'scripted';
 		},
 		name: "Stalwart",
 		rating: 0,
