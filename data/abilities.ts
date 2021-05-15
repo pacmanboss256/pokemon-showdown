@@ -224,6 +224,7 @@ export const Abilities: {[abilityid: string]: AbilityData} = {
 	},
 	aurabreak: {
 		onStart(pokemon) {
+			if (this.suppressingAbility(pokemon)) return;
 			this.add('-ability', pokemon, 'Aura Break');
 		},
 		onAnyTryPrimaryHit(target, source, move) {
@@ -630,6 +631,7 @@ export const Abilities: {[abilityid: string]: AbilityData} = {
 	},
 	darkaura: {
 		onStart(pokemon) {
+			if (this.suppressingAbility(pokemon)) return;
 			this.add('-ability', pokemon, 'Dark Aura');
 		},
 		onAnyBasePowerPriority: 20,
@@ -944,6 +946,7 @@ export const Abilities: {[abilityid: string]: AbilityData} = {
 	},
 	fairyaura: {
 		onStart(pokemon) {
+			if (this.suppressingAbility(pokemon)) return;
 			this.add('-ability', pokemon, 'Fairy Aura');
 		},
 		onAnyBasePowerPriority: 20,
@@ -2357,6 +2360,11 @@ export const Abilities: {[abilityid: string]: AbilityData} = {
 			}
 		},
 		onEnd(source) {
+			for (const pokemon of this.getAllActive()) {
+				if (pokemon !== source && pokemon.hasAbility('Neutralizing Gas')) {
+					return;
+				}
+			}
 			this.add('-end', source, 'ability: Neutralizing Gas');
 
 			// FIXME this happens before the pokemon switches out, should be the opposite order.
