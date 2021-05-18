@@ -20,7 +20,7 @@ export type ModdedItemData = ItemData | Partial<Omit<ItemData, 'name'>> & {
 export class Item extends BasicEffect implements Readonly<BasicEffect> {
 	readonly effectType: 'Item';
 
-	/** just controls location on the item spritesheet */
+	/** Just controls location on the item spritesheet */
 	readonly num!: number;
 
 	/**
@@ -91,7 +91,9 @@ export class Item extends BasicEffect implements Readonly<BasicEffect> {
 
 	readonly condition?: ConditionData;
 	readonly forcedForme?: string;
+	/** Is this item a chouce locking item?*/
 	readonly isChoice?: boolean;
+	/** Natural Gift power and type */
 	readonly naturalGift?: {basePower: number, type: string};
 	readonly spritenum?: number;
 	readonly boosts?: SparseBoostsTable | false;

@@ -21,7 +21,9 @@ export class Ability extends BasicEffect implements Readonly<BasicEffect> {
 	readonly rating: number;
 	readonly suppressWeather: boolean;
 	readonly condition?: ConditionData;
+	/** Not able to be copied or changed by moves */
 	readonly isPermanent?: boolean;
+	/** Suppressed by Mold Breaker */
 	readonly isBreakable?: boolean;
 
 	constructor(data: AnyObject) {
