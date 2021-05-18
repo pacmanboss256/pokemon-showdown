@@ -24,6 +24,7 @@ namespace Chat {
 	export type PunishmentFilter = import('./chat').PunishmentFilter;
 	export type FilterWord = import('./chat').FilterWord;
 	export type CRQHandler = import('./chat').CRQHandler;
+	export type RoomCloseHandler = import('./chat').RoomCloseHandler;
 	export type AnnotatedChatCommands = import('./chat').AnnotatedChatCommands;
 	export type AnnotatedChatHandler = import('./chat').AnnotatedChatHandler;
 }
@@ -72,4 +73,10 @@ type Connection = Users.Connection;
 namespace Users {
 	export type User = import('./users').User;
 	export type Connection = import('./users').Connection;
+}
+
+namespace Ladders {
+	export type Challenge = import('./ladders-challenges').Challenge;
+	export type BattleChallenge = import('./ladders-challenges').BattleChallenge;
+	export type GameChallenge = import('./ladders-challenges').GameChallenge;
 }
