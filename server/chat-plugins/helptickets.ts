@@ -726,14 +726,16 @@ export const textTickets: {[k: string]: TextTicketInfo} = {
 		},
 		getReviewDisplay(ticket, staff, conn) {
 			let buf = '';
-			const sharedBattles = getCommonBattles(ticket.userid, null, toID(ticket.text[0]), null, conn);
+			const reportUserid = toID(ticket.text[0]);
+			const sharedBattles = getCommonBattles(ticket.userid, null, reportUserid, null, conn);
 			const replays = getBattleLinks(ticket.text[1]).concat(getBattleLinks(ticket.text[1]));
-			buf += `<strong>Reported user:</strong> ${ticket.text[0]}</br />`;
-			buf += `<br /><br /><details class="readmore"><summary><strong>Punish:</strong></summary><div class="infobox">`;
+			buf += `<strong>Reported user:</strong> ${reportUserid} `;
+			buf += `<button class="button" name="send" value="/modlog global,[${reportUserid}]">Global Modlog</button><br />`;
+			buf += `<br /><details class="readmore"><summary><strong>Punish:</strong></summary><div class="infobox">`;
 			const replayString = replays.concat(sharedBattles).map(u => `https://${Config.routes.client}/${u}`).join(', ');
 			const proofString = `spoiler:PMs with ${ticket.userid}${replayString ? `, ${replayString}` : ''}`;
 			for (const [name, punishment] of [['Lock', 'lock'], ['Weeklock', 'weeklock'], ['Warn', 'warn']]) {
-				buf += `<form data-submitsend="/msgroom staff,/${punishment} ${ticket.text[0]},{reason} ${proofString}">`;
+				buf += `<form data-submitsend="/msgroom staff,/${punishment} ${reportUserid},{reason} ${proofString}">`;
 				buf += `<button class="button notifying" type="submit">${name}</button><br />`;
 				buf += `Optional reason: <input name="reason" />`;
 				buf += `</form><br />`;
@@ -751,6 +753,11 @@ export const textTickets: {[k: string]: TextTicketInfo} = {
 			}
 
 			return buf;
+		},
+		onSubmit(ticket, text, submitter, conn) {
+			const targetId = toID(text[0]);
+			// this does the saving for us so we don't have to do anything else
+			getCommonBattles(targetId, Users.get(targetId), submitter.id, submitter, conn);
 		},
 	},
 	inapname: {
@@ -800,20 +807,6 @@ export const textTickets: {[k: string]: TextTicketInfo} = {
 			if (context) {
 				rooms.push(...getBattleLinks(context));
 			}
-
-			let battlelogNoticeAdded = false;
-			for (const [i, url] of [...rooms].entries()) {
-				if (rooms.indexOf(url) !== i) {
-					rooms.splice(i, 1);
-					continue;
-				}
-				const room = Rooms.get(url);
-				if (!room) {
-					if (battlelogNoticeAdded) continue;
-					buf += `<small>(use /battlelog to view logs if the battle is expired)</small><br />`;
-					battlelogNoticeAdded = true;
-				}
-			}
 			if (ticket.meta) {
 				const [type, meta] = ticket.meta.split('-');
 				if (type === 'user') {
@@ -834,6 +827,29 @@ export const textTickets: {[k: string]: TextTicketInfo} = {
 				}
 			}
 			buf += `Battle links: ${rooms.map(url => Chat.formatText(`<<${url}>>`)).join(', ')}<br />`;
+			buf += `<br />`;
+			const existingRooms = rooms.map(r => Rooms.get(r)).filter(r => r?.type !== 'chat');
+			if (existingRooms.length) {
+				const chatBuffer = existingRooms.map(room => {
+					// there is no reason this should happen (room && room.type check above in .filter).
+					// but typescript is stupid. so appeasement.
+					if (!room) return '';
+					const log = room.log.log.filter(l => l.startsWith('|c'));
+					if (!log?.length) return '';
+					let innerBuf = `<div class="infobox"><details class="readmore"><summary>${room.title}</summary><hr />`;
+					for (const line of log) {
+						const [,, username, message] = Utils.splitFirst(line, '|', 3);
+						innerBuf += Utils.html`<div class="chat"><span class="username"><username>${username}:</username></span> ${message}`;
+					}
+					innerBuf += `</div></details>`;
+					return innerBuf;
+				}).filter(Boolean).join('<br />');
+				if (chatBuffer) {
+					buf += `<div class="infobox"><details class="readmore"><summary><strong>Battle chat logs:</strong><br /></summary>`;
+					buf += chatBuffer;
+					buf += `</details></div>`;
+				}
+			}
 			return buf;
 		},
 	},
