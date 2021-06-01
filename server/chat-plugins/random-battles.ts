@@ -647,10 +647,14 @@ export const commands: Chat.ChatCommands = {
 			if (species.otherFormes) setsToCheck.push(...species.otherFormes.map(pkmn => dex.species.get(pkmn)));
 
 			for (const pokemon of setsToCheck) {
-				if (!pokemon.randomBattleMoves) continue;
+				if (!pokemon.randomBattleMoves || pokemon.isNonstandard === 'Future') continue;
 				const randomMoves = pokemon.randomBattleMoves.slice();
 				const m = randomMoves.sort().map(formatMove);
-				movesets.push(`<span style="color:#999999;">Moves for ${pokemon.name} in ${formatName}:</span><br />${m.join(`, `)}`);
+				movesets.push(
+					`<details${!movesets.length ? ' open' : ''}>` +
+					`<summary><span style="color:#999999;">Moves for ${pokemon.name} in ${formatName}:<span style="color:#999999;"></summary>` +
+					`${m.join(`, `)}</details>`
+				);
 			}
 		}
 
