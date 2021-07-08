@@ -147,7 +147,7 @@ export const commands: Chat.ChatCommands = {
 		if (canViewAlts) {
 			let prevNames = targetUser.previousIDs.map(userid => {
 				const punishments = Punishments.userids.get(userid);
-				if (!punishments) return userid;
+				if (!punishments || !user.can('alts')) return userid;
 				return punishments.map(
 					punishment => (
 						`${userid}${punishment ? ` (${Punishments.punishmentTypes.get(punishment.type)?.desc || `punished`}` +
@@ -162,7 +162,7 @@ export const commands: Chat.ChatCommands = {
 				if (targetAlt.tempGroup === '~' && user.tempGroup !== '~') continue;
 
 				const punishments = Punishments.userids.get(targetAlt.id) || [];
-				const punishMsg = punishments.map(punishment => (
+				const punishMsg = !user.can('alts') ? '' : punishments.map(punishment => (
 					` (${Punishments.punishmentTypes.get(punishment.type)?.desc || 'punished'}` +
 					`${punishment.id !== targetAlt.id ? ` as ${punishment.id}` : ''})`
 				)).join(' | ');
@@ -170,9 +170,9 @@ export const commands: Chat.ChatCommands = {
 				if (!targetAlt.connected) buf += ` <em style="color:gray">(offline)</em>`;
 				prevNames = targetAlt.previousIDs.map(userid => {
 					const p = Punishments.userids.get(userid);
-					if (!p) return userid;
+					if (!p || !user.can('alts')) return userid;
 					return p.map(
-						cur => `${userid}(${Punishments.punishmentTypes.get(cur.type)?.desc || 'punished'}` + `${cur.id !== targetAlt.id ? ` as ${cur.id}` : ``})`
+						cur => `${userid} (${Punishments.punishmentTypes.get(cur.type)?.desc || 'punished'}` + `${cur.id !== targetAlt.id ? ` as ${cur.id}` : ``})`
 					).join(' | ');
 				}).join(", ");
 				if (prevNames) buf += `<br />Previous names: ${prevNames}`;
@@ -349,6 +349,7 @@ export const commands: Chat.ChatCommands = {
 		if (idPunishments) {
 			for (const p of idPunishments) {
 				const {type: punishType, id: punishUserid, reason} = p;
+				if (!user.can('alts') && !['LOCK', 'BAN'].includes(punishType)) continue;
 				const punishDesc = (Punishments.punishmentTypes.get(punishType)?.desc || punishType);
 				buf += `${punishDesc}: ${punishUserid}`;
 				const expiresIn = Punishments.checkLockExpiration(userid);
@@ -709,7 +710,7 @@ export const commands: Chat.ChatCommands = {
 					if (move.flags['sound']) details["&#10003; Sound"] = "";
 					if (move.flags['bullet']) details["&#10003; Bullet"] = "";
 					if (move.flags['pulse']) details["&#10003; Pulse"] = "";
-					if (!move.flags['protect'] && !/(ally|self)/i.test(move.target)) details["&#10003; Bypasses Protect"] = "";
+					if (!move.flags['protect'] && move.target !== 'self') details["&#10003; Bypasses Protect"] = "";
 					if (move.flags['authentic']) details["&#10003; Bypasses Substitutes"] = "";
 					if (move.flags['defrost']) details["&#10003; Thaws user"] = "";
 					if (move.flags['bite']) details["&#10003; Bite"] = "";
@@ -2790,6 +2791,6 @@ process.nextTick(() => {
 	Dex.includeData();
 	Chat.multiLinePattern.register(
 		'/htmlbox', '/quote', '/addquote', '!htmlbox', '/addhtmlbox', '/addrankhtmlbox', '/adduhtml',
-		'/changeuhtml', '/addrankuhtmlbox', '/changerankuhtmlbox', '/addrankuhtml',
+		'/changeuhtml', '/addrankuhtmlbox', '/changerankuhtmlbox', '/addrankuhtml', '/addhtmlfaq'
 	);
 });
